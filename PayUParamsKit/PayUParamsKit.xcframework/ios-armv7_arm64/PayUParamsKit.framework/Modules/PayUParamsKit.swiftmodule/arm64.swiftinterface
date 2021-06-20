@@ -17,8 +17,9 @@ import UIKit
 @objc public class PayUBeneficiaryParams : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc public var beneficiaryName: Swift.String
   @objc public var beneficiaryAccountNumber: Swift.String
+  @objc public var beneficiaryIFSC: Swift.String
   @objc public var beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType
-  @objc public init(beneficiaryName: Swift.String, beneficiaryAccountNumber: Swift.String, beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType)
+  @objc public init(beneficiaryName: Swift.String, beneficiaryAccountNumber: Swift.String, beneficiaryIFSC: Swift.String, beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
   @objc override dynamic public init()
@@ -35,6 +36,20 @@ import UIKit
   public static var allCases: [PayUParamsKit.BeneficiaryAccountType] {
     get
   }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers open class PayUModelIFSCInfo : ObjectiveC.NSObject {
+  @objc public var bank: Swift.String?
+  @objc public var branch: Swift.String?
+  @objc public var city: Swift.String?
+  @objc public var ifsc: Swift.String?
+  @objc public var micr: Swift.String?
+  @objc public var state: Swift.String?
+  @objc public var office: Swift.String?
+  @objc public var address: Swift.String?
+  @objc public var contact: Swift.String?
+  @objc public var district: Swift.String?
+  @objc deinit
+  @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers @objcMembers open class PayUModelMultiCurrencyPayment : ObjectiveC.NSObject {
   @objc public var supportedCardSchemes: [Swift.String]?

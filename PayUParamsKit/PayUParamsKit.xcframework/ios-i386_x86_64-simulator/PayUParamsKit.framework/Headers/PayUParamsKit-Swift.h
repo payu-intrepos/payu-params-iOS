@@ -240,8 +240,9 @@ SWIFT_CLASS("_TtC13PayUParamsKit21PayUBeneficiaryParams")
 @interface PayUBeneficiaryParams : NSObject <NSCopying>
 @property (nonatomic, copy) NSString * _Nonnull beneficiaryName;
 @property (nonatomic, copy) NSString * _Nonnull beneficiaryAccountNumber;
+@property (nonatomic, copy) NSString * _Nonnull beneficiaryIFSC;
 @property (nonatomic) enum BeneficiaryAccountType beneficiaryAccountType;
-- (nonnull instancetype)initWithBeneficiaryName:(NSString * _Nonnull)beneficiaryName beneficiaryAccountNumber:(NSString * _Nonnull)beneficiaryAccountNumber beneficiaryAccountType:(enum BeneficiaryAccountType)beneficiaryAccountType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithBeneficiaryName:(NSString * _Nonnull)beneficiaryName beneficiaryAccountNumber:(NSString * _Nonnull)beneficiaryAccountNumber beneficiaryIFSC:(NSString * _Nonnull)beneficiaryIFSC beneficiaryAccountType:(enum BeneficiaryAccountType)beneficiaryAccountType OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -255,6 +256,22 @@ typedef SWIFT_ENUM(NSInteger, PayUBillingCycle, open) {
   PayUBillingCycleYearly = 4,
   PayUBillingCycleAdhoc = 5,
 };
+
+
+SWIFT_CLASS("_TtC13PayUParamsKit17PayUModelIFSCInfo")
+@interface PayUModelIFSCInfo : NSObject
+@property (nonatomic, copy) NSString * _Nullable bank;
+@property (nonatomic, copy) NSString * _Nullable branch;
+@property (nonatomic, copy) NSString * _Nullable city;
+@property (nonatomic, copy) NSString * _Nullable ifsc;
+@property (nonatomic, copy) NSString * _Nullable micr;
+@property (nonatomic, copy) NSString * _Nullable state;
+@property (nonatomic, copy) NSString * _Nullable office;
+@property (nonatomic, copy) NSString * _Nullable address;
+@property (nonatomic, copy) NSString * _Nullable contact;
+@property (nonatomic, copy) NSString * _Nullable district;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @class NSNumber;
 
@@ -538,8 +555,9 @@ SWIFT_CLASS("_TtC13PayUParamsKit21PayUBeneficiaryParams")
 @interface PayUBeneficiaryParams : NSObject <NSCopying>
 @property (nonatomic, copy) NSString * _Nonnull beneficiaryName;
 @property (nonatomic, copy) NSString * _Nonnull beneficiaryAccountNumber;
+@property (nonatomic, copy) NSString * _Nonnull beneficiaryIFSC;
 @property (nonatomic) enum BeneficiaryAccountType beneficiaryAccountType;
-- (nonnull instancetype)initWithBeneficiaryName:(NSString * _Nonnull)beneficiaryName beneficiaryAccountNumber:(NSString * _Nonnull)beneficiaryAccountNumber beneficiaryAccountType:(enum BeneficiaryAccountType)beneficiaryAccountType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithBeneficiaryName:(NSString * _Nonnull)beneficiaryName beneficiaryAccountNumber:(NSString * _Nonnull)beneficiaryAccountNumber beneficiaryIFSC:(NSString * _Nonnull)beneficiaryIFSC beneficiaryAccountType:(enum BeneficiaryAccountType)beneficiaryAccountType OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -553,6 +571,22 @@ typedef SWIFT_ENUM(NSInteger, PayUBillingCycle, open) {
   PayUBillingCycleYearly = 4,
   PayUBillingCycleAdhoc = 5,
 };
+
+
+SWIFT_CLASS("_TtC13PayUParamsKit17PayUModelIFSCInfo")
+@interface PayUModelIFSCInfo : NSObject
+@property (nonatomic, copy) NSString * _Nullable bank;
+@property (nonatomic, copy) NSString * _Nullable branch;
+@property (nonatomic, copy) NSString * _Nullable city;
+@property (nonatomic, copy) NSString * _Nullable ifsc;
+@property (nonatomic, copy) NSString * _Nullable micr;
+@property (nonatomic, copy) NSString * _Nullable state;
+@property (nonatomic, copy) NSString * _Nullable office;
+@property (nonatomic, copy) NSString * _Nullable address;
+@property (nonatomic, copy) NSString * _Nullable contact;
+@property (nonatomic, copy) NSString * _Nullable district;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 @class NSNumber;
 
