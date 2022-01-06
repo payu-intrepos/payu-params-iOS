@@ -14,5 +14,5 @@ let package = Package(
     targets: [
             .binaryTarget(name: "PayUIndia-PayUParams", path: "./PayUParamsKit/PayUParamsKit.xcframework")
         ],
-    exclude: ["PayUIndia-PayUParams-Release.sh", "PayUIndia-PayUParams.podspec"]
+    exclude: ["./PayUIndia-PayUParams-Release.sh", "./PayUIndia-PayUParams.podspec"]
 )
