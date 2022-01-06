@@ -1,2 +1,2 @@
 # payu-params-iOS
-PayUParams-iOS
+PayUIndia-PayUParam
