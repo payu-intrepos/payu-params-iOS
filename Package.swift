@@ -11,10 +11,6 @@ let package = Package(
             name: "PayUIndia-PayUParams",
             targets: ["PayUIndia-PayUParams"]),
     ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-    ],
     targets: [
             .binaryTarget(name: "PayUIndia-PayUParams", path: "./PayUParamsKit/PayUParamsKit.xcframework")
         ]
