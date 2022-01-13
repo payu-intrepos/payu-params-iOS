@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-PayUParams"
-  s.version             = "2.1.1"
+  s.version             = "3.1.0"
   s.license             = "MIT"
   s.homepage            = "https://github.com/payu-intrepos/payu-params-iOS"
   s.author              = { "PayUbiz" => "contact@payu.in"  }

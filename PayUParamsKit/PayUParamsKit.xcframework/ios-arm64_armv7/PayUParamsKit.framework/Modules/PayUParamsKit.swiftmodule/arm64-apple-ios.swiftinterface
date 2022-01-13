@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUParamsKit
 import Foundation
 @_exported import PayUParamsKit
@@ -17,6 +17,8 @@ import _Concurrency
   public var taxAmount: Swift.Double?
   public var taxInPercentage: Swift.Double?
   @objc public var txnS2SFlow: Swift.String?
+  @objc public var beneficiaryAccountNumber: Swift.String?
+  @objc public var beneficiaryAccountIFSC: Swift.String?
   @objc public var paymentType: PayUParamsKit.PaymentType {
     @objc get
   }
@@ -217,18 +219,36 @@ import _Concurrency
   @objc override dynamic public init()
   @objc deinit
 }
-public enum PPKError : Swift.Error {
-  case noInternet
-  case withImage(message: Swift.String?, image: UIKit.UIImage?)
-  case withCode(message: Swift.String?, code: Swift.Int?)
+@objc @_inheritsConvenienceInitializers @objcMembers public class PPKValidator : ObjectiveC.NSObject {
+  @objc public class func isValidMobile(_ mobile: Swift.String) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
 }
-extension PayUParamsKit.PPKError : Foundation.LocalizedError {
-  public var errorDescription: Swift.String? {
+@objc public enum PayUErrorType : Swift.Int {
+  case error
+  case unknownError
+  case noInternet
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
-  public var errorCode: Swift.Int? {
-    get
+}
+@_hasMissingDesignatedInitializers @objcMembers public class PayUError : Foundation.LocalizedError {
+  @objc final public let errorType: PayUParamsKit.PayUErrorType
+  @objc final public let message: Swift.String?
+  final public let errorCode: Swift.Int?
+  @objc final public let image: UIKit.UIImage?
+  @objc public var description: Swift.String {
+    @objc get
   }
+  public static func == (lhs: PayUParamsKit.PayUError, rhs: PayUParamsKit.PayUError) -> Swift.Bool
+  public class func noInternet() -> PayUParamsKit.PayUError
+  public class func unknownError() -> PayUParamsKit.PayUError
+  public class func error(_ message: Swift.String) -> PayUParamsKit.PayUError
+  public class func error(message: Swift.String?, image: UIKit.UIImage?) -> PayUParamsKit.PayUError
+  public class func error(message: Swift.String?, code: Swift.Int?) -> PayUParamsKit.PayUError
+  @objc deinit
 }
 @objc public class PayUBeneficiaryParams : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc public var beneficiaryName: Swift.String
@@ -301,6 +321,8 @@ extension PayUParamsKit.PPKError : Foundation.LocalizedError {
   @objc public var billingInterval: Foundation.NSNumber
   @objc public var isFreeTrial: Swift.Bool
   @objc public var remarks: Swift.String?
+  @objc public var billingLimit: Swift.String?
+  @objc public var billingRule: Swift.String?
   @objc public init(billingAmount: Swift.String, paymentStartDate: Foundation.Date, paymentEndDate: Foundation.Date, billingCycle: PayUParamsKit.PayUBillingCycle, billingInterval: Foundation.NSNumber)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
@@ -329,6 +351,10 @@ extension PayUParamsKit.PPKError : Foundation.LocalizedError {
   @objc public class func dateStringFrom(_ date: Foundation.Date, formater: Swift.String = Constants.yyyyMMdd) -> Swift.String?
   @objc public class func getJSONIndividualObject(forKey key: Swift.String?, value: Swift.String?) -> Swift.String
   @objc public class func getJSONString(from json: [Swift.String : Any]) -> Swift.String?
+  @objc public class func convertJsonToPostParam(_ json: [Swift.String : Swift.String]) -> Swift.String
+  @objc public class func isSITransaction(_ params: PayUParamsKit.PayUPaymentParam) -> Swift.Bool
+  @objc public class func getSIPostParams(_ siParam: PayUParamsKit.PayUSIParams?) -> [Swift.String : Swift.String]
+  @objc public class func getSIDetailsPostParams(_ siParam: PayUParamsKit.PayUSIParams?) -> Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -342,6 +368,69 @@ extension PayUParamsKit.PPKError : Foundation.LocalizedError {
   @objc public static let PAYMENT: Swift.String
   @objc public static let INSTRUMENT_TYPE: Swift.String
   @objc public static let DEVICE_TYPE_IOS: Swift.String
+  @_inheritsConvenienceInitializers @objc public class Params : ObjectiveC.NSObject {
+    @objc public static let PG: Swift.String
+    @objc public static let BANK_CODE: Swift.String
+    @objc public static let SDK_PLATFORM: Swift.String
+    @objc public static let KEY: Swift.String
+    @objc public static let OFFER_KEY: Swift.String
+    @objc public static let TXNID: Swift.String
+    @objc public static let AMOUNT: Swift.String
+    @objc public static let PRODUCT_INFO: Swift.String
+    @objc public static let FIRST_NAME: Swift.String
+    @objc public static let EMAIL: Swift.String
+    @objc public static let PHONE: Swift.String
+    @objc public static let SURL: Swift.String
+    @objc public static let FURL: Swift.String
+    @objc public static let HASH: Swift.String
+    @objc public static let CCNUM: Swift.String
+    @objc public static let CCNAME: Swift.String
+    @objc public static let CCVV: Swift.String
+    @objc public static let CC_EXP_MON: Swift.String
+    @objc public static let CC_EXP_YR: Swift.String
+    @objc public static let LOOKUP_ID: Swift.String
+    @objc public static let DEVICE_TYPE: Swift.String
+    @objc public static let INSTRUMENT_TYPE: Swift.String
+    @objc public static let INSTRUMENT_ID: Swift.String
+    @objc public static let TXN_S2S_FLOW: Swift.String
+    @objc public static let USER_CREDENTIALS: Swift.String
+    @objc public static let UDF_1: Swift.String
+    @objc public static let UDF_2: Swift.String
+    @objc public static let UDF_3: Swift.String
+    @objc public static let UDF_4: Swift.String
+    @objc public static let UDF_5: Swift.String
+    @objc public static let store_card_token: Swift.String
+    @objc public static let FREE_TRIAL: Swift.String
+    @objc public static let API_VERSION: Swift.String
+    @objc public static let SI: Swift.String
+    @objc public static let SI_DETAILS: Swift.String
+    @objc public static let BILLING_AMOUNT: Swift.String
+    @objc public static let BILLING_CURRENCY: Swift.String
+    @objc public static let BILLING_CYCLE: Swift.String
+    @objc public static let BILLING_INTERVAL: Swift.String
+    @objc public static let PAYMENT_START_DATE: Swift.String
+    @objc public static let PAYMENT_END_DATE: Swift.String
+    @objc public static let REMARKS: Swift.String
+    @objc public static let STORE_CARD: Swift.String
+    @objc public static let STORE_CARD_NAME: Swift.String
+    @objc public static let USER_CONSENT: Swift.String
+    @objc public static let ONE_CLICK: Swift.String
+    @objc public static let ONE_CLICK_DETAILS: Swift.String
+    @objc public static let USER_DEVICE_ID: Swift.String
+    @objc public static let VSC_AUTH_CODE: Swift.String
+    @objc public static let MERCHANT_APP_ID: Swift.String
+    @objc public static let PARTNER_ORIGINAL_TRANSACTION_ID: Swift.String
+    @objc public static let CARD_ALIAS: Swift.String
+    @objc public static let PARTNER_TOKEN: Swift.String
+    @objc public static let payu_sdk_name: Swift.String
+    @objc public static let payu_sdk_version: Swift.String
+    @objc public static let platform: Swift.String
+    @objc public static let name: Swift.String
+    @objc public static let BILLING_RULE: Swift.String
+    @objc public static let BILLING_LIMIT: Swift.String
+    @objc override dynamic public init()
+    @objc deinit
+  }
   @objc override dynamic public init()
   @objc deinit
 }
@@ -510,6 +599,9 @@ extension PayUParamsKit.EMIType : Swift.RawRepresentable {}
 extension PayUParamsKit.ApiStatus : Swift.Equatable {}
 extension PayUParamsKit.ApiStatus : Swift.Hashable {}
 extension PayUParamsKit.ApiStatus : Swift.RawRepresentable {}
+extension PayUParamsKit.PayUErrorType : Swift.Equatable {}
+extension PayUParamsKit.PayUErrorType : Swift.Hashable {}
+extension PayUParamsKit.PayUErrorType : Swift.RawRepresentable {}
 extension PayUParamsKit.BeneficiaryAccountType : Swift.Equatable {}
 extension PayUParamsKit.BeneficiaryAccountType : Swift.Hashable {}
 extension PayUParamsKit.BeneficiaryAccountType : Swift.RawRepresentable {}
