@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-PayUParams"
-  s.version             = "3.1.0"
+  s.version             = "3.2.0"
   s.license             = "MIT"
   s.homepage            = "https://github.com/payu-intrepos/payu-params-iOS"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -9,10 +9,10 @@ Pod::Spec.new do |s|
   s.description         = "The PayUParams SDK provides basic classes and method used across other framewroks."
 
   s.source              = { :git => "https://github.com/payu-intrepos/payu-params-iOS.git",
-                            :tag => "#{s.name}_#{s.version}"
+                            :tag => "#{s.version}"
                           }
   
-  s.ios.deployment_target = "10.0"
+  s.ios.deployment_target = "11.0"
   s.vendored_frameworks = 'PayUParamsKit/PayUParamsKit.xcframework'
 
 end
