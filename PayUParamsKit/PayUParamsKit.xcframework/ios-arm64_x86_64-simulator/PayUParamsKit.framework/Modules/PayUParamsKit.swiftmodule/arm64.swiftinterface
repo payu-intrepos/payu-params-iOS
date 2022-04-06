@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUParamsKit
 import Foundation
 @_exported import PayUParamsKit
@@ -488,6 +488,7 @@ extension Swift.Dictionary {
     @objc public static let DROP_CATEGORY: Swift.String
     @objc public static let ENFORCE_PAY_METHOD: Swift.String
     @objc public static let CUSTOM_NOTE: Swift.String
+    @objc public static let SPLIT_REQUEST: Swift.String
     @objc public static let NOTE_CATEGORY: Swift.String
     @objc public static let ONE_CLICK_CHECKOUT: Swift.String
     @objc public static let BENEFICIARY_NAME: Swift.String
@@ -557,6 +558,7 @@ extension Swift.Dictionary {
   @objc public var enforcePayMethod: Swift.String?
   @objc public var customNote: Swift.String?
   @objc public var noteCategory: Swift.String?
+  @objc public var splitPaymentDetails: Swift.String?
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String, surl: Swift.String, furl: Swift.String, environment: PayUParamsKit.Environment)
   @objc deinit
 }
