@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUParamsKit
 import Foundation
 @_exported import PayUParamsKit
@@ -512,6 +512,7 @@ extension Swift.Dictionary {
     @objc public static let TAVV: Swift.String
     @objc public static let TRID: Swift.String
     @objc public static let TOKEN_REF_NO: Swift.String
+    @objc public static let SDK_RETRY: Swift.String
     @objc override dynamic public init()
     @objc deinit
   }
@@ -528,7 +529,7 @@ extension Swift.Dictionary {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @objcMembers public class PayUPaymentParam : ObjectiveC.NSObject {
+@objc @objcMembers public class PayUPaymentParam : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc public var key: Swift.String
   @objc public var transactionId: Swift.String
   @objc public var amount: Swift.String
@@ -559,7 +560,9 @@ extension Swift.Dictionary {
   @objc public var customNote: Swift.String?
   @objc public var noteCategory: Swift.String?
   @objc public var splitPaymentDetails: Swift.String?
+  @objc public var isRetryPayment: Swift.Bool
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String, surl: Swift.String, furl: Swift.String, environment: PayUParamsKit.Environment)
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
 }
 @objc public enum Environment : Swift.Int {
