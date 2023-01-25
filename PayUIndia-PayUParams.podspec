@@ -1,6 +1,9 @@
+vars_from_file = File.read("/Users/amit.salaria/Documents/Git/one-payu-ui-sdk-ios/Dependency/PayUParamsKit/GitHub/Version.txt")
+eval(vars_from_file)
+
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-PayUParams"
-  s.version             = "4.5.0"
+  s.version             = PARAMKIT_POD_VERSION
   s.license             = "MIT"
   s.homepage            = "https://github.com/payu-intrepos/payu-params-iOS"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
