@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUParamsKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -42,7 +42,8 @@ import _StringProcessing
   public var imageUpdatedOn: Swift.Double?
   @objc public var flowType: Swift.String?
   @objc public var phoneNumber: Swift.String?
-  @objc public var subject: Swift.String?
+  @objc public var header: Swift.String?
+  public var isEligible: Swift.Bool?
   @objc public var paymentType: PayUParamsKit.PaymentType {
     @objc get
   }
@@ -177,6 +178,14 @@ import _StringProcessing
   @objc override dynamic public init()
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @objcMembers public class CLW : PayUParamsKit.PaymentOption {
+  @objc public var walletUrn: Swift.String?
+  public var balance: Swift.Double?
+  @objc public var apiStatus: PayUParamsKit.ApiStatus
+  @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class CardBinInfo : ObjectiveC.NSObject {
   @objc override dynamic public init()
   public var taxInPercentage: Swift.Double?
@@ -237,6 +246,7 @@ import _StringProcessing
   case other
   case savedNetbanking
   case savedUPI
+  case clw
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -601,10 +611,11 @@ import _StringProcessing
   @objc public var tag: Swift.String?
   @objc public var userInfo: Swift.String?
   @objc public var paymentInfo: Swift.String?
-  @objc public var eligibilityCheck: Swift.String?
+  @objc public var eligibilityCheck: Swift.Bool
   @objc public var eligibleAmount: Swift.String?
   @objc public var title: Swift.String?
   @objc public var msg: Swift.String?
+  @objc public var bankCode: Swift.String?
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
@@ -725,6 +736,7 @@ extension Swift.Dictionary {
     @objc public static let payid: Swift.String
     @objc public static let PG: Swift.String
     @objc public static let BANK_CODE: Swift.String
+    @objc public static let WALLET_URN: Swift.String
     @objc public static let SDK_PLATFORM: Swift.String
     @objc public static let KEY: Swift.String
     @objc public static let OFFER_KEY: Swift.String
