@@ -1,4 +1,4 @@
-vars_from_file = File.read("/Users/amit.salaria/Documents/Git/one-payu-ui-sdk-ios/Dependency/PayUParamsKit/GitHub/Version.txt")
+vars_from_file = File.read("./Version.txt")
 eval(vars_from_file)
 
 Pod::Spec.new do |s|
