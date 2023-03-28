@@ -1,5 +1,12 @@
+# Supress warning messages.
+original_verbose, $VERBOSE = $VERBOSE, nil
+
+# Read file
 vars_from_file = File.read("./Version.txt")
 eval(vars_from_file)
+
+# Activate warning messages again.
+$VERBOSE = original_verbose
 
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-PayUParams"

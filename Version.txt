@@ -81,3 +81,7 @@ CHECKOUT_PRO_PODSPEC_DEPENDENCIES = [
 "s.dependency            'PayUIndia-CardScanner', '~> 1.0'",
 "s.dependency            'PayUIndia-Analytics', '3.0'"
 ]
+
+# PayUAssetLibrary
+ASSET_LIBRARY_POD_VERSION="3.3.0"
+ASSET_LIBRARY_COMMIT_MESSAGE="Updated Version"
