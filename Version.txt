@@ -4,7 +4,7 @@ XCFRAMEWORK_SUCCESS_MSG="xcframework successfully written"
 
 # Release Config
 MAX_RETRY_COUNT="2"
-DEFAULT_RETRY_TIME_IN_SECONDS="3"
+DEFAULT_RETRY_TIME_IN_SECONDS="1"
 FIRST_LINT_RETRY_TIME_IN_SECONDS="5"
 DEFAULT_LINT_RETRY_TIME_IN_SECONDS="3"
 
@@ -85,3 +85,70 @@ CHECKOUT_PRO_PODSPEC_DEPENDENCIES = [
 # PayUAssetLibrary
 ASSET_LIBRARY_POD_VERSION="3.3.0"
 ASSET_LIBRARY_COMMIT_MESSAGE="Updated Version"
+
+# PayUCustomBrowser
+CUSTOM_BROWSER_POD_VERSION="9.2.0"
+CUSTOM_BROWSER_COMMIT_MESSAGE="Updated Version"
+
+CUSTOM_BROWSER_PACKAGE_DEPENDENCIES=(
+'let VERSION_ANALYTICS_KIT: PackageDescription.Version = "3.0.0"'
+)
+
+CUSTOM_BROWSER_PODSPEC_DEPENDENCIES = [
+"s.dependency            'PayUIndia-Analytics', '3.0'"
+]
+
+# PayULoggerKit
+LOGGER_KIT_POD_VERSION="4.0.0"
+
+# PayUNetworking
+NETWORKING_KIT_POD_VERSION="4.0.0"
+
+NETWORKING_KIT_PODSPEC_DEPENDENCIES = [
+"s.dependency            'PayUIndia-Logger', '4.0.0'"
+]
+
+# PayUUPICore
+UPI_CORE_POD_VERSION="7.1.1"
+UPI_CORE_COMMIT_MESSAGE="Updated Version"
+
+UPI_CORE_PACKAGE_DEPENDENCIES=(
+'let VERSION_PARAM_KIT: PackageDescription.Version = "4.5.0"'
+)
+
+UPI_CORE_PODSPEC_DEPENDENCIES = [
+"s.dependency            'PayUIndia-PayUParams', '~> 4.5'",
+"s.dependency            'PayUIndia-Networking', '~> 4.0'"
+]
+
+# PayUUPIKIT
+UPI_KIT_POD_VERSION="7.0.0"
+
+UPI_KIT_PODSPEC_DEPENDENCIES = [
+"s.dependency            'PayUIndia-UPICore', '~> 7.0'"
+]
+
+# Make sure to append sdk name in dependency order
+
+UPI_KIT_SDKS_NAMES=(
+'PayULoggerKit' 
+'PayUNetworkingKit' 
+'PayUUPICoreKit' 
+'PayUUPIKit'
+)
+
+UPI_KIT_SDKS_RELEASE_NAMES=(
+'PayUIndia-Logger' 
+'PayUIndia-Networking' 
+'PayUIndia-UPICore' 
+'PayUIndia-UPI'
+)
+
+UPI_KIT_SDKS_RELEASE_VERSIONS=(
+$LOGGER_KIT_POD_VERSION 
+$NETWORKING_KIT_POD_VERSION 
+$UPI_CORE_POD_VERSION 
+$UPI_KIT_POD_VERSION
+)
+
+UPI_KIT_SDKS_TO_BUILD=('0' '1' '2' '3')
