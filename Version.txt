@@ -151,3 +151,7 @@ $UPI_KIT_POD_VERSION
 )
 
 UPI_KIT_SDKS_TO_BUILD=('0' '1' '2' '3')
+
+# PayUCommonUI
+CommonUI_POD_VERSION="1.0.0"
+CommonUI_COMMIT_MESSAGE="Updated Script"
