@@ -56279,6 +56279,43 @@
             "moduleName": "PayUParamsKit"
           },
           {
+            "kind": "Var",
+            "name": "mobile",
+            "printedName": "mobile",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUParamsKit.PayUPaymentNavigationType.Type) -> PayUParamsKit.PayUPaymentNavigationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUPaymentNavigationType",
+                    "printedName": "PayUParamsKit.PayUPaymentNavigationType",
+                    "usr": "s:13PayUParamsKit0A22UPaymentNavigationTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUParamsKit.PayUPaymentNavigationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUPaymentNavigationType",
+                        "printedName": "PayUParamsKit.PayUPaymentNavigationType",
+                        "usr": "s:13PayUParamsKit0A22UPaymentNavigationTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13PayUParamsKit0A22UPaymentNavigationTypeO6mobileyA2CmF",
+            "mangledName": "$s13PayUParamsKit0A22UPaymentNavigationTypeO6mobileyA2CmF",
+            "moduleName": "PayUParamsKit"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -83083,6 +83120,13 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PayUPaymentNavigationType.swift",
       "kind": "StringLiteral",
+      "offset": 981,
+      "length": 8,
+      "value": "\"Mobile\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PayUPaymentNavigationType.swift",
+      "kind": "StringLiteral",
       "offset": 271,
       "length": 9,
       "value": "\"Default\""
@@ -83170,6 +83214,13 @@
       "offset": 952,
       "length": 10,
       "value": "\"FullCard\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PayUPaymentNavigationType.swift",
+      "kind": "StringLiteral",
+      "offset": 981,
+      "length": 8,
+      "value": "\"Mobile\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Utils\/JSONCodingKeys.swift",

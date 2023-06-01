@@ -883,6 +883,7 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   case bankRedirection
   case mobileRedirection
   case fullCardRedirection
+  case mobile
   public init?(rawValue: Swift.String)
   public typealias AllCases = [PayUParamsKit.PayUPaymentNavigationType]
   public typealias RawValue = Swift.String
