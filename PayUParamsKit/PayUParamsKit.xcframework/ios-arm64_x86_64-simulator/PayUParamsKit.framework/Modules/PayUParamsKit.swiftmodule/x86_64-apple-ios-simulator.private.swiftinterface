@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUParamsKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -550,7 +550,6 @@ import _StringProcessing
 }
 @_inheritsConvenienceInitializers @objc open class PayURequestHeaderParams : ObjectiveC.NSObject {
   @objc public var date: Swift.String?
-  @objc public var digest: Swift.String?
   @objc public var signingString: Swift.String?
   @objc public var error: Swift.String?
   @objc override dynamic public init()
@@ -861,10 +860,11 @@ extension Swift.Dictionary {
     public static let FOR_DINR_2: Swift.String
     public static let FOR_DINR_3: Swift.String
     public static let FOR_JCB: Swift.String
-    public static let FOR_VPA: Swift.String
     public static let AMOUNT: Swift.String
     public static let EMAIL: Swift.String
     public static let PAN: Swift.String
+    public static let PHONE: Swift.String
+    public static let VPA: Swift.String
   }
   @objc override dynamic public init()
   @objc deinit

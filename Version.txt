@@ -18,7 +18,7 @@ FS_GREEN="\033[01;32m"
 SWIFT_TOOL_VERSION="// swift-tools-version:5.5\n// The swift-tools-version declares the minimum version of Swift required to build this package."
 
 # ParamKit
-PARAMKIT_POD_VERSION="4.9.0"
+PARAMKIT_POD_VERSION="5.0.0"
 PARAMKIT_COMMIT_MESSAGE="Supported Twid Pay"
 
 # PayUNativeOtpAssist
