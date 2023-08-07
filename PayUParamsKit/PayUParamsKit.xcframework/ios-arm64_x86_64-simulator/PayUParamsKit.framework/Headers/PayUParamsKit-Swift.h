@@ -1508,6 +1508,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit3UPI")
 @interface UPI : PaymentOption
 @property (nonatomic, copy) NSString * _Nullable vpa;
 @property (nonatomic, copy) NSString * _Nullable scheme;
+@property (nonatomic, copy) NSString * _Nullable imageCode;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable handlers;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable apps;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
@@ -3046,6 +3047,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit3UPI")
 @interface UPI : PaymentOption
 @property (nonatomic, copy) NSString * _Nullable vpa;
 @property (nonatomic, copy) NSString * _Nullable scheme;
+@property (nonatomic, copy) NSString * _Nullable imageCode;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable handlers;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable apps;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;

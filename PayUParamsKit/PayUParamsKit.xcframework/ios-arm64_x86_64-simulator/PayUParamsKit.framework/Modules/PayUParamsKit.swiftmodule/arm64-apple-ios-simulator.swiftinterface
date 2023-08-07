@@ -142,6 +142,7 @@ import _StringProcessing
   public var isCollect: Swift.Bool?
   @objc public var vpa: Swift.String?
   @objc public var scheme: Swift.String?
+  @objc public var imageCode: Swift.String?
   @objc public var handlers: [Swift.String]?
   @objc public var apps: [Swift.String]?
   @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
