@@ -183,6 +183,7 @@ import _StringProcessing
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class CLW : PayUParamsKit.PaymentOption {
   @objc public var walletUrn: Swift.String?
+  @objc public var loadAmount: Swift.String?
   public var balance: Swift.Double?
   @objc public var apiStatus: PayUParamsKit.ApiStatus
   @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
@@ -326,8 +327,8 @@ import _StringProcessing
   @objc public var netBanking: [PayUParamsKit.BankDetail]?, wallet: [PayUParamsKit.BankDetail]?, upi: [PayUParamsKit.BankDetail]?
   @objc public var bnpl: [PayUParamsKit.BnplBankDetail]?
   @objc public var emi: PayUParamsKit.EmiDetail?
-  @objc public var skuDetail: Swift.String?
-  @objc public init(offerKey: Swift.String?, type: Swift.String?, title: Swift.String?, offerDescription: Swift.String?, tnc: Swift.String?, tncLink: Swift.String?, minTxnAmount: Swift.Double, maxTxnAmount: Swift.Double, offerType: Swift.String?, validFrom: Swift.String?, validTo: Swift.String?, discountDetail: PayUParamsKit.OfferDiscountDetail?, isNoCostEmi: Swift.Bool, isSubvented: Swift.Bool, isSkuOffer: Swift.Bool, isAcrossSkuQuantity: Swift.Bool, creditCard: [PayUParamsKit.CcdcDetail]?, debitCard: [PayUParamsKit.CcdcDetail]?, netBanking: [PayUParamsKit.BankDetail]?, wallet: [PayUParamsKit.BankDetail]?, upi: [PayUParamsKit.BankDetail]?, bnpl: [PayUParamsKit.BnplBankDetail]?, emi: PayUParamsKit.EmiDetail?, skuDetail: Swift.String?)
+  @objc public var skuDetail: Swift.String?, offerCategory: Swift.String?
+  @objc public init(offerKey: Swift.String?, type: Swift.String?, title: Swift.String?, offerDescription: Swift.String?, tnc: Swift.String?, tncLink: Swift.String?, minTxnAmount: Swift.Double, maxTxnAmount: Swift.Double, offerType: Swift.String?, validFrom: Swift.String?, validTo: Swift.String?, discountDetail: PayUParamsKit.OfferDiscountDetail?, isNoCostEmi: Swift.Bool, isSubvented: Swift.Bool, isSkuOffer: Swift.Bool, isAcrossSkuQuantity: Swift.Bool, creditCard: [PayUParamsKit.CcdcDetail]?, debitCard: [PayUParamsKit.CcdcDetail]?, netBanking: [PayUParamsKit.BankDetail]?, wallet: [PayUParamsKit.BankDetail]?, upi: [PayUParamsKit.BankDetail]?, bnpl: [PayUParamsKit.BnplBankDetail]?, emi: PayUParamsKit.EmiDetail?, skuDetail: Swift.String?, offerCategory: Swift.String?)
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
@@ -740,6 +741,7 @@ extension Swift.Dictionary {
     @objc public static let PG: Swift.String
     @objc public static let BANK_CODE: Swift.String
     @objc public static let WALLET_URN: Swift.String
+    @objc public static let LOAD_AMOUNT: Swift.String
     @objc public static let SDK_PLATFORM: Swift.String
     @objc public static let KEY: Swift.String
     @objc public static let OFFER_KEY: Swift.String

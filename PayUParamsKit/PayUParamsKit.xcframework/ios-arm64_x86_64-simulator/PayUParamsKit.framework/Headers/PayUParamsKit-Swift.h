@@ -354,6 +354,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit4CCDC")
 SWIFT_CLASS("_TtC13PayUParamsKit3CLW")
 @interface CLW : PaymentOption
 @property (nonatomic, copy) NSString * _Nullable walletUrn;
+@property (nonatomic, copy) NSString * _Nullable loadAmount;
 @property (nonatomic) enum ApiStatus apiStatus;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -441,6 +442,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)BANK_CODE SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull WALLET_URN;)
 + (NSString * _Nonnull)WALLET_URN SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull LOAD_AMOUNT;)
++ (NSString * _Nonnull)LOAD_AMOUNT SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull SDK_PLATFORM;)
 + (NSString * _Nonnull)SDK_PLATFORM SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull KEY;)
@@ -774,7 +777,8 @@ SWIFT_CLASS("_TtC13PayUParamsKit5Offer")
 @property (nonatomic, copy) NSArray<BnplBankDetail *> * _Nullable bnpl;
 @property (nonatomic, strong) EmiDetail * _Nullable emi;
 @property (nonatomic, copy) NSString * _Nullable skuDetail;
-- (nonnull instancetype)initWithOfferKey:(NSString * _Nullable)offerKey type:(NSString * _Nullable)type title:(NSString * _Nullable)title offerDescription:(NSString * _Nullable)offerDescription tnc:(NSString * _Nullable)tnc tncLink:(NSString * _Nullable)tncLink minTxnAmount:(double)minTxnAmount maxTxnAmount:(double)maxTxnAmount offerType:(NSString * _Nullable)offerType validFrom:(NSString * _Nullable)validFrom validTo:(NSString * _Nullable)validTo discountDetail:(OfferDiscountDetail * _Nullable)discountDetail isNoCostEmi:(BOOL)isNoCostEmi isSubvented:(BOOL)isSubvented isSkuOffer:(BOOL)isSkuOffer isAcrossSkuQuantity:(BOOL)isAcrossSkuQuantity creditCard:(NSArray<CcdcDetail *> * _Nullable)creditCard debitCard:(NSArray<CcdcDetail *> * _Nullable)debitCard netBanking:(NSArray<BankDetail *> * _Nullable)netBanking wallet:(NSArray<BankDetail *> * _Nullable)wallet upi:(NSArray<BankDetail *> * _Nullable)upi bnpl:(NSArray<BnplBankDetail *> * _Nullable)bnpl emi:(EmiDetail * _Nullable)emi skuDetail:(NSString * _Nullable)skuDetail OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, copy) NSString * _Nullable offerCategory;
+- (nonnull instancetype)initWithOfferKey:(NSString * _Nullable)offerKey type:(NSString * _Nullable)type title:(NSString * _Nullable)title offerDescription:(NSString * _Nullable)offerDescription tnc:(NSString * _Nullable)tnc tncLink:(NSString * _Nullable)tncLink minTxnAmount:(double)minTxnAmount maxTxnAmount:(double)maxTxnAmount offerType:(NSString * _Nullable)offerType validFrom:(NSString * _Nullable)validFrom validTo:(NSString * _Nullable)validTo discountDetail:(OfferDiscountDetail * _Nullable)discountDetail isNoCostEmi:(BOOL)isNoCostEmi isSubvented:(BOOL)isSubvented isSkuOffer:(BOOL)isSkuOffer isAcrossSkuQuantity:(BOOL)isAcrossSkuQuantity creditCard:(NSArray<CcdcDetail *> * _Nullable)creditCard debitCard:(NSArray<CcdcDetail *> * _Nullable)debitCard netBanking:(NSArray<BankDetail *> * _Nullable)netBanking wallet:(NSArray<BankDetail *> * _Nullable)wallet upi:(NSArray<BankDetail *> * _Nullable)upi bnpl:(NSArray<BnplBankDetail *> * _Nullable)bnpl emi:(EmiDetail * _Nullable)emi skuDetail:(NSString * _Nullable)skuDetail offerCategory:(NSString * _Nullable)offerCategory OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1893,6 +1897,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit4CCDC")
 SWIFT_CLASS("_TtC13PayUParamsKit3CLW")
 @interface CLW : PaymentOption
 @property (nonatomic, copy) NSString * _Nullable walletUrn;
+@property (nonatomic, copy) NSString * _Nullable loadAmount;
 @property (nonatomic) enum ApiStatus apiStatus;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1980,6 +1985,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)BANK_CODE SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull WALLET_URN;)
 + (NSString * _Nonnull)WALLET_URN SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull LOAD_AMOUNT;)
++ (NSString * _Nonnull)LOAD_AMOUNT SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull SDK_PLATFORM;)
 + (NSString * _Nonnull)SDK_PLATFORM SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull KEY;)
@@ -2313,7 +2320,8 @@ SWIFT_CLASS("_TtC13PayUParamsKit5Offer")
 @property (nonatomic, copy) NSArray<BnplBankDetail *> * _Nullable bnpl;
 @property (nonatomic, strong) EmiDetail * _Nullable emi;
 @property (nonatomic, copy) NSString * _Nullable skuDetail;
-- (nonnull instancetype)initWithOfferKey:(NSString * _Nullable)offerKey type:(NSString * _Nullable)type title:(NSString * _Nullable)title offerDescription:(NSString * _Nullable)offerDescription tnc:(NSString * _Nullable)tnc tncLink:(NSString * _Nullable)tncLink minTxnAmount:(double)minTxnAmount maxTxnAmount:(double)maxTxnAmount offerType:(NSString * _Nullable)offerType validFrom:(NSString * _Nullable)validFrom validTo:(NSString * _Nullable)validTo discountDetail:(OfferDiscountDetail * _Nullable)discountDetail isNoCostEmi:(BOOL)isNoCostEmi isSubvented:(BOOL)isSubvented isSkuOffer:(BOOL)isSkuOffer isAcrossSkuQuantity:(BOOL)isAcrossSkuQuantity creditCard:(NSArray<CcdcDetail *> * _Nullable)creditCard debitCard:(NSArray<CcdcDetail *> * _Nullable)debitCard netBanking:(NSArray<BankDetail *> * _Nullable)netBanking wallet:(NSArray<BankDetail *> * _Nullable)wallet upi:(NSArray<BankDetail *> * _Nullable)upi bnpl:(NSArray<BnplBankDetail *> * _Nullable)bnpl emi:(EmiDetail * _Nullable)emi skuDetail:(NSString * _Nullable)skuDetail OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, copy) NSString * _Nullable offerCategory;
+- (nonnull instancetype)initWithOfferKey:(NSString * _Nullable)offerKey type:(NSString * _Nullable)type title:(NSString * _Nullable)title offerDescription:(NSString * _Nullable)offerDescription tnc:(NSString * _Nullable)tnc tncLink:(NSString * _Nullable)tncLink minTxnAmount:(double)minTxnAmount maxTxnAmount:(double)maxTxnAmount offerType:(NSString * _Nullable)offerType validFrom:(NSString * _Nullable)validFrom validTo:(NSString * _Nullable)validTo discountDetail:(OfferDiscountDetail * _Nullable)discountDetail isNoCostEmi:(BOOL)isNoCostEmi isSubvented:(BOOL)isSubvented isSkuOffer:(BOOL)isSkuOffer isAcrossSkuQuantity:(BOOL)isAcrossSkuQuantity creditCard:(NSArray<CcdcDetail *> * _Nullable)creditCard debitCard:(NSArray<CcdcDetail *> * _Nullable)debitCard netBanking:(NSArray<BankDetail *> * _Nullable)netBanking wallet:(NSArray<BankDetail *> * _Nullable)wallet upi:(NSArray<BankDetail *> * _Nullable)upi bnpl:(NSArray<BnplBankDetail *> * _Nullable)bnpl emi:(EmiDetail * _Nullable)emi skuDetail:(NSString * _Nullable)skuDetail offerCategory:(NSString * _Nullable)offerCategory OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
