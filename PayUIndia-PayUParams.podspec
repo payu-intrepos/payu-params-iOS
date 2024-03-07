@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-PayUParams"
-  s.version             = "5.2.0"
+  s.version             = "5.3.0"
   s.license             = "MIT"
   s.homepage            = "https://github.com/payu-intrepos/payu-params-iOS"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                             :tag => "#{s.version}"
                           }
   
-  s.ios.deployment_target = "11.0"
+  s.ios.deployment_target = "12.0"
   s.vendored_frameworks = 'PayUParamsKit/PayUParamsKit.xcframework'
 
 end
