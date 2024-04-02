@@ -22577,6 +22577,147 @@
           },
           {
             "kind": "Var",
+            "name": "clw",
+            "printedName": "clw",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PayUParamsKit.BankDetail]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PayUParamsKit.BankDetail]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BankDetail",
+                        "printedName": "PayUParamsKit.BankDetail",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)BankDetail"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)Offer(py)clw",
+            "mangledName": "$s13PayUParamsKit5OfferC3clwSayAA10BankDetailCGSgvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PayUParamsKit.BankDetail]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PayUParamsKit.BankDetail]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BankDetail",
+                            "printedName": "PayUParamsKit.BankDetail",
+                            "usr": "c:@M@PayUParamsKit@objc(cs)BankDetail"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)Offer(im)clw",
+                "mangledName": "$s13PayUParamsKit5OfferC3clwSayAA10BankDetailCGSgvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PayUParamsKit.BankDetail]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PayUParamsKit.BankDetail]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BankDetail",
+                            "printedName": "PayUParamsKit.BankDetail",
+                            "usr": "c:@M@PayUParamsKit@objc(cs)BankDetail"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)Offer(im)setClw:",
+                "mangledName": "$s13PayUParamsKit5OfferC3clwSayAA10BankDetailCGSgvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit5OfferC3clwSayAA10BankDetailCGSgvM",
+                "mangledName": "$s13PayUParamsKit5OfferC3clwSayAA10BankDetailCGSgvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "emi",
             "printedName": "emi",
             "children": [
@@ -22929,7 +23070,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(offerKey:type:title:offerDescription:tnc:tncLink:minTxnAmount:maxTxnAmount:totalAmount:discount:offerType:validFrom:validTo:discountDetail:isNoCostEmi:isSubvented:isSkuOffer:isAcrossSkuQuantity:isAllPaymentMethodsAvailable:creditCard:debitCard:netBanking:wallet:upi:bnpl:emi:skuDetail:offerCategory:)",
+            "printedName": "init(offerKey:type:title:offerDescription:tnc:tncLink:minTxnAmount:maxTxnAmount:totalAmount:discount:offerType:validFrom:validTo:discountDetail:isNoCostEmi:isSubvented:isSkuOffer:isAcrossSkuQuantity:isAllPaymentMethodsAvailable:creditCard:debitCard:netBanking:wallet:upi:bnpl:clw:emi:skuDetail:offerCategory:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -23266,6 +23407,28 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
+                "printedName": "[PayUParamsKit.BankDetail]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PayUParamsKit.BankDetail]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BankDetail",
+                        "printedName": "PayUParamsKit.BankDetail",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)BankDetail"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
                 "printedName": "PayUParamsKit.EmiDetail?",
                 "children": [
                   {
@@ -23307,10 +23470,10 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@PayUParamsKit@objc(cs)Offer(im)initWithOfferKey:type:title:offerDescription:tnc:tncLink:minTxnAmount:maxTxnAmount:totalAmount:discount:offerType:validFrom:validTo:discountDetail:isNoCostEmi:isSubvented:isSkuOffer:isAcrossSkuQuantity:isAllPaymentMethodsAvailable:creditCard:debitCard:netBanking:wallet:upi:bnpl:emi:skuDetail:offerCategory:",
-            "mangledName": "$s13PayUParamsKit5OfferC8offerKey4type5title0E11Description3tnc0J4Link12minTxnAmount03maxmN005totalN08discount0E4Type9validFrom0S2To0Q6Detail11isNoCostEmi0W9Subvented0w3SkuD00W17AcrossSkuQuantity0W26AllPaymentMethodsAvailable10creditCard9debitCard10netBanking6wallet3upi4bnpl3emi03skuV00E8CategoryACSSSg_A4_A4_A4_A4_A4_S4dA4_A4_A4_AA0d8DiscountV0CSgS5bSayAA04CcdcV0CGSgA11_SayAA04BankV0CGSgA15_A15_A15_AA0zV0CSgAA03SkuV0CSgA4_tcfc",
+            "usr": "c:@M@PayUParamsKit@objc(cs)Offer(im)initWithOfferKey:type:title:offerDescription:tnc:tncLink:minTxnAmount:maxTxnAmount:totalAmount:discount:offerType:validFrom:validTo:discountDetail:isNoCostEmi:isSubvented:isSkuOffer:isAcrossSkuQuantity:isAllPaymentMethodsAvailable:creditCard:debitCard:netBanking:wallet:upi:bnpl:clw:emi:skuDetail:offerCategory:",
+            "mangledName": "$s13PayUParamsKit5OfferC8offerKey4type5title0E11Description3tnc0J4Link12minTxnAmount03maxmN005totalN08discount0E4Type9validFrom0S2To0Q6Detail11isNoCostEmi0W9Subvented0w3SkuD00W17AcrossSkuQuantity0W26AllPaymentMethodsAvailable10creditCard9debitCard10netBanking6wallet3upi4bnpl3clw3emi03skuV00E8CategoryACSSSg_A5_A5_A5_A5_A5_S4dA5_A5_A5_AA0d8DiscountV0CSgS5bSayAA04CcdcV0CGSgA12_SayAA04BankV0CGSgA16_A16_A16_A16_AA0zV0CSgAA03SkuV0CSgA5_tcfc",
             "moduleName": "PayUParamsKit",
-            "objc_name": "initWithOfferKey:type:title:offerDescription:tnc:tncLink:minTxnAmount:maxTxnAmount:totalAmount:discount:offerType:validFrom:validTo:discountDetail:isNoCostEmi:isSubvented:isSkuOffer:isAcrossSkuQuantity:isAllPaymentMethodsAvailable:creditCard:debitCard:netBanking:wallet:upi:bnpl:emi:skuDetail:offerCategory:",
+            "objc_name": "initWithOfferKey:type:title:offerDescription:tnc:tncLink:minTxnAmount:maxTxnAmount:totalAmount:discount:offerType:validFrom:validTo:discountDetail:isNoCostEmi:isSubvented:isSkuOffer:isAcrossSkuQuantity:isAllPaymentMethodsAvailable:creditCard:debitCard:netBanking:wallet:upi:bnpl:clw:emi:skuDetail:offerCategory:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -92492,84 +92655,77 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 2738,
+      "offset": 2743,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 2779,
+      "offset": 2784,
       "length": 8,
       "value": "\"amount\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 2738,
+      "offset": 2743,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 2779,
+      "offset": 2784,
       "length": 8,
       "value": "\"amount\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "IntegerLiteral",
-      "offset": 5430,
+      "offset": 5483,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "IntegerLiteral",
-      "offset": 5523,
+      "offset": 5576,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "IntegerLiteral",
-      "offset": 5614,
+      "offset": 5667,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "IntegerLiteral",
-      "offset": 5699,
+      "offset": 5752,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "BooleanLiteral",
-      "offset": 6127,
+      "offset": 6180,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "BooleanLiteral",
-      "offset": 6783,
+      "offset": 6910,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "BooleanLiteral",
-      "offset": 6874,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6983,
+      "offset": 7001,
       "length": 5,
       "value": "false"
     },
@@ -92577,6 +92733,13 @@
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "BooleanLiteral",
       "offset": 7110,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7237,
       "length": 5,
       "value": "false"
     },
@@ -92590,30 +92753,16 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 9565,
+      "offset": 9723,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 9641,
+      "offset": 9799,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9721,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9800,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
@@ -92625,140 +92774,154 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "IntegerLiteral",
-      "offset": 9953,
+      "offset": 9958,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "IntegerLiteral",
-      "offset": 10033,
+      "offset": 10037,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "IntegerLiteral",
-      "offset": 10113,
+      "offset": 10111,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10191,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10271,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 8546,
+      "offset": 8704,
       "length": 9,
       "value": "\"PayUParamsKit.SkuDetail\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 10450,
+      "offset": 10608,
       "length": 10,
       "value": "\"PayUParamsKit.CcdcDetail\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 11139,
+      "offset": 11297,
       "length": 13,
       "value": "\"PayUParamsKit.NetworkDetail\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "IntegerLiteral",
-      "offset": 12395,
+      "offset": 12553,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "IntegerLiteral",
-      "offset": 12480,
+      "offset": 12638,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "IntegerLiteral",
-      "offset": 12581,
+      "offset": 12739,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "IntegerLiteral",
-      "offset": 12672,
+      "offset": 12830,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 11522,
+      "offset": 11680,
       "length": 19,
       "value": "\"PayUParamsKit.OfferDiscountDetail\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 12971,
+      "offset": 13129,
       "length": 9,
       "value": "\"PayUParamsKit.EmiDetail\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 13507,
+      "offset": 13665,
       "length": 13,
       "value": "\"PayUParamsKit.EmiCcdcDetail\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 13852,
+      "offset": 14010,
       "length": 13,
       "value": "\"PayUParamsKit.EmiBankDetail\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 14347,
+      "offset": 14505,
       "length": 12,
       "value": "\"PayUParamsKit.TenureOption\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "IntegerLiteral",
-      "offset": 15663,
+      "offset": 15821,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "IntegerLiteral",
-      "offset": 15748,
+      "offset": 15906,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "IntegerLiteral",
-      "offset": 15849,
+      "offset": 16007,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 15049,
+      "offset": 15207,
       "length": 26,
       "value": "\"PayUParamsKit.TenureOptionDiscountDetail\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 16109,
+      "offset": 16267,
       "length": 10,
       "value": "\"PayUParamsKit.BankDetail\""
     },
