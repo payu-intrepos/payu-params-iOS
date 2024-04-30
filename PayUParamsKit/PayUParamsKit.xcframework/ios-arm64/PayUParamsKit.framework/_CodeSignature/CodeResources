@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vfu/90vz46FjwZZJ67bA0NZuWIo=
+		DPnkWBo6X1STW/CKieaCGlljoZU=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		1LOlRQ+9DrjLIPDkJJvFWXEmaNE=
+		NDVSicj/LeCO1Idr/+tz5YjIc68=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,15 @@
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		42hPF2FIvTGkyZ79o7/B5jNzfCc=
+		ARhgGoyqTkG9cS+VAAhK9rL8/Ls=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		jWEbVwWMsq0vIttEHFmTg2ceibw=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		ZajnvEs/MYRS3X4TPLAhBWi8mc4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -61,7 +65,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7X1kDIf5S0X39IyhGYKyYHG8LO/jEbIGwUUjnCiVcTY=
+			u7aQq8ES4RqvlyhMCsQOIHISHqkyYfpBk1TCMFI7cDE=
 			</data>
 		</dict>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -89,7 +93,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4apTkyKw2ARa0eHRV2s4c165p2SElV7Dpy3ehoZHPSE=
+			Eo7MmsOvi1+jmuS1JiPTSByS3RUjrOorcvbbYqYa1CQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -97,6 +101,13 @@
 			<key>hash2</key>
 			<data>
 			kV1x8QOWKeQZwlFU7JuTO8OF/3+MC5bod6Yu362OMgA=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dLDNcvwjwe8wLyLuJ1P2GBfNxa8P96fy0GMrUk+4rOo=
 			</data>
 		</dict>
 	</dict>
