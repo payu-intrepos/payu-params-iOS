@@ -137,6 +137,7 @@ import _SwiftConcurrencyShims
   @objc public var imageCode: Swift.String?
   @objc public var handlers: [Swift.String]?
   @objc public var apps: [Swift.String]?
+  @objc public var upiPaymentCode: Swift.String?
   @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
   @objc deinit

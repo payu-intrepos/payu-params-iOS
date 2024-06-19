@@ -8871,6 +8871,123 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "upiPaymentCode",
+            "printedName": "upiPaymentCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)UPI(py)upiPaymentCode",
+            "mangledName": "$s13PayUParamsKit3UPIC14upiPaymentCodeSSSgvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)UPI(im)upiPaymentCode",
+                "mangledName": "$s13PayUParamsKit3UPIC14upiPaymentCodeSSSgvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)UPI(im)setUpiPaymentCode:",
+                "mangledName": "$s13PayUParamsKit3UPIC14upiPaymentCodeSSSgvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit3UPIC14upiPaymentCodeSSSgvM",
+                "mangledName": "$s13PayUParamsKit3UPIC14upiPaymentCodeSSSgvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "copy",
             "printedName": "copy(with:)",
@@ -92311,441 +92428,441 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "FloatLiteral",
-      "offset": 10477,
+      "offset": 10561,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "FloatLiteral",
-      "offset": 10523,
+      "offset": 10607,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "BooleanLiteral",
-      "offset": 10744,
+      "offset": 10828,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "BooleanLiteral",
-      "offset": 10785,
+      "offset": 10869,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "StringLiteral",
-      "offset": 10314,
+      "offset": 10398,
       "length": 3,
       "value": "\"PayUParamsKit.EMI\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "BooleanLiteral",
-      "offset": 13812,
+      "offset": 13896,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14366,
+      "offset": 14450,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14378,
+      "offset": 14462,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14366,
+      "offset": 14450,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14378,
+      "offset": 14462,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14453,
+      "offset": 14537,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14467,
+      "offset": 14551,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14480,
+      "offset": 14564,
       "length": 4,
       "value": "3"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14494,
+      "offset": 14578,
       "length": 7,
       "value": "4"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14511,
+      "offset": 14595,
       "length": 5,
       "value": "5"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14526,
+      "offset": 14610,
       "length": 8,
       "value": "6"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14544,
+      "offset": 14628,
       "length": 10,
       "value": "7"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14564,
+      "offset": 14648,
       "length": 5,
       "value": "8"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14579,
+      "offset": 14663,
       "length": 16,
       "value": "9"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14605,
+      "offset": 14689,
       "length": 7,
       "value": "10"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14622,
+      "offset": 14706,
       "length": 6,
       "value": "11"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14453,
+      "offset": 14537,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14467,
+      "offset": 14551,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14480,
+      "offset": 14564,
       "length": 4,
       "value": "3"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14494,
+      "offset": 14578,
       "length": 7,
       "value": "4"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14511,
+      "offset": 14595,
       "length": 5,
       "value": "5"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14526,
+      "offset": 14610,
       "length": 8,
       "value": "6"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14544,
+      "offset": 14628,
       "length": 10,
       "value": "7"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14564,
+      "offset": 14648,
       "length": 5,
       "value": "8"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14579,
+      "offset": 14663,
       "length": 16,
       "value": "9"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14605,
+      "offset": 14689,
       "length": 7,
       "value": "10"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14622,
+      "offset": 14706,
       "length": 6,
       "value": "11"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14692,
+      "offset": 14776,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14712,
+      "offset": 14796,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14725,
+      "offset": 14809,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14741,
+      "offset": 14825,
       "length": 3,
       "value": "4"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14754,
+      "offset": 14838,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14773,
+      "offset": 14857,
       "length": 8,
       "value": "6"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14791,
+      "offset": 14875,
       "length": 6,
       "value": "7"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14807,
+      "offset": 14891,
       "length": 4,
       "value": "8"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14821,
+      "offset": 14905,
       "length": 5,
       "value": "9"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14836,
+      "offset": 14920,
       "length": 3,
       "value": "10"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14692,
+      "offset": 14776,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14712,
+      "offset": 14796,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14725,
+      "offset": 14809,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14741,
+      "offset": 14825,
       "length": 3,
       "value": "4"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14754,
+      "offset": 14838,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14773,
+      "offset": 14857,
       "length": 8,
       "value": "6"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14791,
+      "offset": 14875,
       "length": 6,
       "value": "7"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14807,
+      "offset": 14891,
       "length": 4,
       "value": "8"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14821,
+      "offset": 14905,
       "length": 5,
       "value": "9"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14836,
+      "offset": 14920,
       "length": 3,
       "value": "10"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14897,
+      "offset": 14981,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14909,
+      "offset": 14993,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14927,
+      "offset": 15011,
       "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14897,
+      "offset": 14981,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14909,
+      "offset": 14993,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14927,
+      "offset": 15011,
       "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14997,
+      "offset": 15081,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15013,
+      "offset": 15097,
       "length": 10,
       "value": "2"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 14997,
+      "offset": 15081,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15013,
+      "offset": 15097,
       "length": 10,
       "value": "2"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "StringLiteral",
-      "offset": 15053,
+      "offset": 15137,
       "length": 14,
       "value": "\"PayUParamsKit.AdditionalInfo\""
     },
@@ -94501,8 +94618,36 @@
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PayUBaseModel.swift",
+      "kind": "StringLiteral",
+      "offset": 847,
+      "length": 26,
+      "value": "\"\/recommendation\/v1\/fetch\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PayUBaseModel.swift",
+      "kind": "StringLiteral",
+      "offset": 958,
+      "length": 7,
+      "value": "\"fetch\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PayUBaseModel.swift",
+      "kind": "StringLiteral",
+      "offset": 975,
+      "length": 6,
+      "value": "\"json\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PayUBaseModel.swift",
       "kind": "Dictionary",
-      "offset": 2015,
+      "offset": 1252,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PayUBaseModel.swift",
+      "kind": "Dictionary",
+      "offset": 2522,
       "length": 3,
       "value": "[]"
     },
@@ -95124,386 +95269,407 @@
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
+      "kind": "StringLiteral",
+      "offset": 13751,
+      "length": 5,
+      "value": "\"TEZ\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
+      "kind": "StringLiteral",
+      "offset": 13780,
+      "length": 12,
+      "value": "\"upiappname\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
+      "kind": "StringLiteral",
+      "offset": 13796,
+      "length": 11,
+      "value": "\"googlepay\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "Dictionary",
-      "offset": 14262,
+      "offset": 14373,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 14382,
+      "offset": 14493,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 14891,
+      "offset": 15002,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "Dictionary",
-      "offset": 15396,
+      "offset": 15507,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 15511,
+      "offset": 15622,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "Dictionary",
-      "offset": 16503,
+      "offset": 16614,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 16623,
+      "offset": 16734,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "BooleanLiteral",
-      "offset": 17129,
+      "offset": 17240,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "Dictionary",
-      "offset": 17488,
+      "offset": 17599,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 17823,
+      "offset": 17934,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 17829,
+      "offset": 17940,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "Dictionary",
-      "offset": 18129,
+      "offset": 18240,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "Dictionary",
-      "offset": 18662,
+      "offset": 18773,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "Dictionary",
-      "offset": 19100,
+      "offset": 19211,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "Dictionary",
-      "offset": 19850,
+      "offset": 19961,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 20512,
+      "offset": 20623,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 20634,
+      "offset": 20745,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 20732,
+      "offset": 20843,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "Dictionary",
-      "offset": 21179,
+      "offset": 21290,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 21283,
+      "offset": 21394,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 21404,
+      "offset": 21515,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 21425,
+      "offset": 21536,
       "length": 102,
       "value": "\"\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 21472,
+      "offset": 21583,
       "length": 1,
       "value": "\"\":\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 21521,
+      "offset": 21632,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 21524,
+      "offset": 21635,
       "length": 1,
       "value": "\"\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 21634,
+      "offset": 21745,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 21639,
+      "offset": 21750,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 21665,
+      "offset": 21776,
       "length": 86,
       "value": "\",\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 21698,
+      "offset": 21809,
       "length": 1,
       "value": "\"\":\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 21745,
+      "offset": 21856,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 21748,
+      "offset": 21859,
       "length": 1,
       "value": "\"\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 21786,
+      "offset": 21897,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 21830,
+      "offset": 21941,
       "length": 6,
       "value": "\"{%@}\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "BooleanLiteral",
-      "offset": 21936,
+      "offset": 22047,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 22180,
+      "offset": 22291,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 22339,
+      "offset": 22450,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 22805,
+      "offset": 22916,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 22811,
+      "offset": 22922,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 23105,
+      "offset": 23216,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "BooleanLiteral",
-      "offset": 23192,
+      "offset": 23303,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 23287,
+      "offset": 23398,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 23572,
+      "offset": 23683,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 23800,
+      "offset": 23911,
       "length": 5,
       "value": "\"TPV\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "BooleanLiteral",
-      "offset": 23810,
+      "offset": 23921,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 23869,
+      "offset": 23980,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 23875,
+      "offset": 23986,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 24015,
+      "offset": 24126,
       "length": 3,
       "value": "\"6\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 24286,
+      "offset": 24397,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 24377,
+      "offset": 24488,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 24466,
+      "offset": 24577,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 24559,
+      "offset": 24670,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 24668,
+      "offset": 24779,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 24752,
+      "offset": 24863,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 24819,
+      "offset": 24930,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "StringLiteral",
-      "offset": 24912,
+      "offset": 25023,
       "length": 2,
       "value": "\"\""
     },
