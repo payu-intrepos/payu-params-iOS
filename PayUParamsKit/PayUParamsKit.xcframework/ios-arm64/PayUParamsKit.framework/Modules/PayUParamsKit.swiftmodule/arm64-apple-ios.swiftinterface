@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUParamsKit
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayUParamsKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
 @_exported import PayUParamsKit
 import Swift
@@ -656,7 +656,7 @@ import _SwiftConcurrencyShims
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [PayUParamsKit.BeneficiaryAccountType]
   public typealias RawValue = Swift.Int
-  public static var allCases: [PayUParamsKit.BeneficiaryAccountType] {
+  nonisolated public static var allCases: [PayUParamsKit.BeneficiaryAccountType] {
     get
   }
   public var rawValue: Swift.Int {
@@ -669,7 +669,7 @@ import _SwiftConcurrencyShims
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [PayUParamsKit.VerificationModeType]
   public typealias RawValue = Swift.Int
-  public static var allCases: [PayUParamsKit.VerificationModeType] {
+  nonisolated public static var allCases: [PayUParamsKit.VerificationModeType] {
     get
   }
   public var rawValue: Swift.Int {
@@ -783,7 +783,7 @@ import _SwiftConcurrencyShims
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [PayUParamsKit.PayULanguageCode]
   public typealias RawValue = Swift.Int
-  public static var allCases: [PayUParamsKit.PayULanguageCode] {
+  nonisolated public static var allCases: [PayUParamsKit.PayULanguageCode] {
     get
   }
   public var rawValue: Swift.Int {
@@ -825,7 +825,7 @@ extension PayUParamsKit.PayULanguageCode {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [PayUParamsKit.PayUBillingCycle]
   public typealias RawValue = Swift.Int
-  public static var allCases: [PayUParamsKit.PayUBillingCycle] {
+  nonisolated public static var allCases: [PayUParamsKit.PayUBillingCycle] {
     get
   }
   public var rawValue: Swift.Int {
@@ -1056,7 +1056,7 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   public init?(rawValue: Swift.String)
   public typealias AllCases = [PayUParamsKit.PayUPaymentNavigationType]
   public typealias RawValue = Swift.String
-  public static var allCases: [PayUParamsKit.PayUPaymentNavigationType] {
+  nonisolated public static var allCases: [PayUParamsKit.PayUPaymentNavigationType] {
     get
   }
   public var rawValue: Swift.String {
