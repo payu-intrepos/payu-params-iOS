@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayUParamsKit
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
@@ -54,6 +54,7 @@ import _SwiftConcurrencyShims
   @objc public var savedOptionObj: PayUParamsKit.PayUSupportedPaymentOptions?
   public var apiStatus: PayUParamsKit.ApiStatus?
   @objc public var id: Swift.Double
+  @objc public var ifscCode: Swift.String?
   @objc public var paymentType: PayUParamsKit.PaymentType {
     @objc get
   }
@@ -647,6 +648,7 @@ import _SwiftConcurrencyShims
   @objc public var beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType
   @objc public var verficationMode: Swift.String?
   @objc public init(beneficiaryName: Swift.String, beneficiaryAccountNumber: Swift.String, beneficiaryIFSC: Swift.String, beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType, verficationMode: Swift.String? = nil)
+  @objc public init(beneficiaryAccountNumber: Swift.String, beneficiaryIFSC: Swift.String)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
 }
@@ -1109,6 +1111,7 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   @objc public var subventionAmount: Swift.String?
   @objc public var skuDetail: PayUParamsKit.PayUSkuDetails?
   @objc public var skuCartDetail: Swift.String?
+  @objc public var payuBeneficieryDetails: [PayUParamsKit.PayUBeneficiaryParams]?
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String, surl: Swift.String, furl: Swift.String, environment: PayUParamsKit.Environment)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
