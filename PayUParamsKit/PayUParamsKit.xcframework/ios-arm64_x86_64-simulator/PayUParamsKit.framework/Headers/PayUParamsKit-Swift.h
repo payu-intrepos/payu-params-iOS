@@ -417,6 +417,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit11CardBinInfo")
 @property (nonatomic, copy) NSString * _Nullable cardSchemeRawValue;
 @property (nonatomic, copy) NSString * _Nullable cardTypeRawValue;
 @property (nonatomic, copy) NSString * _Nullable bankName;
+@property (nonatomic, copy) NSString * _Nullable bankCode;
 @property (nonatomic, copy) NSString * _Nullable bin;
 @property (nonatomic, copy) NSArray<EMI *> * _Nullable emis;
 @end
@@ -731,6 +732,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)OFFER_AUTO_APPLY SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull QUANTITY;)
 + (NSString * _Nonnull)QUANTITY SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ADDITIONAL_CHARGES;)
++ (NSString * _Nonnull)ADDITIONAL_CHARGES SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PERCHENTAGE_ADDITIONAL_CHARGES;)
++ (NSString * _Nonnull)PERCHENTAGE_ADDITIONAL_CHARGES SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1344,6 +1349,8 @@ SWIFT_CLASS("_TtC13PayUParamsKit16PayUPaymentParam")
 @property (nonatomic, strong) PayUSkuDetails * _Nullable skuDetail;
 @property (nonatomic, copy) NSString * _Nullable skuCartDetail;
 @property (nonatomic, copy) NSArray<PayUBeneficiaryParams *> * _Nullable payuBeneficieryDetails;
+@property (nonatomic, copy) NSString * _Nullable additionalCharges;
+@property (nonatomic, copy) NSString * _Nullable percentageAdditionalCharges;
 - (nonnull instancetype)initWithKey:(NSString * _Nonnull)key transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email phone:(NSString * _Nonnull)phone surl:(NSString * _Nonnull)surl furl:(NSString * _Nonnull)furl environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -2248,6 +2255,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit11CardBinInfo")
 @property (nonatomic, copy) NSString * _Nullable cardSchemeRawValue;
 @property (nonatomic, copy) NSString * _Nullable cardTypeRawValue;
 @property (nonatomic, copy) NSString * _Nullable bankName;
+@property (nonatomic, copy) NSString * _Nullable bankCode;
 @property (nonatomic, copy) NSString * _Nullable bin;
 @property (nonatomic, copy) NSArray<EMI *> * _Nullable emis;
 @end
@@ -2562,6 +2570,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)OFFER_AUTO_APPLY SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull QUANTITY;)
 + (NSString * _Nonnull)QUANTITY SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ADDITIONAL_CHARGES;)
++ (NSString * _Nonnull)ADDITIONAL_CHARGES SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PERCHENTAGE_ADDITIONAL_CHARGES;)
++ (NSString * _Nonnull)PERCHENTAGE_ADDITIONAL_CHARGES SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -3175,6 +3187,8 @@ SWIFT_CLASS("_TtC13PayUParamsKit16PayUPaymentParam")
 @property (nonatomic, strong) PayUSkuDetails * _Nullable skuDetail;
 @property (nonatomic, copy) NSString * _Nullable skuCartDetail;
 @property (nonatomic, copy) NSArray<PayUBeneficiaryParams *> * _Nullable payuBeneficieryDetails;
+@property (nonatomic, copy) NSString * _Nullable additionalCharges;
+@property (nonatomic, copy) NSString * _Nullable percentageAdditionalCharges;
 - (nonnull instancetype)initWithKey:(NSString * _Nonnull)key transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email phone:(NSString * _Nonnull)phone surl:(NSString * _Nonnull)surl furl:(NSString * _Nonnull)furl environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

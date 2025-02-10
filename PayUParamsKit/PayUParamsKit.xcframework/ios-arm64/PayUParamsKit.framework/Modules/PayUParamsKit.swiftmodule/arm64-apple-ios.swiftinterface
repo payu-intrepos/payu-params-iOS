@@ -200,11 +200,13 @@ import _SwiftConcurrencyShims
   @objc public var cardTypeRawValue: Swift.String?
   public var isDomestic: Swift.Bool?
   @objc public var bankName: Swift.String?
+  @objc public var bankCode: Swift.String?
   @objc public var bin: Swift.String?
   public var isAtmPinCard: Swift.Bool?
   public var isSISupported: Swift.Bool?
   public var isZeroRedirectSupported: Swift.Bool?
   @objc public var emis: [PayUParamsKit.EMI]?
+  public var binLevel: Swift.Bool?
   @objc deinit
 }
 @objc public enum CardType : Swift.Int {
@@ -998,6 +1000,8 @@ extension Swift.Dictionary {
     @objc public static let AMOUNT_PER_SKU: Swift.String
     @objc public static let OFFER_AUTO_APPLY: Swift.String
     @objc public static let QUANTITY: Swift.String
+    @objc public static let ADDITIONAL_CHARGES: Swift.String
+    @objc public static let PERCHENTAGE_ADDITIONAL_CHARGES: Swift.String
     @objc override dynamic public init()
     @objc deinit
   }
@@ -1112,6 +1116,8 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   @objc public var skuDetail: PayUParamsKit.PayUSkuDetails?
   @objc public var skuCartDetail: Swift.String?
   @objc public var payuBeneficieryDetails: [PayUParamsKit.PayUBeneficiaryParams]?
+  @objc public var additionalCharges: Swift.String?
+  @objc public var percentageAdditionalCharges: Swift.String?
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String, surl: Swift.String, furl: Swift.String, environment: PayUParamsKit.Environment)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
