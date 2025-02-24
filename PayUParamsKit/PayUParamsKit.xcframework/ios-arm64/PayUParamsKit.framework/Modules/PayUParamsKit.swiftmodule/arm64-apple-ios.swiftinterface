@@ -307,8 +307,9 @@ import _SwiftConcurrencyShims
   @objc public var offerAmount: Swift.Double
   @objc public var offers: [PayUParamsKit.Offer]?
   @objc public var skusDetail: PayUParamsKit.SkusDetail?
+  @objc public var isUserPersonalizedOffersAvailable: Swift.Bool
   @objc public class func getObject(json: [Swift.String : Any]) -> PayUParamsKit.PayUModelAllOfferDetail?
-  @objc public init(clientID: Swift.Int, mid: Swift.Int, offerAmount: Swift.Double, offers: [PayUParamsKit.Offer]?, skusDetail: PayUParamsKit.SkusDetail?)
+  @objc public init(clientID: Swift.Int, mid: Swift.Int, offerAmount: Swift.Double, offers: [PayUParamsKit.Offer]?, skusDetail: PayUParamsKit.SkusDetail?, isUserPersonalizedOffersAvailable: Swift.Bool)
   required public init(from decoder: any Swift.Decoder) throws
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit

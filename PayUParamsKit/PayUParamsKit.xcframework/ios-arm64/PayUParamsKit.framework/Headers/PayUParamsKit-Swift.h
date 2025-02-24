@@ -1198,8 +1198,9 @@ SWIFT_CLASS("_TtC13PayUParamsKit23PayUModelAllOfferDetail")
 @property (nonatomic) double offerAmount;
 @property (nonatomic, copy) NSArray<Offer *> * _Nullable offers;
 @property (nonatomic, strong) SkusDetail * _Nullable skusDetail;
+@property (nonatomic) BOOL isUserPersonalizedOffersAvailable;
 + (PayUModelAllOfferDetail * _Nullable)getObjectWithJson:(NSDictionary<NSString *, id> * _Nonnull)json SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithClientID:(NSInteger)clientID mid:(NSInteger)mid offerAmount:(double)offerAmount offers:(NSArray<Offer *> * _Nullable)offers skusDetail:(SkusDetail * _Nullable)skusDetail OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithClientID:(NSInteger)clientID mid:(NSInteger)mid offerAmount:(double)offerAmount offers:(NSArray<Offer *> * _Nullable)offers skusDetail:(SkusDetail * _Nullable)skusDetail isUserPersonalizedOffersAvailable:(BOOL)isUserPersonalizedOffersAvailable OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

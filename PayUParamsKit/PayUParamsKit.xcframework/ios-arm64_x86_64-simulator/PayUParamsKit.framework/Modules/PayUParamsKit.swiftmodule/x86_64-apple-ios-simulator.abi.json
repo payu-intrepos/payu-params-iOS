@@ -19365,6 +19365,98 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isUserPersonalizedOffersAvailable",
+            "printedName": "isUserPersonalizedOffersAvailable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUModelAllOfferDetail(py)isUserPersonalizedOffersAvailable",
+            "mangledName": "$s13PayUParamsKit0A20UModelAllOfferDetailC33isUserPersonalizedOffersAvailableSbvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUModelAllOfferDetail(im)isUserPersonalizedOffersAvailable",
+                "mangledName": "$s13PayUParamsKit0A20UModelAllOfferDetailC33isUserPersonalizedOffersAvailableSbvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUModelAllOfferDetail(im)setIsUserPersonalizedOffersAvailable:",
+                "mangledName": "$s13PayUParamsKit0A20UModelAllOfferDetailC33isUserPersonalizedOffersAvailableSbvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit0A20UModelAllOfferDetailC33isUserPersonalizedOffersAvailableSbvM",
+                "mangledName": "$s13PayUParamsKit0A20UModelAllOfferDetailC33isUserPersonalizedOffersAvailableSbvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "getObject",
             "printedName": "getObject(json:)",
@@ -19418,7 +19510,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(clientID:mid:offerAmount:offers:skusDetail:)",
+            "printedName": "init(clientID:mid:offerAmount:offers:skusDetail:isUserPersonalizedOffersAvailable:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -19479,13 +19571,19 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@PayUParamsKit@objc(cs)PayUModelAllOfferDetail(im)initWithClientID:mid:offerAmount:offers:skusDetail:",
-            "mangledName": "$s13PayUParamsKit0A20UModelAllOfferDetailC8clientID3mid11offerAmount6offers04skusG0ACSi_SiSdSayAA0F0CGSgAA04SkusG0CSgtcfc",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUModelAllOfferDetail(im)initWithClientID:mid:offerAmount:offers:skusDetail:isUserPersonalizedOffersAvailable:",
+            "mangledName": "$s13PayUParamsKit0A20UModelAllOfferDetailC8clientID3mid11offerAmount6offers04skusG033isUserPersonalizedOffersAvailableACSi_SiSdSayAA0F0CGSgAA04SkusG0CSgSbtcfc",
             "moduleName": "PayUParamsKit",
-            "objc_name": "initWithClientID:mid:offerAmount:offers:skusDetail:",
+            "objc_name": "initWithClientID:mid:offerAmount:offers:skusDetail:isUserPersonalizedOffersAvailable:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -94806,28 +94904,28 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 535,
+      "offset": 596,
       "length": 10,
       "value": "\"clientId\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 573,
+      "offset": 634,
       "length": 8,
       "value": "\"amount\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 2743,
+      "offset": 3182,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Offers\/PayUModelAllOfferDetail.swift",
       "kind": "StringLiteral",
-      "offset": 2784,
+      "offset": 3223,
       "length": 8,
       "value": "\"amount\""
     },
