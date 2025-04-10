@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayUParamsKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUParamsKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import Foundation
 @_exported import PayUParamsKit
 import Swift
@@ -47,6 +47,7 @@ import _SwiftConcurrencyShims
   public var isEligible: Swift.Bool?
   @objc public var isSecureWebViewTxn: Swift.Bool
   @objc public var autoApplyOffer: Swift.Bool
+  @objc public var isNudgeOfferEnable: Swift.Bool
   public var isOfferApplied: Swift.Bool?
   @objc public var offerKeys: [Swift.String]?
   @objc public var isConsent: Swift.Bool
@@ -260,6 +261,7 @@ import _SwiftConcurrencyShims
   case cc
   case dc
   case cardless
+  case ccNudge
   case other
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -322,13 +324,13 @@ import _SwiftConcurrencyShims
   @objc public var minTxnAmount: Swift.Double, maxTxnAmount: Swift.Double, totalAmount: Swift.Double, discount: Swift.Double
   @objc public var offerType: Swift.String?, validFrom: Swift.String?, validTo: Swift.String?
   @objc public var discountDetail: PayUParamsKit.OfferDiscountDetail?
-  @objc public var isNoCostEmi: Swift.Bool, isSubvented: Swift.Bool, isSkuOffer: Swift.Bool, isAcrossSkuQuantity: Swift.Bool, isAllPaymentMethodsAvailable: Swift.Bool
+  @objc public var isNoCostEmi: Swift.Bool, isSubvented: Swift.Bool, isSkuOffer: Swift.Bool, isAcrossSkuQuantity: Swift.Bool, isAllPaymentMethodsAvailable: Swift.Bool, isNudgeOnlyOffer: Swift.Bool
   @objc public var creditCard: [PayUParamsKit.CcdcDetail]?, debitCard: [PayUParamsKit.CcdcDetail]?
   @objc public var netBanking: [PayUParamsKit.BankDetail]?, wallet: [PayUParamsKit.BankDetail]?, upi: [PayUParamsKit.BankDetail]?, bnpl: [PayUParamsKit.BankDetail]?, clw: [PayUParamsKit.BankDetail]?
   @objc public var emi: PayUParamsKit.EmiDetail?
   @objc public var skuDetail: PayUParamsKit.SkuDetail?
   @objc public var offerCategory: Swift.String?
-  @objc public init(offerKey: Swift.String?, type: Swift.String?, title: Swift.String?, offerDescription: Swift.String?, tnc: Swift.String?, tncLink: Swift.String?, minTxnAmount: Swift.Double, maxTxnAmount: Swift.Double, totalAmount: Swift.Double, discount: Swift.Double, offerType: Swift.String?, validFrom: Swift.String?, validTo: Swift.String?, discountDetail: PayUParamsKit.OfferDiscountDetail?, isNoCostEmi: Swift.Bool, isSubvented: Swift.Bool, isSkuOffer: Swift.Bool, isAcrossSkuQuantity: Swift.Bool, isAllPaymentMethodsAvailable: Swift.Bool, creditCard: [PayUParamsKit.CcdcDetail]?, debitCard: [PayUParamsKit.CcdcDetail]?, netBanking: [PayUParamsKit.BankDetail]?, wallet: [PayUParamsKit.BankDetail]?, upi: [PayUParamsKit.BankDetail]?, bnpl: [PayUParamsKit.BankDetail]?, clw: [PayUParamsKit.BankDetail]?, emi: PayUParamsKit.EmiDetail?, skuDetail: PayUParamsKit.SkuDetail?, offerCategory: Swift.String?)
+  @objc public init(offerKey: Swift.String?, type: Swift.String?, title: Swift.String?, offerDescription: Swift.String?, tnc: Swift.String?, tncLink: Swift.String?, minTxnAmount: Swift.Double, maxTxnAmount: Swift.Double, totalAmount: Swift.Double, discount: Swift.Double, offerType: Swift.String?, validFrom: Swift.String?, validTo: Swift.String?, discountDetail: PayUParamsKit.OfferDiscountDetail?, isNoCostEmi: Swift.Bool, isSubvented: Swift.Bool, isSkuOffer: Swift.Bool, isAcrossSkuQuantity: Swift.Bool, isAllPaymentMethodsAvailable: Swift.Bool, isNudgeOnlyOffer: Swift.Bool, creditCard: [PayUParamsKit.CcdcDetail]?, debitCard: [PayUParamsKit.CcdcDetail]?, netBanking: [PayUParamsKit.BankDetail]?, wallet: [PayUParamsKit.BankDetail]?, upi: [PayUParamsKit.BankDetail]?, bnpl: [PayUParamsKit.BankDetail]?, clw: [PayUParamsKit.BankDetail]?, emi: PayUParamsKit.EmiDetail?, skuDetail: PayUParamsKit.SkuDetail?, offerCategory: Swift.String?)
   required public init(from decoder: any Swift.Decoder) throws
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
@@ -816,8 +818,10 @@ extension PayUParamsKit.PayULanguageCode {
   @objc public var remarks: Swift.String?
   @objc public var billingLimit: Swift.String?
   @objc public var billingRule: Swift.String?
+  @objc public var isPreAuthTxn: Swift.Bool
   @objc public init(billingAmount: Swift.String, paymentStartDate: Foundation.Date, paymentEndDate: Foundation.Date, billingCycle: PayUParamsKit.PayUBillingCycle, billingInterval: Foundation.NSNumber)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc public init(paymentStartDate: Foundation.Date, paymentEndDate: Foundation.Date, isPreAuthTxn: Swift.Bool)
   @objc deinit
 }
 @objc public enum PayUBillingCycle : Swift.Int, Swift.CaseIterable {
@@ -855,8 +859,8 @@ extension Swift.Dictionary {
   @objc public class func getJSON(from string: Swift.String) -> [Swift.String : Any]?
   @objc public class func convertJsonToPostParam(_ json: [Swift.String : Swift.String]) -> Swift.String
   @objc public class func isSITransaction(_ params: PayUParamsKit.PayUPaymentParam) -> Swift.Bool
-  @objc public class func getSIPostParams(_ siParam: PayUParamsKit.PayUSIParams?) -> [Swift.String : Swift.String]
-  @objc public class func getSIDetailsPostParams(_ siParam: PayUParamsKit.PayUSIParams?) -> Swift.String
+  @objc public class func getSIPostParams(_ siParam: PayUParamsKit.PayUSIParams?, isOTMTxn: Swift.Bool = false) -> [Swift.String : Swift.String]
+  @objc public class func getSIDetailsPostParams(_ siParam: PayUParamsKit.PayUSIParams?, _ isOTMTxn: Swift.Bool = false) -> Swift.String
   @objc public class func getDeviceRelatedParam() -> [Swift.String : Swift.String]
   @objc public class func getAnalyticsParams(_ paymentParam: PayUParamsKit.PayUPaymentParam) -> [Swift.String : Swift.String]
   @objc public class func escape(_ string: Swift.String) -> Swift.String
@@ -1003,6 +1007,7 @@ extension Swift.Dictionary {
     @objc public static let QUANTITY: Swift.String
     @objc public static let ADDITIONAL_CHARGES: Swift.String
     @objc public static let PERCHENTAGE_ADDITIONAL_CHARGES: Swift.String
+    @objc public static let PRE_AUTHORIZE: Swift.String
     @objc override dynamic public init()
     @objc deinit
   }
@@ -1115,6 +1120,7 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   @objc public var isRetryPayment: Swift.Bool
   @objc public var subventionAmount: Swift.String?
   @objc public var skuDetail: PayUParamsKit.PayUSkuDetails?
+  @objc public var enforcementOfferKeys: [Swift.String]?
   @objc public var skuCartDetail: Swift.String?
   @objc public var payuBeneficieryDetails: [PayUParamsKit.PayUBeneficiaryParams]?
   @objc public var additionalCharges: Swift.String?
