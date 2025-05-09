@@ -56,6 +56,7 @@ import _SwiftConcurrencyShims
   public var apiStatus: PayUParamsKit.ApiStatus?
   @objc public var id: Swift.Double
   @objc public var ifscCode: Swift.String?
+  @objc public var charges: [PayUParamsKit.PayUCharges]
   @objc public var paymentType: PayUParamsKit.PaymentType {
     @objc get
   }
@@ -208,6 +209,8 @@ import _SwiftConcurrencyShims
   public var isZeroRedirectSupported: Swift.Bool?
   @objc public var emis: [PayUParamsKit.EMI]?
   public var binLevel: Swift.Bool?
+  @objc public var charges: [PayUParamsKit.PayUCharges]?
+  @objc public var offerDetails: PayUParamsKit.PayUModelOfferDetail?
   @objc deinit
 }
 @objc public enum CardType : Swift.Int {
@@ -310,8 +313,9 @@ import _SwiftConcurrencyShims
   @objc public var offers: [PayUParamsKit.Offer]?
   @objc public var skusDetail: PayUParamsKit.SkusDetail?
   @objc public var isUserPersonalizedOffersAvailable: Swift.Bool
+  @objc public var couponsAvailable: Swift.Bool
   @objc public class func getObject(json: [Swift.String : Any]) -> PayUParamsKit.PayUModelAllOfferDetail?
-  @objc public init(clientID: Swift.Int, mid: Swift.Int, offerAmount: Swift.Double, offers: [PayUParamsKit.Offer]?, skusDetail: PayUParamsKit.SkusDetail?, isUserPersonalizedOffersAvailable: Swift.Bool)
+  @objc public init(clientID: Swift.Int, mid: Swift.Int, offerAmount: Swift.Double, offers: [PayUParamsKit.Offer]?, skusDetail: PayUParamsKit.SkusDetail?, isUserPersonalizedOffersAvailable: Swift.Bool, couponsAvailable: Swift.Bool)
   required public init(from decoder: any Swift.Decoder) throws
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
@@ -324,13 +328,15 @@ import _SwiftConcurrencyShims
   @objc public var minTxnAmount: Swift.Double, maxTxnAmount: Swift.Double, totalAmount: Swift.Double, discount: Swift.Double
   @objc public var offerType: Swift.String?, validFrom: Swift.String?, validTo: Swift.String?
   @objc public var discountDetail: PayUParamsKit.OfferDiscountDetail?
-  @objc public var isNoCostEmi: Swift.Bool, isSubvented: Swift.Bool, isSkuOffer: Swift.Bool, isAcrossSkuQuantity: Swift.Bool, isAllPaymentMethodsAvailable: Swift.Bool, isNudgeOnlyOffer: Swift.Bool
+  @objc public var isNoCostEmi: Swift.Bool, isSubvented: Swift.Bool, isSkuOffer: Swift.Bool, isAcrossSkuQuantity: Swift.Bool, isAllPaymentMethodsAvailable: Swift.Bool, isNudgeOnlyOffer: Swift.Bool, isUserVerificationRequired: Swift.Bool
   @objc public var creditCard: [PayUParamsKit.CcdcDetail]?, debitCard: [PayUParamsKit.CcdcDetail]?
   @objc public var netBanking: [PayUParamsKit.BankDetail]?, wallet: [PayUParamsKit.BankDetail]?, upi: [PayUParamsKit.BankDetail]?, bnpl: [PayUParamsKit.BankDetail]?, clw: [PayUParamsKit.BankDetail]?
   @objc public var emi: PayUParamsKit.EmiDetail?
   @objc public var skuDetail: PayUParamsKit.SkuDetail?
   @objc public var offerCategory: Swift.String?
-  @objc public init(offerKey: Swift.String?, type: Swift.String?, title: Swift.String?, offerDescription: Swift.String?, tnc: Swift.String?, tncLink: Swift.String?, minTxnAmount: Swift.Double, maxTxnAmount: Swift.Double, totalAmount: Swift.Double, discount: Swift.Double, offerType: Swift.String?, validFrom: Swift.String?, validTo: Swift.String?, discountDetail: PayUParamsKit.OfferDiscountDetail?, isNoCostEmi: Swift.Bool, isSubvented: Swift.Bool, isSkuOffer: Swift.Bool, isAcrossSkuQuantity: Swift.Bool, isAllPaymentMethodsAvailable: Swift.Bool, isNudgeOnlyOffer: Swift.Bool, creditCard: [PayUParamsKit.CcdcDetail]?, debitCard: [PayUParamsKit.CcdcDetail]?, netBanking: [PayUParamsKit.BankDetail]?, wallet: [PayUParamsKit.BankDetail]?, upi: [PayUParamsKit.BankDetail]?, bnpl: [PayUParamsKit.BankDetail]?, clw: [PayUParamsKit.BankDetail]?, emi: PayUParamsKit.EmiDetail?, skuDetail: PayUParamsKit.SkuDetail?, offerCategory: Swift.String?)
+  @objc public var userDetail: PayUParamsKit.OfferUserDetail?
+  @objc public var toDisplay: Swift.Bool
+  @objc public init(offerKey: Swift.String?, type: Swift.String?, title: Swift.String?, offerDescription: Swift.String?, tnc: Swift.String?, tncLink: Swift.String?, minTxnAmount: Swift.Double, maxTxnAmount: Swift.Double, totalAmount: Swift.Double, discount: Swift.Double, offerType: Swift.String?, validFrom: Swift.String?, validTo: Swift.String?, discountDetail: PayUParamsKit.OfferDiscountDetail?, isNoCostEmi: Swift.Bool, isSubvented: Swift.Bool, isSkuOffer: Swift.Bool, isAcrossSkuQuantity: Swift.Bool, isAllPaymentMethodsAvailable: Swift.Bool, isUserVerificationRequired: Swift.Bool, isNudgeOnlyOffer: Swift.Bool, userDetail: PayUParamsKit.OfferUserDetail?, creditCard: [PayUParamsKit.CcdcDetail]?, debitCard: [PayUParamsKit.CcdcDetail]?, netBanking: [PayUParamsKit.BankDetail]?, wallet: [PayUParamsKit.BankDetail]?, upi: [PayUParamsKit.BankDetail]?, bnpl: [PayUParamsKit.BankDetail]?, clw: [PayUParamsKit.BankDetail]?, emi: PayUParamsKit.EmiDetail?, skuDetail: PayUParamsKit.SkuDetail?, offerCategory: Swift.String?, toDisplay: Swift.Bool = true)
   required public init(from decoder: any Swift.Decoder) throws
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
@@ -370,6 +376,14 @@ import _SwiftConcurrencyShims
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc public class OfferUserDetail : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let firstName: Swift.String?
+  @objc public var phoneNo: Swift.String?
+  @objc final public let email: Swift.String?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class EmiDetail : ObjectiveC.NSObject, Swift.Codable, Foundation.NSCopying {
   @objc public var debitCard: PayUParamsKit.EmiCcdcDetail?, creditCard: PayUParamsKit.EmiCcdcDetail?
@@ -651,8 +665,11 @@ import _SwiftConcurrencyShims
   @objc public var beneficiaryAccountNumber: Swift.String
   @objc public var beneficiaryIFSC: Swift.String
   @objc public var beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType
-  @objc public var verficationMode: Swift.String?
-  @objc public init(beneficiaryName: Swift.String, beneficiaryAccountNumber: Swift.String, beneficiaryIFSC: Swift.String, beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType, verficationMode: Swift.String? = nil)
+  @objc public var verificationMode: Swift.String? {
+    get
+  }
+  @objc public init(beneficiaryName: Swift.String, beneficiaryAccountNumber: Swift.String, beneficiaryIFSC: Swift.String, beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType)
+  @objc public init(beneficiaryName: Swift.String, beneficiaryAccountNumber: Swift.String, beneficiaryIFSC: Swift.String, beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType, verficationMode: PayUParamsKit.VerificationModeType)
   @objc public init(beneficiaryAccountNumber: Swift.String, beneficiaryIFSC: Swift.String)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
@@ -660,6 +677,7 @@ import _SwiftConcurrencyShims
 @objc public enum BeneficiaryAccountType : Swift.Int, Swift.CaseIterable {
   case savings
   case current
+  public static func getBeneficiaryAccountType(_ accountType: Swift.String?) -> PayUParamsKit.BeneficiaryAccountType?
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [PayUParamsKit.BeneficiaryAccountType]
   public typealias RawValue = Swift.Int
@@ -673,6 +691,11 @@ import _SwiftConcurrencyShims
 @objc public enum VerificationModeType : Swift.Int, Swift.CaseIterable {
   case debitCard
   case netBanking
+  case aadhaar
+  public var key: Swift.String {
+    get
+  }
+  public static func typeFrom(_ string: Swift.String) -> PayUParamsKit.VerificationModeType?
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [PayUParamsKit.VerificationModeType]
   public typealias RawValue = Swift.Int
@@ -784,6 +807,22 @@ import _SwiftConcurrencyShims
   public func getURLRequest(postParam: Swift.String?, requestURL: Foundation.URL?, httpHeaderField: [Swift.String : Swift.String]?, httpMethod: Swift.String?) -> Foundation.NSMutableURLRequest?
   @objc override dynamic public init()
   @objc deinit
+}
+@objc public class PayUCharges : ObjectiveC.NSObject, Swift.Codable, Foundation.NSCopying {
+  @objc public var chargeUUID: Swift.String?
+  @objc public var chargeName: Swift.String?
+  @objc public var baseFee: Swift.Double
+  @objc public var taxAmount: Swift.Double
+  @objc public var ruleId: Swift.String?
+  @objc public var combinationKey: Swift.String?
+  @objc public var combinationUUID: Swift.String?
+  @objc public var requestUuid: Swift.String?
+  @objc public class func getObject(json: [Swift.String : Any]) -> PayUParamsKit.PayUCharges?
+  @objc public init(chargeUuid: Swift.String?, chargeName: Swift.String?, baseFee: Swift.Double, taxAmount: Swift.Double, ruleId: Swift.String?, combinationKey: Swift.String?, combinationUUID: Swift.String?, requestUuid: Swift.String?)
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 @objc public enum PayULanguageCode : Swift.Int, Swift.CaseIterable {
   case english
@@ -947,6 +986,7 @@ extension Swift.Dictionary {
     @objc public static let BILLING_RULE: Swift.String
     @objc public static let BILLING_LIMIT: Swift.String
     @objc public static let NOTIFYURL: Swift.String
+    @objc public static let LASTNAME: Swift.String
     @objc public static let ADDRESS_1: Swift.String
     @objc public static let ADDRESS_2: Swift.String
     @objc public static let CITY: Swift.String
@@ -1007,6 +1047,9 @@ extension Swift.Dictionary {
     @objc public static let QUANTITY: Swift.String
     @objc public static let ADDITIONAL_CHARGES: Swift.String
     @objc public static let PERCHENTAGE_ADDITIONAL_CHARGES: Swift.String
+    @objc public static let REQUEST_UUID: Swift.String
+    @objc public static let COMBINATION_UUID: Swift.String
+    @objc public static let CHARGE_UUIDS: Swift.String
     @objc public static let PRE_AUTHORIZE: Swift.String
     @objc override dynamic public init()
     @objc deinit
@@ -1125,6 +1168,7 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   @objc public var payuBeneficieryDetails: [PayUParamsKit.PayUBeneficiaryParams]?
   @objc public var additionalCharges: Swift.String?
   @objc public var percentageAdditionalCharges: Swift.String?
+  @objc public var charges: [PayUParamsKit.PayUCharges]?
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String, surl: Swift.String, furl: Swift.String, environment: PayUParamsKit.Environment)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
@@ -1245,6 +1289,27 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUPaymentValidations : ObjectiveC.NSObject {
   public func validatePaymentDetails(_ paymentParam: PayUParamsKit.PayUPaymentParam) -> (isValidDetails: Swift.Bool, errorMessage: Swift.String)
   @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class PayUFetchConvFeeRequest : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc public var commonDynamicAttributes: PayUParamsKit.PayUCommonDynamicAttributes?
+  @objc public var variableDynamicAttributesList: [PayUParamsKit.PayUVariableDynamicAttributes]?
+  @objc public init(commonDynamicAttributes: PayUParamsKit.PayUCommonDynamicAttributes?, variableDynamicAttributesList: [PayUParamsKit.PayUVariableDynamicAttributes]?)
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+@objc @objcMembers public class PayUCommonDynamicAttributes : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc public var mode: Swift.String?
+  @objc public var action: Swift.String?
+  @objc public init(mode: Swift.String?, action: Swift.String?)
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
+@objc @objcMembers public class PayUVariableDynamicAttributes : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc public var combinationKey: Swift.String?
+  @objc public var ibiboCode: Swift.String?
+  @objc public init(combinationKey: Swift.String?, ibiboCode: Swift.String?)
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
 }
 @objc public class PayUModelFetchAssets : ObjectiveC.NSObject, Swift.Codable {

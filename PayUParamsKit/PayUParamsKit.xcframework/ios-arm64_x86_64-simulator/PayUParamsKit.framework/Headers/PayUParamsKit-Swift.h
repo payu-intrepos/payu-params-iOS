@@ -324,6 +324,7 @@ typedef SWIFT_ENUM(NSInteger, ApiStatus, open) {
 };
 
 @class PayUSupportedPaymentOptions;
+@class PayUCharges;
 enum PaymentType : NSInteger;
 SWIFT_CLASS("_TtC13PayUParamsKit13PaymentOption")
 @interface PaymentOption : NSObject <NSCopying>
@@ -349,6 +350,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit13PaymentOption")
 @property (nonatomic, strong) PayUSupportedPaymentOptions * _Nullable savedOptionObj;
 @property (nonatomic) double id;
 @property (nonatomic, copy) NSString * _Nullable ifscCode;
+@property (nonatomic, copy) NSArray<PayUCharges *> * _Nonnull charges;
 @property (nonatomic, readonly) enum PaymentType paymentType;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
@@ -406,6 +408,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit3CLW")
 @end
 
 @class EMI;
+@class PayUModelOfferDetail;
 SWIFT_CLASS("_TtC13PayUParamsKit11CardBinInfo")
 @interface CardBinInfo : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -416,6 +419,8 @@ SWIFT_CLASS("_TtC13PayUParamsKit11CardBinInfo")
 @property (nonatomic, copy) NSString * _Nullable bankCode;
 @property (nonatomic, copy) NSString * _Nullable bin;
 @property (nonatomic, copy) NSArray<EMI *> * _Nullable emis;
+@property (nonatomic, copy) NSArray<PayUCharges *> * _Nullable charges;
+@property (nonatomic, strong) PayUModelOfferDetail * _Nullable offerDetails;
 @end
 
 typedef SWIFT_ENUM(NSInteger, CardScheme, open) {
@@ -609,6 +614,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)BILLING_LIMIT SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NOTIFYURL;)
 + (NSString * _Nonnull)NOTIFYURL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull LASTNAME;)
++ (NSString * _Nonnull)LASTNAME SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ADDRESS_1;)
 + (NSString * _Nonnull)ADDRESS_1 SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ADDRESS_2;)
@@ -729,6 +736,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)ADDITIONAL_CHARGES SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PERCHENTAGE_ADDITIONAL_CHARGES;)
 + (NSString * _Nonnull)PERCHENTAGE_ADDITIONAL_CHARGES SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull REQUEST_UUID;)
++ (NSString * _Nonnull)REQUEST_UUID SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull COMBINATION_UUID;)
++ (NSString * _Nonnull)COMBINATION_UUID SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull CHARGE_UUIDS;)
++ (NSString * _Nonnull)CHARGE_UUIDS SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PRE_AUTHORIZE;)
 + (NSString * _Nonnull)PRE_AUTHORIZE SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -829,6 +842,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit13NetworkDetail")
 
 @class OfferDiscountDetail;
 @class SkuDetail;
+@class OfferUserDetail;
 SWIFT_CLASS("_TtC13PayUParamsKit5Offer")
 @interface Offer : NSObject <NSCopying>
 @property (nonatomic, copy) NSString * _Nullable offerKey;
@@ -851,6 +865,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit5Offer")
 @property (nonatomic) BOOL isAcrossSkuQuantity;
 @property (nonatomic) BOOL isAllPaymentMethodsAvailable;
 @property (nonatomic) BOOL isNudgeOnlyOffer;
+@property (nonatomic) BOOL isUserVerificationRequired;
 @property (nonatomic, copy) NSArray<CcdcDetail *> * _Nullable creditCard;
 @property (nonatomic, copy) NSArray<CcdcDetail *> * _Nullable debitCard;
 @property (nonatomic, copy) NSArray<BankDetail *> * _Nullable netBanking;
@@ -861,7 +876,9 @@ SWIFT_CLASS("_TtC13PayUParamsKit5Offer")
 @property (nonatomic, strong) EmiDetail * _Nullable emi;
 @property (nonatomic, strong) SkuDetail * _Nullable skuDetail;
 @property (nonatomic, copy) NSString * _Nullable offerCategory;
-- (nonnull instancetype)initWithOfferKey:(NSString * _Nullable)offerKey type:(NSString * _Nullable)type title:(NSString * _Nullable)title offerDescription:(NSString * _Nullable)offerDescription tnc:(NSString * _Nullable)tnc tncLink:(NSString * _Nullable)tncLink minTxnAmount:(double)minTxnAmount maxTxnAmount:(double)maxTxnAmount totalAmount:(double)totalAmount discount:(double)discount offerType:(NSString * _Nullable)offerType validFrom:(NSString * _Nullable)validFrom validTo:(NSString * _Nullable)validTo discountDetail:(OfferDiscountDetail * _Nullable)discountDetail isNoCostEmi:(BOOL)isNoCostEmi isSubvented:(BOOL)isSubvented isSkuOffer:(BOOL)isSkuOffer isAcrossSkuQuantity:(BOOL)isAcrossSkuQuantity isAllPaymentMethodsAvailable:(BOOL)isAllPaymentMethodsAvailable isNudgeOnlyOffer:(BOOL)isNudgeOnlyOffer creditCard:(NSArray<CcdcDetail *> * _Nullable)creditCard debitCard:(NSArray<CcdcDetail *> * _Nullable)debitCard netBanking:(NSArray<BankDetail *> * _Nullable)netBanking wallet:(NSArray<BankDetail *> * _Nullable)wallet upi:(NSArray<BankDetail *> * _Nullable)upi bnpl:(NSArray<BankDetail *> * _Nullable)bnpl clw:(NSArray<BankDetail *> * _Nullable)clw emi:(EmiDetail * _Nullable)emi skuDetail:(SkuDetail * _Nullable)skuDetail offerCategory:(NSString * _Nullable)offerCategory OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, strong) OfferUserDetail * _Nullable userDetail;
+@property (nonatomic) BOOL toDisplay;
+- (nonnull instancetype)initWithOfferKey:(NSString * _Nullable)offerKey type:(NSString * _Nullable)type title:(NSString * _Nullable)title offerDescription:(NSString * _Nullable)offerDescription tnc:(NSString * _Nullable)tnc tncLink:(NSString * _Nullable)tncLink minTxnAmount:(double)minTxnAmount maxTxnAmount:(double)maxTxnAmount totalAmount:(double)totalAmount discount:(double)discount offerType:(NSString * _Nullable)offerType validFrom:(NSString * _Nullable)validFrom validTo:(NSString * _Nullable)validTo discountDetail:(OfferDiscountDetail * _Nullable)discountDetail isNoCostEmi:(BOOL)isNoCostEmi isSubvented:(BOOL)isSubvented isSkuOffer:(BOOL)isSkuOffer isAcrossSkuQuantity:(BOOL)isAcrossSkuQuantity isAllPaymentMethodsAvailable:(BOOL)isAllPaymentMethodsAvailable isUserVerificationRequired:(BOOL)isUserVerificationRequired isNudgeOnlyOffer:(BOOL)isNudgeOnlyOffer userDetail:(OfferUserDetail * _Nullable)userDetail creditCard:(NSArray<CcdcDetail *> * _Nullable)creditCard debitCard:(NSArray<CcdcDetail *> * _Nullable)debitCard netBanking:(NSArray<BankDetail *> * _Nullable)netBanking wallet:(NSArray<BankDetail *> * _Nullable)wallet upi:(NSArray<BankDetail *> * _Nullable)upi bnpl:(NSArray<BankDetail *> * _Nullable)bnpl clw:(NSArray<BankDetail *> * _Nullable)clw emi:(EmiDetail * _Nullable)emi skuDetail:(SkuDetail * _Nullable)skuDetail offerCategory:(NSString * _Nullable)offerCategory toDisplay:(BOOL)toDisplay OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -919,6 +936,13 @@ SWIFT_CLASS("_TtC13PayUParamsKit19OfferDiscountDetail")
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS("_TtC13PayUParamsKit15OfferUserDetail")
+@interface OfferUserDetail : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable firstName;
+@property (nonatomic, copy) NSString * _Nullable phoneNo;
+@property (nonatomic, readonly, copy) NSString * _Nullable email;
 @end
 
 SWIFT_CLASS("_TtC13PayUParamsKit9PPKHashes")
@@ -1016,14 +1040,16 @@ SWIFT_CLASS("_TtC13PayUParamsKit18PayUAddressDetails")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+enum VerificationModeType : NSInteger;
 SWIFT_CLASS("_TtC13PayUParamsKit21PayUBeneficiaryParams")
 @interface PayUBeneficiaryParams : NSObject <NSCopying>
 @property (nonatomic, copy) NSString * _Nonnull beneficiaryName;
 @property (nonatomic, copy) NSString * _Nonnull beneficiaryAccountNumber;
 @property (nonatomic, copy) NSString * _Nonnull beneficiaryIFSC;
 @property (nonatomic) enum BeneficiaryAccountType beneficiaryAccountType;
-@property (nonatomic, copy) NSString * _Nullable verficationMode;
-- (nonnull instancetype)initWithBeneficiaryName:(NSString * _Nonnull)beneficiaryName beneficiaryAccountNumber:(NSString * _Nonnull)beneficiaryAccountNumber beneficiaryIFSC:(NSString * _Nonnull)beneficiaryIFSC beneficiaryAccountType:(enum BeneficiaryAccountType)beneficiaryAccountType verficationMode:(NSString * _Nullable)verficationMode OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nullable verificationMode;
+- (nonnull instancetype)initWithBeneficiaryName:(NSString * _Nonnull)beneficiaryName beneficiaryAccountNumber:(NSString * _Nonnull)beneficiaryAccountNumber beneficiaryIFSC:(NSString * _Nonnull)beneficiaryIFSC beneficiaryAccountType:(enum BeneficiaryAccountType)beneficiaryAccountType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithBeneficiaryName:(NSString * _Nonnull)beneficiaryName beneficiaryAccountNumber:(NSString * _Nonnull)beneficiaryAccountNumber beneficiaryIFSC:(NSString * _Nonnull)beneficiaryIFSC beneficiaryAccountType:(enum BeneficiaryAccountType)beneficiaryAccountType verficationMode:(enum VerificationModeType)verficationMode OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithBeneficiaryAccountNumber:(NSString * _Nonnull)beneficiaryAccountNumber beneficiaryIFSC:(NSString * _Nonnull)beneficiaryIFSC OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1058,6 +1084,33 @@ typedef SWIFT_ENUM(NSInteger, PayUCardDetailsType, open) {
   PayUCardDetailsTypeMobile = 7,
   PayUCardDetailsTypeCardNumberTenure = 8,
 };
+
+SWIFT_CLASS("_TtC13PayUParamsKit11PayUCharges")
+@interface PayUCharges : NSObject <NSCopying>
+@property (nonatomic, copy) NSString * _Nullable chargeUUID;
+@property (nonatomic, copy) NSString * _Nullable chargeName;
+@property (nonatomic) double baseFee;
+@property (nonatomic) double taxAmount;
+@property (nonatomic, copy) NSString * _Nullable ruleId;
+@property (nonatomic, copy) NSString * _Nullable combinationKey;
+@property (nonatomic, copy) NSString * _Nullable combinationUUID;
+@property (nonatomic, copy) NSString * _Nullable requestUuid;
++ (PayUCharges * _Nullable)getObjectWithJson:(NSDictionary<NSString *, id> * _Nonnull)json SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithChargeUuid:(NSString * _Nullable)chargeUuid chargeName:(NSString * _Nullable)chargeName baseFee:(double)baseFee taxAmount:(double)taxAmount ruleId:(NSString * _Nullable)ruleId combinationKey:(NSString * _Nullable)combinationKey combinationUUID:(NSString * _Nullable)combinationUUID requestUuid:(NSString * _Nullable)requestUuid OBJC_DESIGNATED_INITIALIZER;
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS("_TtC13PayUParamsKit27PayUCommonDynamicAttributes")
+@interface PayUCommonDynamicAttributes : NSObject <NSCopying>
+@property (nonatomic, copy) NSString * _Nullable mode;
+@property (nonatomic, copy) NSString * _Nullable action;
+- (nonnull instancetype)initWithMode:(NSString * _Nullable)mode action:(NSString * _Nullable)action OBJC_DESIGNATED_INITIALIZER;
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 SWIFT_CLASS("_TtC13PayUParamsKit26PayUDeleteQuickPayResponse")
 @interface PayUDeleteQuickPayResponse : PayUBaseModel
@@ -1116,6 +1169,17 @@ typedef SWIFT_ENUM(NSInteger, PayUErrorType, open) {
   PayUErrorTypeInvalidHash = 3,
 };
 
+@class PayUVariableDynamicAttributes;
+SWIFT_CLASS("_TtC13PayUParamsKit23PayUFetchConvFeeRequest")
+@interface PayUFetchConvFeeRequest : NSObject <NSCopying>
+@property (nonatomic, strong) PayUCommonDynamicAttributes * _Nullable commonDynamicAttributes;
+@property (nonatomic, copy) NSArray<PayUVariableDynamicAttributes *> * _Nullable variableDynamicAttributesList;
+- (nonnull instancetype)initWithCommonDynamicAttributes:(PayUCommonDynamicAttributes * _Nullable)commonDynamicAttributes variableDynamicAttributesList:(NSArray<PayUVariableDynamicAttributes *> * _Nullable)variableDynamicAttributesList OBJC_DESIGNATED_INITIALIZER;
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 enum PayULanguageCode : NSInteger;
 SWIFT_CLASS("_TtC13PayUParamsKit12PayULanguage")
 @interface PayULanguage : NSObject
@@ -1166,8 +1230,9 @@ SWIFT_CLASS("_TtC13PayUParamsKit23PayUModelAllOfferDetail")
 @property (nonatomic, copy) NSArray<Offer *> * _Nullable offers;
 @property (nonatomic, strong) SkusDetail * _Nullable skusDetail;
 @property (nonatomic) BOOL isUserPersonalizedOffersAvailable;
+@property (nonatomic) BOOL couponsAvailable;
 + (PayUModelAllOfferDetail * _Nullable)getObjectWithJson:(NSDictionary<NSString *, id> * _Nonnull)json SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithClientID:(NSInteger)clientID mid:(NSInteger)mid offerAmount:(double)offerAmount offers:(NSArray<Offer *> * _Nullable)offers skusDetail:(SkusDetail * _Nullable)skusDetail isUserPersonalizedOffersAvailable:(BOOL)isUserPersonalizedOffersAvailable OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithClientID:(NSInteger)clientID mid:(NSInteger)mid offerAmount:(double)offerAmount offers:(NSArray<Offer *> * _Nullable)offers skusDetail:(SkusDetail * _Nullable)skusDetail isUserPersonalizedOffersAvailable:(BOOL)isUserPersonalizedOffersAvailable couponsAvailable:(BOOL)couponsAvailable OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1311,6 +1376,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit16PayUPaymentParam")
 @property (nonatomic, copy) NSArray<PayUBeneficiaryParams *> * _Nullable payuBeneficieryDetails;
 @property (nonatomic, copy) NSString * _Nullable additionalCharges;
 @property (nonatomic, copy) NSString * _Nullable percentageAdditionalCharges;
+@property (nonatomic, copy) NSArray<PayUCharges *> * _Nullable charges;
 - (nonnull instancetype)initWithKey:(NSString * _Nonnull)key transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email phone:(NSString * _Nonnull)phone surl:(NSString * _Nonnull)surl furl:(NSString * _Nonnull)furl environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1566,6 +1632,16 @@ SWIFT_CLASS("_TtC13PayUParamsKit13PayUVSCParams")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+SWIFT_CLASS("_TtC13PayUParamsKit29PayUVariableDynamicAttributes")
+@interface PayUVariableDynamicAttributes : NSObject <NSCopying>
+@property (nonatomic, copy) NSString * _Nullable combinationKey;
+@property (nonatomic, copy) NSString * _Nullable ibiboCode;
+- (nonnull instancetype)initWithCombinationKey:(NSString * _Nullable)combinationKey ibiboCode:(NSString * _Nullable)ibiboCode OBJC_DESIGNATED_INITIALIZER;
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 SWIFT_CLASS("_TtC13PayUParamsKit17PayUVerifyPayment")
 @interface PayUVerifyPayment : NSObject
 @property (nonatomic, strong) PayUBinData * _Nullable binData;
@@ -1748,6 +1824,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit3UPI")
 typedef SWIFT_ENUM(NSInteger, VerificationModeType, open) {
   VerificationModeTypeDebitCard = 0,
   VerificationModeTypeNetBanking = 1,
+  VerificationModeTypeAadhaar = 2,
 };
 
 SWIFT_CLASS("_TtC13PayUParamsKit6Wallet")
@@ -2092,6 +2169,7 @@ typedef SWIFT_ENUM(NSInteger, ApiStatus, open) {
 };
 
 @class PayUSupportedPaymentOptions;
+@class PayUCharges;
 enum PaymentType : NSInteger;
 SWIFT_CLASS("_TtC13PayUParamsKit13PaymentOption")
 @interface PaymentOption : NSObject <NSCopying>
@@ -2117,6 +2195,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit13PaymentOption")
 @property (nonatomic, strong) PayUSupportedPaymentOptions * _Nullable savedOptionObj;
 @property (nonatomic) double id;
 @property (nonatomic, copy) NSString * _Nullable ifscCode;
+@property (nonatomic, copy) NSArray<PayUCharges *> * _Nonnull charges;
 @property (nonatomic, readonly) enum PaymentType paymentType;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
@@ -2174,6 +2253,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit3CLW")
 @end
 
 @class EMI;
+@class PayUModelOfferDetail;
 SWIFT_CLASS("_TtC13PayUParamsKit11CardBinInfo")
 @interface CardBinInfo : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -2184,6 +2264,8 @@ SWIFT_CLASS("_TtC13PayUParamsKit11CardBinInfo")
 @property (nonatomic, copy) NSString * _Nullable bankCode;
 @property (nonatomic, copy) NSString * _Nullable bin;
 @property (nonatomic, copy) NSArray<EMI *> * _Nullable emis;
+@property (nonatomic, copy) NSArray<PayUCharges *> * _Nullable charges;
+@property (nonatomic, strong) PayUModelOfferDetail * _Nullable offerDetails;
 @end
 
 typedef SWIFT_ENUM(NSInteger, CardScheme, open) {
@@ -2377,6 +2459,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)BILLING_LIMIT SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NOTIFYURL;)
 + (NSString * _Nonnull)NOTIFYURL SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull LASTNAME;)
++ (NSString * _Nonnull)LASTNAME SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ADDRESS_1;)
 + (NSString * _Nonnull)ADDRESS_1 SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ADDRESS_2;)
@@ -2497,6 +2581,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)ADDITIONAL_CHARGES SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PERCHENTAGE_ADDITIONAL_CHARGES;)
 + (NSString * _Nonnull)PERCHENTAGE_ADDITIONAL_CHARGES SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull REQUEST_UUID;)
++ (NSString * _Nonnull)REQUEST_UUID SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull COMBINATION_UUID;)
++ (NSString * _Nonnull)COMBINATION_UUID SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull CHARGE_UUIDS;)
++ (NSString * _Nonnull)CHARGE_UUIDS SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PRE_AUTHORIZE;)
 + (NSString * _Nonnull)PRE_AUTHORIZE SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -2597,6 +2687,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit13NetworkDetail")
 
 @class OfferDiscountDetail;
 @class SkuDetail;
+@class OfferUserDetail;
 SWIFT_CLASS("_TtC13PayUParamsKit5Offer")
 @interface Offer : NSObject <NSCopying>
 @property (nonatomic, copy) NSString * _Nullable offerKey;
@@ -2619,6 +2710,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit5Offer")
 @property (nonatomic) BOOL isAcrossSkuQuantity;
 @property (nonatomic) BOOL isAllPaymentMethodsAvailable;
 @property (nonatomic) BOOL isNudgeOnlyOffer;
+@property (nonatomic) BOOL isUserVerificationRequired;
 @property (nonatomic, copy) NSArray<CcdcDetail *> * _Nullable creditCard;
 @property (nonatomic, copy) NSArray<CcdcDetail *> * _Nullable debitCard;
 @property (nonatomic, copy) NSArray<BankDetail *> * _Nullable netBanking;
@@ -2629,7 +2721,9 @@ SWIFT_CLASS("_TtC13PayUParamsKit5Offer")
 @property (nonatomic, strong) EmiDetail * _Nullable emi;
 @property (nonatomic, strong) SkuDetail * _Nullable skuDetail;
 @property (nonatomic, copy) NSString * _Nullable offerCategory;
-- (nonnull instancetype)initWithOfferKey:(NSString * _Nullable)offerKey type:(NSString * _Nullable)type title:(NSString * _Nullable)title offerDescription:(NSString * _Nullable)offerDescription tnc:(NSString * _Nullable)tnc tncLink:(NSString * _Nullable)tncLink minTxnAmount:(double)minTxnAmount maxTxnAmount:(double)maxTxnAmount totalAmount:(double)totalAmount discount:(double)discount offerType:(NSString * _Nullable)offerType validFrom:(NSString * _Nullable)validFrom validTo:(NSString * _Nullable)validTo discountDetail:(OfferDiscountDetail * _Nullable)discountDetail isNoCostEmi:(BOOL)isNoCostEmi isSubvented:(BOOL)isSubvented isSkuOffer:(BOOL)isSkuOffer isAcrossSkuQuantity:(BOOL)isAcrossSkuQuantity isAllPaymentMethodsAvailable:(BOOL)isAllPaymentMethodsAvailable isNudgeOnlyOffer:(BOOL)isNudgeOnlyOffer creditCard:(NSArray<CcdcDetail *> * _Nullable)creditCard debitCard:(NSArray<CcdcDetail *> * _Nullable)debitCard netBanking:(NSArray<BankDetail *> * _Nullable)netBanking wallet:(NSArray<BankDetail *> * _Nullable)wallet upi:(NSArray<BankDetail *> * _Nullable)upi bnpl:(NSArray<BankDetail *> * _Nullable)bnpl clw:(NSArray<BankDetail *> * _Nullable)clw emi:(EmiDetail * _Nullable)emi skuDetail:(SkuDetail * _Nullable)skuDetail offerCategory:(NSString * _Nullable)offerCategory OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, strong) OfferUserDetail * _Nullable userDetail;
+@property (nonatomic) BOOL toDisplay;
+- (nonnull instancetype)initWithOfferKey:(NSString * _Nullable)offerKey type:(NSString * _Nullable)type title:(NSString * _Nullable)title offerDescription:(NSString * _Nullable)offerDescription tnc:(NSString * _Nullable)tnc tncLink:(NSString * _Nullable)tncLink minTxnAmount:(double)minTxnAmount maxTxnAmount:(double)maxTxnAmount totalAmount:(double)totalAmount discount:(double)discount offerType:(NSString * _Nullable)offerType validFrom:(NSString * _Nullable)validFrom validTo:(NSString * _Nullable)validTo discountDetail:(OfferDiscountDetail * _Nullable)discountDetail isNoCostEmi:(BOOL)isNoCostEmi isSubvented:(BOOL)isSubvented isSkuOffer:(BOOL)isSkuOffer isAcrossSkuQuantity:(BOOL)isAcrossSkuQuantity isAllPaymentMethodsAvailable:(BOOL)isAllPaymentMethodsAvailable isUserVerificationRequired:(BOOL)isUserVerificationRequired isNudgeOnlyOffer:(BOOL)isNudgeOnlyOffer userDetail:(OfferUserDetail * _Nullable)userDetail creditCard:(NSArray<CcdcDetail *> * _Nullable)creditCard debitCard:(NSArray<CcdcDetail *> * _Nullable)debitCard netBanking:(NSArray<BankDetail *> * _Nullable)netBanking wallet:(NSArray<BankDetail *> * _Nullable)wallet upi:(NSArray<BankDetail *> * _Nullable)upi bnpl:(NSArray<BankDetail *> * _Nullable)bnpl clw:(NSArray<BankDetail *> * _Nullable)clw emi:(EmiDetail * _Nullable)emi skuDetail:(SkuDetail * _Nullable)skuDetail offerCategory:(NSString * _Nullable)offerCategory toDisplay:(BOOL)toDisplay OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -2687,6 +2781,13 @@ SWIFT_CLASS("_TtC13PayUParamsKit19OfferDiscountDetail")
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS("_TtC13PayUParamsKit15OfferUserDetail")
+@interface OfferUserDetail : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable firstName;
+@property (nonatomic, copy) NSString * _Nullable phoneNo;
+@property (nonatomic, readonly, copy) NSString * _Nullable email;
 @end
 
 SWIFT_CLASS("_TtC13PayUParamsKit9PPKHashes")
@@ -2784,14 +2885,16 @@ SWIFT_CLASS("_TtC13PayUParamsKit18PayUAddressDetails")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+enum VerificationModeType : NSInteger;
 SWIFT_CLASS("_TtC13PayUParamsKit21PayUBeneficiaryParams")
 @interface PayUBeneficiaryParams : NSObject <NSCopying>
 @property (nonatomic, copy) NSString * _Nonnull beneficiaryName;
 @property (nonatomic, copy) NSString * _Nonnull beneficiaryAccountNumber;
 @property (nonatomic, copy) NSString * _Nonnull beneficiaryIFSC;
 @property (nonatomic) enum BeneficiaryAccountType beneficiaryAccountType;
-@property (nonatomic, copy) NSString * _Nullable verficationMode;
-- (nonnull instancetype)initWithBeneficiaryName:(NSString * _Nonnull)beneficiaryName beneficiaryAccountNumber:(NSString * _Nonnull)beneficiaryAccountNumber beneficiaryIFSC:(NSString * _Nonnull)beneficiaryIFSC beneficiaryAccountType:(enum BeneficiaryAccountType)beneficiaryAccountType verficationMode:(NSString * _Nullable)verficationMode OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSString * _Nullable verificationMode;
+- (nonnull instancetype)initWithBeneficiaryName:(NSString * _Nonnull)beneficiaryName beneficiaryAccountNumber:(NSString * _Nonnull)beneficiaryAccountNumber beneficiaryIFSC:(NSString * _Nonnull)beneficiaryIFSC beneficiaryAccountType:(enum BeneficiaryAccountType)beneficiaryAccountType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithBeneficiaryName:(NSString * _Nonnull)beneficiaryName beneficiaryAccountNumber:(NSString * _Nonnull)beneficiaryAccountNumber beneficiaryIFSC:(NSString * _Nonnull)beneficiaryIFSC beneficiaryAccountType:(enum BeneficiaryAccountType)beneficiaryAccountType verficationMode:(enum VerificationModeType)verficationMode OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithBeneficiaryAccountNumber:(NSString * _Nonnull)beneficiaryAccountNumber beneficiaryIFSC:(NSString * _Nonnull)beneficiaryIFSC OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -2826,6 +2929,33 @@ typedef SWIFT_ENUM(NSInteger, PayUCardDetailsType, open) {
   PayUCardDetailsTypeMobile = 7,
   PayUCardDetailsTypeCardNumberTenure = 8,
 };
+
+SWIFT_CLASS("_TtC13PayUParamsKit11PayUCharges")
+@interface PayUCharges : NSObject <NSCopying>
+@property (nonatomic, copy) NSString * _Nullable chargeUUID;
+@property (nonatomic, copy) NSString * _Nullable chargeName;
+@property (nonatomic) double baseFee;
+@property (nonatomic) double taxAmount;
+@property (nonatomic, copy) NSString * _Nullable ruleId;
+@property (nonatomic, copy) NSString * _Nullable combinationKey;
+@property (nonatomic, copy) NSString * _Nullable combinationUUID;
+@property (nonatomic, copy) NSString * _Nullable requestUuid;
++ (PayUCharges * _Nullable)getObjectWithJson:(NSDictionary<NSString *, id> * _Nonnull)json SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithChargeUuid:(NSString * _Nullable)chargeUuid chargeName:(NSString * _Nullable)chargeName baseFee:(double)baseFee taxAmount:(double)taxAmount ruleId:(NSString * _Nullable)ruleId combinationKey:(NSString * _Nullable)combinationKey combinationUUID:(NSString * _Nullable)combinationUUID requestUuid:(NSString * _Nullable)requestUuid OBJC_DESIGNATED_INITIALIZER;
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS("_TtC13PayUParamsKit27PayUCommonDynamicAttributes")
+@interface PayUCommonDynamicAttributes : NSObject <NSCopying>
+@property (nonatomic, copy) NSString * _Nullable mode;
+@property (nonatomic, copy) NSString * _Nullable action;
+- (nonnull instancetype)initWithMode:(NSString * _Nullable)mode action:(NSString * _Nullable)action OBJC_DESIGNATED_INITIALIZER;
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 SWIFT_CLASS("_TtC13PayUParamsKit26PayUDeleteQuickPayResponse")
 @interface PayUDeleteQuickPayResponse : PayUBaseModel
@@ -2884,6 +3014,17 @@ typedef SWIFT_ENUM(NSInteger, PayUErrorType, open) {
   PayUErrorTypeInvalidHash = 3,
 };
 
+@class PayUVariableDynamicAttributes;
+SWIFT_CLASS("_TtC13PayUParamsKit23PayUFetchConvFeeRequest")
+@interface PayUFetchConvFeeRequest : NSObject <NSCopying>
+@property (nonatomic, strong) PayUCommonDynamicAttributes * _Nullable commonDynamicAttributes;
+@property (nonatomic, copy) NSArray<PayUVariableDynamicAttributes *> * _Nullable variableDynamicAttributesList;
+- (nonnull instancetype)initWithCommonDynamicAttributes:(PayUCommonDynamicAttributes * _Nullable)commonDynamicAttributes variableDynamicAttributesList:(NSArray<PayUVariableDynamicAttributes *> * _Nullable)variableDynamicAttributesList OBJC_DESIGNATED_INITIALIZER;
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 enum PayULanguageCode : NSInteger;
 SWIFT_CLASS("_TtC13PayUParamsKit12PayULanguage")
 @interface PayULanguage : NSObject
@@ -2934,8 +3075,9 @@ SWIFT_CLASS("_TtC13PayUParamsKit23PayUModelAllOfferDetail")
 @property (nonatomic, copy) NSArray<Offer *> * _Nullable offers;
 @property (nonatomic, strong) SkusDetail * _Nullable skusDetail;
 @property (nonatomic) BOOL isUserPersonalizedOffersAvailable;
+@property (nonatomic) BOOL couponsAvailable;
 + (PayUModelAllOfferDetail * _Nullable)getObjectWithJson:(NSDictionary<NSString *, id> * _Nonnull)json SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithClientID:(NSInteger)clientID mid:(NSInteger)mid offerAmount:(double)offerAmount offers:(NSArray<Offer *> * _Nullable)offers skusDetail:(SkusDetail * _Nullable)skusDetail isUserPersonalizedOffersAvailable:(BOOL)isUserPersonalizedOffersAvailable OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithClientID:(NSInteger)clientID mid:(NSInteger)mid offerAmount:(double)offerAmount offers:(NSArray<Offer *> * _Nullable)offers skusDetail:(SkusDetail * _Nullable)skusDetail isUserPersonalizedOffersAvailable:(BOOL)isUserPersonalizedOffersAvailable couponsAvailable:(BOOL)couponsAvailable OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -3079,6 +3221,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit16PayUPaymentParam")
 @property (nonatomic, copy) NSArray<PayUBeneficiaryParams *> * _Nullable payuBeneficieryDetails;
 @property (nonatomic, copy) NSString * _Nullable additionalCharges;
 @property (nonatomic, copy) NSString * _Nullable percentageAdditionalCharges;
+@property (nonatomic, copy) NSArray<PayUCharges *> * _Nullable charges;
 - (nonnull instancetype)initWithKey:(NSString * _Nonnull)key transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email phone:(NSString * _Nonnull)phone surl:(NSString * _Nonnull)surl furl:(NSString * _Nonnull)furl environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -3334,6 +3477,16 @@ SWIFT_CLASS("_TtC13PayUParamsKit13PayUVSCParams")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+SWIFT_CLASS("_TtC13PayUParamsKit29PayUVariableDynamicAttributes")
+@interface PayUVariableDynamicAttributes : NSObject <NSCopying>
+@property (nonatomic, copy) NSString * _Nullable combinationKey;
+@property (nonatomic, copy) NSString * _Nullable ibiboCode;
+- (nonnull instancetype)initWithCombinationKey:(NSString * _Nullable)combinationKey ibiboCode:(NSString * _Nullable)ibiboCode OBJC_DESIGNATED_INITIALIZER;
+- (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 SWIFT_CLASS("_TtC13PayUParamsKit17PayUVerifyPayment")
 @interface PayUVerifyPayment : NSObject
 @property (nonatomic, strong) PayUBinData * _Nullable binData;
@@ -3516,6 +3669,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit3UPI")
 typedef SWIFT_ENUM(NSInteger, VerificationModeType, open) {
   VerificationModeTypeDebitCard = 0,
   VerificationModeTypeNetBanking = 1,
+  VerificationModeTypeAadhaar = 2,
 };
 
 SWIFT_CLASS("_TtC13PayUParamsKit6Wallet")
