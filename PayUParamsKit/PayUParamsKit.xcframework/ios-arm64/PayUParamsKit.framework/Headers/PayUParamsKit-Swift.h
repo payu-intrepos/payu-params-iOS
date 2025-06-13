@@ -610,6 +610,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull BILLING_RULE;)
 + (NSString * _Nonnull)BILLING_RULE SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull BILLING_DATE;)
++ (NSString * _Nonnull)BILLING_DATE SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull BILLING_LIMIT;)
 + (NSString * _Nonnull)BILLING_LIMIT SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull NOTIFYURL;)
@@ -959,7 +961,6 @@ SWIFT_CLASS("_TtC13PayUParamsKit9PPKHashes")
 enum PayUBillingCycle : NSInteger;
 @class NSDate;
 @class PayUPaymentParam;
-@class PayUSIParams;
 SWIFT_CLASS("_TtC13PayUParamsKit8PPKUtils")
 @interface PPKUtils : NSObject
 + (NSString * _Nonnull)billingCycleToString:(enum PayUBillingCycle)billingCycle SWIFT_WARN_UNUSED_RESULT;
@@ -972,8 +973,8 @@ SWIFT_CLASS("_TtC13PayUParamsKit8PPKUtils")
 + (NSDictionary<NSString *, id> * _Nullable)getJSONFrom:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)convertJsonToPostParam:(NSDictionary<NSString *, NSString *> * _Nonnull)json SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isSITransaction:(PayUPaymentParam * _Nonnull)params SWIFT_WARN_UNUSED_RESULT;
-+ (NSDictionary<NSString *, NSString *> * _Nonnull)getSIPostParams:(PayUSIParams * _Nullable)siParam isOTMTxn:(BOOL)isOTMTxn SWIFT_WARN_UNUSED_RESULT;
-+ (NSString * _Nonnull)getSIDetailsPostParams:(PayUSIParams * _Nullable)siParam :(BOOL)isOTMTxn SWIFT_WARN_UNUSED_RESULT;
++ (NSDictionary<NSString *, NSString *> * _Nonnull)getSIPostParams:(PayUPaymentParam * _Nullable)params isOTMTxn:(BOOL)isOTMTxn SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)getSIDetailsPostParams:(PayUPaymentParam * _Nullable)params :(BOOL)isOTMTxn SWIFT_WARN_UNUSED_RESULT;
 + (NSDictionary<NSString *, NSString *> * _Nonnull)getDeviceRelatedParam SWIFT_WARN_UNUSED_RESULT;
 + (NSDictionary<NSString *, NSString *> * _Nonnull)getAnalyticsParams:(PayUPaymentParam * _Nonnull)paymentParam SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)escape:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
@@ -1335,6 +1336,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit27PayUPaymentOptionIbiboCodes")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class PayUSIParams;
 @class PayUUserDefines;
 @class PayUVSCParams;
 @class PayUSkuDetails;
@@ -1523,6 +1525,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit12PayUSIParams")
 @property (nonatomic, copy) NSString * _Nullable remarks;
 @property (nonatomic, copy) NSString * _Nullable billingLimit;
 @property (nonatomic, copy) NSString * _Nullable billingRule;
+@property (nonatomic, copy) NSString * _Nullable billingDate;
 @property (nonatomic) BOOL isPreAuthTxn;
 - (nonnull instancetype)initWithBillingAmount:(NSString * _Nonnull)billingAmount paymentStartDate:(NSDate * _Nonnull)paymentStartDate paymentEndDate:(NSDate * _Nonnull)paymentEndDate billingCycle:(enum PayUBillingCycle)billingCycle billingInterval:(NSNumber * _Nonnull)billingInterval OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;

@@ -254,6 +254,7 @@ import _SwiftConcurrencyShims
   case bnpl
   case other
   case clw
+  public func getTypeName() -> Swift.String
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -857,6 +858,7 @@ extension PayUParamsKit.PayULanguageCode {
   @objc public var remarks: Swift.String?
   @objc public var billingLimit: Swift.String?
   @objc public var billingRule: Swift.String?
+  @objc public var billingDate: Swift.String?
   @objc public var isPreAuthTxn: Swift.Bool
   @objc public init(billingAmount: Swift.String, paymentStartDate: Foundation.Date, paymentEndDate: Foundation.Date, billingCycle: PayUParamsKit.PayUBillingCycle, billingInterval: Foundation.NSNumber)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
@@ -898,8 +900,8 @@ extension Swift.Dictionary {
   @objc public class func getJSON(from string: Swift.String) -> [Swift.String : Any]?
   @objc public class func convertJsonToPostParam(_ json: [Swift.String : Swift.String]) -> Swift.String
   @objc public class func isSITransaction(_ params: PayUParamsKit.PayUPaymentParam) -> Swift.Bool
-  @objc public class func getSIPostParams(_ siParam: PayUParamsKit.PayUSIParams?, isOTMTxn: Swift.Bool = false) -> [Swift.String : Swift.String]
-  @objc public class func getSIDetailsPostParams(_ siParam: PayUParamsKit.PayUSIParams?, _ isOTMTxn: Swift.Bool = false) -> Swift.String
+  @objc public class func getSIPostParams(_ params: PayUParamsKit.PayUPaymentParam?, isOTMTxn: Swift.Bool = false) -> [Swift.String : Swift.String]
+  @objc public class func getSIDetailsPostParams(_ params: PayUParamsKit.PayUPaymentParam?, _ isOTMTxn: Swift.Bool = false) -> Swift.String
   @objc public class func getDeviceRelatedParam() -> [Swift.String : Swift.String]
   @objc public class func getAnalyticsParams(_ paymentParam: PayUParamsKit.PayUPaymentParam) -> [Swift.String : Swift.String]
   @objc public class func escape(_ string: Swift.String) -> Swift.String
@@ -984,6 +986,7 @@ extension Swift.Dictionary {
     @objc public static let platform: Swift.String
     @objc public static let name: Swift.String
     @objc public static let BILLING_RULE: Swift.String
+    @objc public static let BILLING_DATE: Swift.String
     @objc public static let BILLING_LIMIT: Swift.String
     @objc public static let NOTIFYURL: Swift.String
     @objc public static let LASTNAME: Swift.String
