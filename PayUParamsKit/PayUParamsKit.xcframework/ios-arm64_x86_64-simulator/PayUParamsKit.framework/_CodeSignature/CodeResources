@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oUtgyiAR3lSacAVGSAFTnC+2wds=
+		igeLUy/dxmAH55bG9sOeCHJ/Uzo=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		CzWKZoL+lUlZv3aqSuWD5K5YMNk=
+		FaAI7jkAxha7EitXKfUmObYnMkk=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UmLVaNBNb3lteiqJUOpRFTo73wI=
+		C09a8U3EFUT3l668lCrdre86V/U=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		CzWKZoL+lUlZv3aqSuWD5K5YMNk=
+		FaAI7jkAxha7EitXKfUmObYnMkk=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		EK+tYjxwGhgtOEI9JW2BXa/Gi5k=
+		orKh6TZ3wl/Yzrjb0BcjA35x2U8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CMBtH+aCa0oNOhZRbV7qvVKWi/T8DLLBHnFFvqqJIBM=
+			diTvUd5de3T9KT3Su9CamXExUT7JmVj33uwPQG693jo=
 			</data>
 		</dict>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -113,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vKxogALPbwcIiU4qhHzSmFVX0es3NdeACKEOfIrkuD0=
+			jO6Q6h9A6DOnimouoKIs8d2g73fn3Fz15lpXKKhVCYc=
 			</data>
 		</dict>
 		<key>Modules/PayUParamsKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CMBtH+aCa0oNOhZRbV7qvVKWi/T8DLLBHnFFvqqJIBM=
+			diTvUd5de3T9KT3Su9CamXExUT7JmVj33uwPQG693jo=
 			</data>
 		</dict>
 		<key>Modules/PayUParamsKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vLwISIXWiNc/JDFy4a66ZlVKskYfxdYUGCDH3CpTP14=
+			ZMEvvaMGbW5tdDA7lqPo2/qR7zFXd2q+M+euuENOlCo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
