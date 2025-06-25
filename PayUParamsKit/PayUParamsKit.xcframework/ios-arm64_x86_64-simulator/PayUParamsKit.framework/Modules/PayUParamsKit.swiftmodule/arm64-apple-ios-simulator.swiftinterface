@@ -56,6 +56,7 @@ import _SwiftConcurrencyShims
   public var apiStatus: PayUParamsKit.ApiStatus?
   @objc public var id: Swift.Double
   @objc public var ifscCode: Swift.String?
+  @objc public var loadAmount: Swift.String?
   @objc public var charges: [PayUParamsKit.PayUCharges]
   @objc public var paymentType: PayUParamsKit.PaymentType {
     @objc get
@@ -173,6 +174,10 @@ import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers @objcMembers public class Wallet : PayUParamsKit.CCDC {
   @objc public var maskedAccountNumber: Swift.String?
   @objc public var twidCustomerHash: Swift.String?
+  @objc public var mpin: Swift.String?
+  @objc public var token: Swift.String?
+  @objc public var aesKey: Swift.String?
+  @objc public var otp: Swift.String?
   @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
   @objc deinit
@@ -184,7 +189,6 @@ import _SwiftConcurrencyShims
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class CLW : PayUParamsKit.PaymentOption {
   @objc public var walletUrn: Swift.String?
-  @objc public var loadAmount: Swift.String?
   public var balance: Swift.Double?
   @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
@@ -909,6 +913,7 @@ extension Swift.Dictionary {
   @objc public class func query(_ parameters: [Swift.String : Any], shouldEscape: Swift.Bool) -> Swift.String
   public class func getObject<T>(for type: T.Type, json: [Swift.String : Any]) -> T? where T : Swift.Decodable
   @objc public class func getDeviceDetail() -> Swift.String
+  @objc public class func mobileNumberWithCountryCode(_ phone: Swift.String) -> Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -1050,10 +1055,17 @@ extension Swift.Dictionary {
     @objc public static let QUANTITY: Swift.String
     @objc public static let ADDITIONAL_CHARGES: Swift.String
     @objc public static let PERCHENTAGE_ADDITIONAL_CHARGES: Swift.String
+    @objc public static let MPIN: Swift.String
+    @objc public static let TOKEN: Swift.String
+    @objc public static let olwKey: Swift.String
+    @objc public static let OLW_ENCRYPTED_KEY: Swift.String
+    @objc public static let OTP: Swift.String
+    @objc public static let ppiInfo: Swift.String
     @objc public static let REQUEST_UUID: Swift.String
     @objc public static let COMBINATION_UUID: Swift.String
     @objc public static let CHARGE_UUIDS: Swift.String
     @objc public static let PRE_AUTHORIZE: Swift.String
+    @objc public static let DEVICE_ID: Swift.String
     @objc override dynamic public init()
     @objc deinit
   }
@@ -1111,6 +1123,7 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   case mobileRedirection
   case fullCardRedirection
   case mobile
+  case olwRedirection
   public init?(rawValue: Swift.String)
   public typealias AllCases = [PayUParamsKit.PayUPaymentNavigationType]
   public typealias RawValue = Swift.String
@@ -1172,6 +1185,8 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   @objc public var additionalCharges: Swift.String?
   @objc public var percentageAdditionalCharges: Swift.String?
   @objc public var charges: [PayUParamsKit.PayUCharges]?
+  @objc public var olwParams: PayUParamsKit.PayUModelOLWParams?
+  @objc public var flowType: Swift.String?
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String, surl: Swift.String, furl: Swift.String, environment: PayUParamsKit.Environment)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
@@ -1280,6 +1295,17 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+@objc public class PayUModelOLWParams : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc public var mpin: Swift.String?
+  @objc public var latestMpin: Swift.String?
+  @objc public var otp: Swift.String?
+  @objc public var action: Swift.String?
+  @objc public var token: Swift.String?
+  @objc public var key: Swift.String?
+  @objc public init(mpin: Swift.String? = nil, latestMpin: Swift.String? = nil, otp: Swift.String? = nil, action: Swift.String? = nil, token: Swift.String? = nil, key: Swift.String? = nil)
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
 @objc public class PayUSDKConfiguration : PayUParamsKit.PayUBaseModel {
   @objc public var key: Swift.String?
   @objc public var value: Any?
@@ -1288,6 +1314,26 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   @objc public var merchantId: Swift.Int
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
+}
+@objc public class PayUOLWMpinOtpResponse : ObjectiveC.NSObject, Swift.Codable, Foundation.NSCopying {
+  @objc public var bankId: Swift.Int
+  @objc public var responseCode: Swift.String?
+  @objc public var issueCode: Swift.String?
+  @objc public var responseMessage: Swift.String?
+  @objc public var errorMessage: Swift.String?
+  @objc public var messageCode: Swift.Int
+  @objc public var clientTxnId: Swift.String?
+  @objc public var responseDateTime: Swift.String?
+  @objc public var token: Swift.String?
+  @objc public var tokenExpiryTime: Swift.String?
+  @objc public var mpinExpiryTime: Swift.String?
+  @objc public var deviceId: Swift.String?
+  @objc public class func getObject(json: [Swift.String : Any]) -> PayUParamsKit.PayUOLWMpinOtpResponse?
+  @objc public init(bankId: Swift.Int, responseCode: Swift.String?, issueCode: Swift.String?, responseMessage: Swift.String?, errorMessage: Swift.String?, messageCode: Swift.Int, clientTxnId: Swift.String?, responseDateTime: Swift.String?, token: Swift.String?, tokenExpiryTime: Swift.String?, mpinExpiryTime: Swift.String?, deviceId: Swift.String?)
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUPaymentValidations : ObjectiveC.NSObject {
   public func validatePaymentDetails(_ paymentParam: PayUParamsKit.PayUPaymentParam) -> (isValidDetails: Swift.Bool, errorMessage: Swift.String)
