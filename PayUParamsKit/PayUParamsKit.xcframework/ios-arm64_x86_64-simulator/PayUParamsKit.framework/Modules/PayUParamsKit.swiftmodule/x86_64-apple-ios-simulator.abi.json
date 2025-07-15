@@ -41616,6 +41616,1544 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "PayUWealthProducts",
+        "printedName": "PayUWealthProducts",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(py)type",
+            "mangledName": "$s13PayUParamsKit0A15UWealthProductsC4typeSSvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)type",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC4typeSSvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)setType:",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC4typeSSvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit0A15UWealthProductsC4typeSSvM",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC4typeSSvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "plan",
+            "printedName": "plan",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(py)plan",
+            "mangledName": "$s13PayUParamsKit0A15UWealthProductsC4planSSSgvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)plan",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC4planSSSgvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)setPlan:",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC4planSSSgvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit0A15UWealthProductsC4planSSSgvM",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC4planSSSgvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "folio",
+            "printedName": "folio",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(py)folio",
+            "mangledName": "$s13PayUParamsKit0A15UWealthProductsC5folioSSSgvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)folio",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC5folioSSSgvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)setFolio:",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC5folioSSSgvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit0A15UWealthProductsC5folioSSSgvM",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC5folioSSSgvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "amount",
+            "printedName": "amount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(py)amount",
+            "mangledName": "$s13PayUParamsKit0A15UWealthProductsC6amountSSvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)amount",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC6amountSSvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)setAmount:",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC6amountSSvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit0A15UWealthProductsC6amountSSvM",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC6amountSSvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "option",
+            "printedName": "option",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(py)option",
+            "mangledName": "$s13PayUParamsKit0A15UWealthProductsC6optionSSSgvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)option",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC6optionSSSgvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)setOption:",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC6optionSSSgvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit0A15UWealthProductsC6optionSSSgvM",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC6optionSSSgvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scheme",
+            "printedName": "scheme",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(py)scheme",
+            "mangledName": "$s13PayUParamsKit0A15UWealthProductsC6schemeSSSgvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)scheme",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC6schemeSSSgvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)setScheme:",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC6schemeSSSgvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit0A15UWealthProductsC6schemeSSSgvM",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC6schemeSSSgvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "receipt",
+            "printedName": "receipt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(py)receipt",
+            "mangledName": "$s13PayUParamsKit0A15UWealthProductsC7receiptSSvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)receipt",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC7receiptSSvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)setReceipt:",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC7receiptSSvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit0A15UWealthProductsC7receiptSSvM",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC7receiptSSvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mfMemberID",
+            "printedName": "mfMemberID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(py)mfMemberID",
+            "mangledName": "$s13PayUParamsKit0A15UWealthProductsC10mfMemberIDSSvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)mfMemberID",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC10mfMemberIDSSvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)setMfMemberID:",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC10mfMemberIDSSvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit0A15UWealthProductsC10mfMemberIDSSvM",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC10mfMemberIDSSvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mfUserID",
+            "printedName": "mfUserID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(py)mfUserID",
+            "mangledName": "$s13PayUParamsKit0A15UWealthProductsC8mfUserIDSSvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)mfUserID",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC8mfUserIDSSvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)setMfUserID:",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC8mfUserIDSSvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit0A15UWealthProductsC8mfUserIDSSvM",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC8mfUserIDSSvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mfPartner",
+            "printedName": "mfPartner",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(py)mfPartner",
+            "mangledName": "$s13PayUParamsKit0A15UWealthProductsC9mfPartnerSSvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)mfPartner",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC9mfPartnerSSvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)setMfPartner:",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC9mfPartnerSSvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit0A15UWealthProductsC9mfPartnerSSvM",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC9mfPartnerSSvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mfInvestmentType",
+            "printedName": "mfInvestmentType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(py)mfInvestmentType",
+            "mangledName": "$s13PayUParamsKit0A15UWealthProductsC16mfInvestmentTypeSSvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)mfInvestmentType",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC16mfInvestmentTypeSSvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)setMfInvestmentType:",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC16mfInvestmentTypeSSvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit0A15UWealthProductsC16mfInvestmentTypeSSvM",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC16mfInvestmentTypeSSvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mfAMCCode",
+            "printedName": "mfAMCCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(py)mfAMCCode",
+            "mangledName": "$s13PayUParamsKit0A15UWealthProductsC9mfAMCCodeSSSgvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)mfAMCCode",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC9mfAMCCodeSSSgvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)setMfAMCCode:",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC9mfAMCCodeSSSgvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit0A15UWealthProductsC9mfAMCCodeSSSgvM",
+                "mangledName": "$s13PayUParamsKit0A15UWealthProductsC9mfAMCCodeSSSgvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(type:plan:folio:amount:option:scheme:receipt:mfMemberID:mfUserID:mfPartner:mfInvestmentType:mfAMCCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUWealthProducts",
+                "printedName": "PayUParamsKit.PayUWealthProducts",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)initWithType:plan:folio:amount:option:scheme:receipt:mfMemberID:mfUserID:mfPartner:mfInvestmentType:mfAMCCode:",
+            "mangledName": "$s13PayUParamsKit0A15UWealthProductsC4type4plan5folio6amount6option6scheme7receipt10mfMemberID0m4UserO00M7Partner0M14InvestmentType0M7AMCCodeACSS_SSSgAPSSA2PS5SAPtcfc",
+            "moduleName": "PayUParamsKit",
+            "objc_name": "initWithType:plan:folio:amount:option:scheme:receipt:mfMemberID:mfUserID:mfPartner:mfInvestmentType:mfAMCCode:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "copy",
+            "printedName": "copy(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ObjectiveC.NSZone?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSZone",
+                    "printedName": "ObjectiveC.NSZone",
+                    "usr": "s:10ObjectiveC6NSZoneV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)copyWithZone:",
+            "mangledName": "$s13PayUParamsKit0A15UWealthProductsC4copy4withyp10ObjectiveC6NSZoneVSg_tF",
+            "moduleName": "PayUParamsKit",
+            "objc_name": "copyWithZone:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUWealthProducts",
+                "printedName": "PayUParamsKit.PayUWealthProducts",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts(im)init",
+            "mangledName": "$s13PayUParamsKit0A15UWealthProductsCACycfc",
+            "moduleName": "PayUParamsKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts",
+        "mangledName": "$s13PayUParamsKit0A15UWealthProductsC",
+        "moduleName": "PayUParamsKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUParamsKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "PPKValidator",
         "printedName": "PPKValidator",
         "children": [
@@ -66690,6 +68228,59 @@
           },
           {
             "kind": "Function",
+            "name": "getWealthProduct",
+            "printedName": "getWealthProduct(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PayUParamsKit.PayUWealthProducts]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PayUParamsKit.PayUWealthProducts]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUWealthProducts",
+                        "printedName": "PayUParamsKit.PayUWealthProducts",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PPKUtils(cm)getWealthProduct:",
+            "mangledName": "$s13PayUParamsKit8PPKUtilsC16getWealthProductySSSgSayAA0A15UWealthProductsCGSgFZ",
+            "moduleName": "PayUParamsKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getJSON",
             "printedName": "getJSON(from:)",
             "children": [
@@ -82839,6 +84430,147 @@
                 "declKind": "Accessor",
                 "usr": "s:13PayUParamsKit0A13UPaymentParamC7chargesSayAA0A8UChargesCGSgvM",
                 "mangledName": "$s13PayUParamsKit0A13UPaymentParamC7chargesSayAA0A8UChargesCGSgvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "products",
+            "printedName": "products",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PayUParamsKit.PayUWealthProducts]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PayUParamsKit.PayUWealthProducts]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUWealthProducts",
+                        "printedName": "PayUParamsKit.PayUWealthProducts",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam(py)products",
+            "mangledName": "$s13PayUParamsKit0A13UPaymentParamC8productsSayAA0A15UWealthProductsCGSgvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PayUParamsKit.PayUWealthProducts]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PayUParamsKit.PayUWealthProducts]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUWealthProducts",
+                            "printedName": "PayUParamsKit.PayUWealthProducts",
+                            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam(im)products",
+                "mangledName": "$s13PayUParamsKit0A13UPaymentParamC8productsSayAA0A15UWealthProductsCGSgvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PayUParamsKit.PayUWealthProducts]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PayUParamsKit.PayUWealthProducts]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUWealthProducts",
+                            "printedName": "PayUParamsKit.PayUWealthProducts",
+                            "usr": "c:@M@PayUParamsKit@objc(cs)PayUWealthProducts"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam(im)setProducts:",
+                "mangledName": "$s13PayUParamsKit0A13UPaymentParamC8productsSayAA0A15UWealthProductsCGSgvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit0A13UPaymentParamC8productsSayAA0A15UWealthProductsCGSgvM",
+                "mangledName": "$s13PayUParamsKit0A13UPaymentParamC8productsSayAA0A15UWealthProductsCGSgvM",
                 "moduleName": "PayUParamsKit",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -103685,238 +105417,238 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "FloatLiteral",
-      "offset": 10871,
+      "offset": 10824,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "FloatLiteral",
-      "offset": 10917,
+      "offset": 10870,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "BooleanLiteral",
-      "offset": 11138,
+      "offset": 11091,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "BooleanLiteral",
-      "offset": 11179,
+      "offset": 11132,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "BooleanLiteral",
-      "offset": 14409,
+      "offset": 14362,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15112,
+      "offset": 15065,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15124,
+      "offset": 15077,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15199,
+      "offset": 15152,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15213,
+      "offset": 15166,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15226,
+      "offset": 15179,
       "length": 4,
       "value": "3"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15240,
+      "offset": 15193,
       "length": 7,
       "value": "4"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15257,
+      "offset": 15210,
       "length": 5,
       "value": "5"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15272,
+      "offset": 15225,
       "length": 8,
       "value": "6"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15290,
+      "offset": 15243,
       "length": 10,
       "value": "7"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15310,
+      "offset": 15263,
       "length": 5,
       "value": "8"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15325,
+      "offset": 15278,
       "length": 16,
       "value": "9"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15351,
+      "offset": 15304,
       "length": 7,
       "value": "10"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15368,
+      "offset": 15321,
       "length": 6,
       "value": "11"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15438,
+      "offset": 15391,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15458,
+      "offset": 15411,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15471,
+      "offset": 15424,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15487,
+      "offset": 15440,
       "length": 3,
       "value": "4"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15500,
+      "offset": 15453,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15519,
+      "offset": 15472,
       "length": 8,
       "value": "6"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15537,
+      "offset": 15490,
       "length": 6,
       "value": "7"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15553,
+      "offset": 15506,
       "length": 4,
       "value": "8"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15567,
+      "offset": 15520,
       "length": 5,
       "value": "9"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 15582,
+      "offset": 15535,
       "length": 3,
       "value": "10"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16440,
+      "offset": 16393,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16452,
+      "offset": 16405,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16470,
+      "offset": 16423,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16487,
+      "offset": 16440,
       "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16557,
+      "offset": 16510,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16573,
+      "offset": 16526,
       "length": 10,
       "value": "2"
     },
@@ -104084,14 +105816,14 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "BooleanLiteral",
-      "offset": 26335,
+      "offset": 26465,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "BooleanLiteral",
-      "offset": 28103,
+      "offset": 28235,
       "length": 5,
       "value": "false"
     },
@@ -104425,16 +106157,16 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Charges.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PayUCharges.swift",
       "kind": "IntegerLiteral",
-      "offset": 393,
+      "offset": 379,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Charges.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PayUCharges.swift",
       "kind": "IntegerLiteral",
-      "offset": 436,
+      "offset": 422,
       "length": 1,
       "value": "0"
     },
@@ -104525,14 +106257,14 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Utils\/PPKUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 3443,
+      "offset": 5298,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Utils\/PPKUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 4060,
+      "offset": 5915,
       "length": 5,
       "value": "false"
     },
@@ -106751,14 +108483,14 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PayUPaymentParam.swift",
       "kind": "IntegerLiteral",
-      "offset": 4518,
+      "offset": 4598,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PayUPaymentParam.swift",
       "kind": "IntegerLiteral",
-      "offset": 4529,
+      "offset": 4609,
       "length": 4,
       "value": "1"
     },

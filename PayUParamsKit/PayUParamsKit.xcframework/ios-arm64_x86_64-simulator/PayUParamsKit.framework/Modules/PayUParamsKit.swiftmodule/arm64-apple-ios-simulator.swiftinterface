@@ -534,6 +534,23 @@ import _SwiftConcurrencyShims
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
 }
+@objc public class PayUWealthProducts : ObjectiveC.NSObject, Foundation.NSCopying {
+  @objc public var type: Swift.String
+  @objc public var plan: Swift.String?
+  @objc public var folio: Swift.String?
+  @objc public var amount: Swift.String
+  @objc public var option: Swift.String?
+  @objc public var scheme: Swift.String?
+  @objc public var receipt: Swift.String
+  @objc public var mfMemberID: Swift.String
+  @objc public var mfUserID: Swift.String
+  @objc public var mfPartner: Swift.String
+  @objc public var mfInvestmentType: Swift.String
+  @objc public var mfAMCCode: Swift.String?
+  @objc public init(type: Swift.String, plan: Swift.String? = nil, folio: Swift.String? = nil, amount: Swift.String, option: Swift.String? = nil, scheme: Swift.String? = nil, receipt: Swift.String, mfMemberID: Swift.String, mfUserID: Swift.String, mfPartner: Swift.String, mfInvestmentType: Swift.String, mfAMCCode: Swift.String? = nil)
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class PPKValidator : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc deinit
@@ -901,6 +918,7 @@ extension Swift.Dictionary {
   @objc public class func dateStringFrom(_ date: Foundation.Date, formater: Swift.String = Constants.yyyyMMdd) -> Swift.String?
   @objc public class func getJSONIndividualObject(forKey key: Swift.String?, value: Swift.String?) -> Swift.String
   @objc public class func getJSONString(from json: [Swift.String : Any]) -> Swift.String?
+  @objc public class func getWealthProduct(_ products: [PayUParamsKit.PayUWealthProducts]?) -> Swift.String?
   @objc public class func getJSON(from string: Swift.String) -> [Swift.String : Any]?
   @objc public class func convertJsonToPostParam(_ json: [Swift.String : Swift.String]) -> Swift.String
   @objc public class func isSITransaction(_ params: PayUParamsKit.PayUPaymentParam) -> Swift.Bool
@@ -1185,6 +1203,7 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   @objc public var additionalCharges: Swift.String?
   @objc public var percentageAdditionalCharges: Swift.String?
   @objc public var charges: [PayUParamsKit.PayUCharges]?
+  @objc public var products: [PayUParamsKit.PayUWealthProducts]?
   @objc public var olwParams: PayUParamsKit.PayUModelOLWParams?
   @objc public var flowType: Swift.String?
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String, surl: Swift.String, furl: Swift.String, environment: PayUParamsKit.Environment)
