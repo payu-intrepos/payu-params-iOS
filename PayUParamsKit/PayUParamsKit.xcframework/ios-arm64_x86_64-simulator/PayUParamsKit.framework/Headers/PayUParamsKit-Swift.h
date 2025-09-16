@@ -1440,6 +1440,12 @@ SWIFT_CLASS("_TtC13PayUParamsKit16PayUPaymentParam")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@interface PayUPaymentParam (SWIFT_EXTENSION(PayUParamsKit))
+/// Converts PayUPaymentParam to a dictionary format suitable for logging
+/// This method converts all properties to string values for analytics logging
+- (NSDictionary<NSString *, NSString *> * _Nonnull)toLoggableDictionary SWIFT_WARN_UNUSED_RESULT;
+@end
+
 SWIFT_CLASS("_TtC13PayUParamsKit22PayUPaymentValidations")
 @interface PayUPaymentValidations : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -3365,6 +3371,12 @@ SWIFT_CLASS("_TtC13PayUParamsKit16PayUPaymentParam")
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@interface PayUPaymentParam (SWIFT_EXTENSION(PayUParamsKit))
+/// Converts PayUPaymentParam to a dictionary format suitable for logging
+/// This method converts all properties to string values for analytics logging
+- (NSDictionary<NSString *, NSString *> * _Nonnull)toLoggableDictionary SWIFT_WARN_UNUSED_RESULT;
 @end
 
 SWIFT_CLASS("_TtC13PayUParamsKit22PayUPaymentValidations")

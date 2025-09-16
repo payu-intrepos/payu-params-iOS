@@ -1219,6 +1219,9 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
     get
   }
 }
+extension PayUParamsKit.PayUPaymentParam {
+  @objc dynamic public func toLoggableDictionary() -> [Swift.String : Swift.String]
+}
 @_inheritsConvenienceInitializers @objc public class PPKHashes : ObjectiveC.NSObject {
   @objc public var paymentOptionsHash: Swift.String?
   @objc public var paymentHash: Swift.String?
