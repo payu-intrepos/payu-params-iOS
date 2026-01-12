@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayUParamsKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUParamsKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import Foundation
 @_exported import PayUParamsKit
 import Swift
@@ -1363,8 +1363,9 @@ extension PayUParamsKit.PayUPaymentParam {
   @objc public var issuerUrl: Swift.String?
   @objc public var postToBank: PayUParamsKit.PayUPostToBank?
   @objc public var mihpayid: Swift.String?
+  @objc public var id: Swift.String?
   @objc public var mode: Swift.String?, status: Swift.String?, key: Swift.String?, txnid: Swift.String?, amount: Swift.String?, addedon: Swift.String?, productinfo: Swift.String?, firstname: Swift.String?, lastname: Swift.String?, address1: Swift.String?
-  @objc public var address2: Swift.String?, city: Swift.String?, state: Swift.String?, country: Swift.String?, zipcode: Swift.String?, email: Swift.String?, phone: Swift.String?, udf1: Swift.String?, udf2: Swift.String?, udf3: Swift.String?, udf4: Swift.String?, udf5: Swift.String?, udf6: Swift.String?, udf7: Swift.String?, udf8: Swift.String?, udf9: Swift.String?, udf10: Swift.String?, card_token: Swift.String?, card_no: Swift.String?, field1: Swift.String?, field2: Swift.String?, field3: Swift.String?, field4: Swift.String?, field5: Swift.String?, field6: Swift.String?, field7: Swift.String?, field8: Swift.String?, field9: Swift.String?, field10: Swift.String?, payment_source: Swift.String?, PG_TYPE: Swift.String?, error: Swift.String?, error_Message: Swift.String?, net_amount_debit: Swift.String?, unmappedstatus: Swift.String?, bank_ref_no: Swift.String?, bank_ref_num: Swift.String?, bankcode: Swift.String?, surl: Swift.String?, curl: Swift.String?, furl: Swift.String?, card_hash: Swift.String?, partnerToken: Swift.String?
+  @objc public var error_code: Swift.String?, ibibo_code: Swift.String?, additionalCharges: Swift.String?, additional_charges: Swift.String?, discount: Swift.String?, address2: Swift.String?, city: Swift.String?, state: Swift.String?, country: Swift.String?, zipcode: Swift.String?, email: Swift.String?, phone: Swift.String?, udf1: Swift.String?, udf2: Swift.String?, udf3: Swift.String?, udf4: Swift.String?, udf5: Swift.String?, udf6: Swift.String?, udf7: Swift.String?, udf8: Swift.String?, udf9: Swift.String?, udf10: Swift.String?, card_token: Swift.String?, card_no: Swift.String?, field1: Swift.String?, field2: Swift.String?, field3: Swift.String?, field4: Swift.String?, field5: Swift.String?, field6: Swift.String?, field7: Swift.String?, field8: Swift.String?, field9: Swift.String?, field10: Swift.String?, payment_source: Swift.String?, PG_TYPE: Swift.String?, error: Swift.String?, error_Message: Swift.String?, net_amount_debit: Swift.String?, unmappedstatus: Swift.String?, bank_ref_no: Swift.String?, bank_ref_num: Swift.String?, bankcode: Swift.String?, surl: Swift.String?, curl: Swift.String?, furl: Swift.String?, card_hash: Swift.String?, partnerToken: Swift.String?
   @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
