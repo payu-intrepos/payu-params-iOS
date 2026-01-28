@@ -352,6 +352,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit13PaymentOption")
 @property (nonatomic, copy) NSString * _Nullable ifscCode;
 @property (nonatomic, copy) NSString * _Nullable loadAmount;
 @property (nonatomic, copy) NSArray<PayUCharges *> * _Nonnull charges;
+@property (nonatomic, copy) NSArray<PayUCharges *> * _Nonnull chargesSI;
 @property (nonatomic, readonly) enum PaymentType paymentType;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
@@ -420,6 +421,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit11CardBinInfo")
 @property (nonatomic, copy) NSString * _Nullable bin;
 @property (nonatomic, copy) NSArray<EMI *> * _Nullable emis;
 @property (nonatomic, copy) NSArray<PayUCharges *> * _Nullable charges;
+@property (nonatomic, copy) NSArray<PayUCharges *> * _Nullable chargesSI;
 @property (nonatomic, strong) PayUModelOfferDetail * _Nullable offerDetails;
 @end
 
@@ -473,6 +475,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull yyyy
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull ddMMyyyy;)
 + (NSString * _Nonnull)ddMMyyyy SWIFT_WARN_UNUSED_RESULT;
 + (void)setDdMMyyyy:(NSString * _Nonnull)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull dd_MM_yyyy;)
++ (NSString * _Nonnull)dd_MM_yyyy SWIFT_WARN_UNUSED_RESULT;
++ (void)setDd_MM_yyyy:(NSString * _Nonnull)value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double MINIMUM_AMOUNT;)
 + (double)MINIMUM_AMOUNT SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull SURL;)
@@ -770,6 +775,22 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)PRE_AUTHORIZE SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull DEVICE_ID;)
 + (NSString * _Nonnull)DEVICE_ID SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull chargeUUID;)
++ (NSString * _Nonnull)chargeUUID SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull chargeName;)
++ (NSString * _Nonnull)chargeName SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull baseFee;)
++ (NSString * _Nonnull)baseFee SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull taxAmount;)
++ (NSString * _Nonnull)taxAmount SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ruleId;)
++ (NSString * _Nonnull)ruleId SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull recurringAmount;)
++ (NSString * _Nonnull)recurringAmount SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull charges;)
++ (NSString * _Nonnull)charges SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull siConvenienceFeeData;)
++ (NSString * _Nonnull)siConvenienceFeeData SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -990,6 +1011,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit30OnDemandConvenienceFeeResponse")
 @interface OnDemandConvenienceFeeResponse : PayUBaseModel
 @property (nonatomic, readonly, strong) ValidateOfferData * _Nullable validateOfferData;
 @property (nonatomic, readonly, strong) PricingCfData * _Nullable pricingConvFeeData;
+@property (nonatomic, readonly, strong) PricingCfData * _Nullable pricingConvFeeDataSI;
 @property (nonatomic, readonly, strong) PricingDynamicCfData * _Nullable pricingDynamicCfData;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1024,7 +1046,6 @@ SWIFT_CLASS("_TtC13PayUParamsKit8PPKUtils")
 + (NSString * _Nonnull)convertJsonToPostParam:(NSDictionary<NSString *, NSString *> * _Nonnull)json SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isSITransaction:(PayUPaymentParam * _Nonnull)params SWIFT_WARN_UNUSED_RESULT;
 + (NSDictionary<NSString *, NSString *> * _Nonnull)getSIPostParams:(PayUPaymentParam * _Nullable)params isOTMTxn:(BOOL)isOTMTxn SWIFT_WARN_UNUSED_RESULT;
-+ (NSString * _Nonnull)getSIDetailsPostParams:(PayUPaymentParam * _Nullable)params :(BOOL)isOTMTxn SWIFT_WARN_UNUSED_RESULT;
 + (NSDictionary<NSString *, NSString *> * _Nonnull)getDeviceRelatedParam SWIFT_WARN_UNUSED_RESULT;
 + (NSDictionary<NSString *, NSString *> * _Nonnull)getAnalyticsParams:(PayUPaymentParam * _Nonnull)paymentParam SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)escape:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
@@ -1457,6 +1478,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit16PayUPaymentParam")
 @property (nonatomic, copy) NSString * _Nullable additionalCharges;
 @property (nonatomic, copy) NSString * _Nullable percentageAdditionalCharges;
 @property (nonatomic, copy) NSArray<PayUCharges *> * _Nullable charges;
+@property (nonatomic, copy) NSArray<PayUCharges *> * _Nullable chargesSI;
 @property (nonatomic, copy) NSArray<PayUWealthProducts *> * _Nullable products;
 @property (nonatomic, strong) PayUModelOLWParams * _Nullable olwParams;
 @property (nonatomic, copy) NSString * _Nullable flowType;

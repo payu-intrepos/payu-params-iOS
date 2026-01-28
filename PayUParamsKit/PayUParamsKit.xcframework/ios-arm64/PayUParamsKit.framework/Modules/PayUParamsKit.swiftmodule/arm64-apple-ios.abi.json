@@ -4090,6 +4090,123 @@
           },
           {
             "kind": "Var",
+            "name": "chargesSI",
+            "printedName": "chargesSI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[PayUParamsKit.PayUCharges]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUCharges",
+                    "printedName": "PayUParamsKit.PayUCharges",
+                    "usr": "c:@M@PayUParamsKit@objc(cs)PayUCharges"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption(py)chargesSI",
+            "mangledName": "$s13PayUParamsKit13PaymentOptionC9chargesSISayAA0A8UChargesCGvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PayUParamsKit.PayUCharges]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUCharges",
+                        "printedName": "PayUParamsKit.PayUCharges",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)PayUCharges"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption(im)chargesSI",
+                "mangledName": "$s13PayUParamsKit13PaymentOptionC9chargesSISayAA0A8UChargesCGvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PayUParamsKit.PayUCharges]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUCharges",
+                        "printedName": "PayUParamsKit.PayUCharges",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)PayUCharges"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption(im)setChargesSI:",
+                "mangledName": "$s13PayUParamsKit13PaymentOptionC9chargesSISayAA0A8UChargesCGvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit13PaymentOptionC9chargesSISayAA0A8UChargesCGvM",
+                "mangledName": "$s13PayUParamsKit13PaymentOptionC9chargesSISayAA0A8UChargesCGvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "paymentType",
             "printedName": "paymentType",
             "children": [
@@ -16119,6 +16236,147 @@
           },
           {
             "kind": "Var",
+            "name": "chargesSI",
+            "printedName": "chargesSI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PayUParamsKit.PayUCharges]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PayUParamsKit.PayUCharges]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUCharges",
+                        "printedName": "PayUParamsKit.PayUCharges",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)PayUCharges"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)CardBinInfo(py)chargesSI",
+            "mangledName": "$s13PayUParamsKit11CardBinInfoC9chargesSISayAA0A8UChargesCGSgvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PayUParamsKit.PayUCharges]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PayUParamsKit.PayUCharges]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUCharges",
+                            "printedName": "PayUParamsKit.PayUCharges",
+                            "usr": "c:@M@PayUParamsKit@objc(cs)PayUCharges"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)CardBinInfo(im)chargesSI",
+                "mangledName": "$s13PayUParamsKit11CardBinInfoC9chargesSISayAA0A8UChargesCGSgvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PayUParamsKit.PayUCharges]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PayUParamsKit.PayUCharges]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUCharges",
+                            "printedName": "PayUParamsKit.PayUCharges",
+                            "usr": "c:@M@PayUParamsKit@objc(cs)PayUCharges"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)CardBinInfo(im)setChargesSI:",
+                "mangledName": "$s13PayUParamsKit11CardBinInfoC9chargesSISayAA0A8UChargesCGSgvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit11CardBinInfoC9chargesSISayAA0A8UChargesCGSgvM",
+                "mangledName": "$s13PayUParamsKit11CardBinInfoC9chargesSISayAA0A8UChargesCGSgvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "offerDetails",
             "printedName": "offerDetails",
             "children": [
@@ -17668,40 +17926,26 @@
           },
           {
             "kind": "Function",
-            "name": "getTypeName",
-            "printedName": "getTypeName()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13PayUParamsKit11PaymentTypeO03getE4NameSSyF",
-            "mangledName": "$s13PayUParamsKit11PaymentTypeO03getE4NameSSyF",
-            "moduleName": "PayUParamsKit",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "getTypeActionName",
-            "printedName": "getTypeActionName()",
+            "printedName": "getTypeActionName(isSI:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:13PayUParamsKit11PaymentTypeO03getE10ActionNameSSyF",
-            "mangledName": "$s13PayUParamsKit11PaymentTypeO03getE10ActionNameSSyF",
+            "usr": "s:13PayUParamsKit11PaymentTypeO03getE10ActionName4isSISSSb_tF",
+            "mangledName": "$s13PayUParamsKit11PaymentTypeO03getE10ActionName4isSISSSb_tF",
             "moduleName": "PayUParamsKit",
             "declAttributes": [
               "AccessControl"
@@ -69317,50 +69561,6 @@
           },
           {
             "kind": "Function",
-            "name": "getSIDetailsPostParams",
-            "printedName": "getSIDetailsPostParams(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "PayUParamsKit.PayUPaymentParam?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PayUPaymentParam",
-                    "printedName": "PayUParamsKit.PayUPaymentParam",
-                    "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PayUParamsKit@objc(cs)PPKUtils(cm)getSIDetailsPostParams::",
-            "mangledName": "$s13PayUParamsKit8PPKUtilsC22getSIDetailsPostParamsySSAA0A13UPaymentParamCSg_SbtFZ",
-            "moduleName": "PayUParamsKit",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "getDeviceRelatedParam",
             "printedName": "getDeviceRelatedParam()",
             "children": [
@@ -69918,6 +70118,72 @@
                 "declKind": "Accessor",
                 "usr": "c:@M@PayUParamsKit@objc(cs)OnDemandConvenienceFeeResponse(im)pricingConvFeeData",
                 "mangledName": "$s13PayUParamsKit30OnDemandConvenienceFeeResponseC011pricingConvG4DataAA09PricingCfK0CSgvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pricingConvFeeDataSI",
+            "printedName": "pricingConvFeeDataSI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUParamsKit.PricingCfData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PricingCfData",
+                    "printedName": "PayUParamsKit.PricingCfData",
+                    "usr": "c:@M@PayUParamsKit@objc(cs)PricingCfData"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)OnDemandConvenienceFeeResponse(py)pricingConvFeeDataSI",
+            "mangledName": "$s13PayUParamsKit30OnDemandConvenienceFeeResponseC011pricingConvG6DataSIAA09PricingCfK0CSgvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayUParamsKit.PricingCfData?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PricingCfData",
+                        "printedName": "PayUParamsKit.PricingCfData",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)PricingCfData"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)OnDemandConvenienceFeeResponse(im)pricingConvFeeDataSI",
+                "mangledName": "$s13PayUParamsKit30OnDemandConvenienceFeeResponseC011pricingConvG6DataSIAA09PricingCfK0CSgvg",
                 "moduleName": "PayUParamsKit",
                 "implicit": true,
                 "declAttributes": [
@@ -71962,6 +72228,109 @@
                 "declKind": "Accessor",
                 "usr": "s:13PayUParamsKit9ConstantsC8ddMMyyyySSvMZ",
                 "mangledName": "$s13PayUParamsKit9ConstantsC8ddMMyyyySSvMZ",
+                "moduleName": "PayUParamsKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dd_MM_yyyy",
+            "printedName": "dd_MM_yyyy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)Constants(cpy)dd_MM_yyyy",
+            "mangledName": "$s13PayUParamsKit9ConstantsC10dd_MM_yyyySSvpZ",
+            "moduleName": "PayUParamsKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)Constants(cm)dd_MM_yyyy",
+                "mangledName": "$s13PayUParamsKit9ConstantsC10dd_MM_yyyySSvgZ",
+                "moduleName": "PayUParamsKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)Constants(cm)setDd_MM_yyyy:",
+                "mangledName": "$s13PayUParamsKit9ConstantsC10dd_MM_yyyySSvsZ",
+                "moduleName": "PayUParamsKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit9ConstantsC10dd_MM_yyyySSvMZ",
+                "mangledName": "$s13PayUParamsKit9ConstantsC10dd_MM_yyyySSvMZ",
                 "moduleName": "PayUParamsKit",
                 "static": true,
                 "implicit": true,
@@ -79716,6 +80085,430 @@
                 ]
               },
               {
+                "kind": "Var",
+                "name": "chargeUUID",
+                "printedName": "chargeUUID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13PayUParamsKit9ConstantsC6ParamsC10chargeUUIDSSvpZ",
+                "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC10chargeUUIDSSvpZ",
+                "moduleName": "PayUParamsKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "Final",
+                  "HasStorage",
+                  "AccessControl",
+                  "ObjC"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13PayUParamsKit9ConstantsC6ParamsC10chargeUUIDSSvgZ",
+                    "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC10chargeUUIDSSvgZ",
+                    "moduleName": "PayUParamsKit",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final",
+                      "ObjC"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "chargeName",
+                "printedName": "chargeName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13PayUParamsKit9ConstantsC6ParamsC10chargeNameSSvpZ",
+                "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC10chargeNameSSvpZ",
+                "moduleName": "PayUParamsKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "Final",
+                  "HasStorage",
+                  "AccessControl",
+                  "ObjC"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13PayUParamsKit9ConstantsC6ParamsC10chargeNameSSvgZ",
+                    "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC10chargeNameSSvgZ",
+                    "moduleName": "PayUParamsKit",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final",
+                      "ObjC"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "baseFee",
+                "printedName": "baseFee",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13PayUParamsKit9ConstantsC6ParamsC7baseFeeSSvpZ",
+                "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC7baseFeeSSvpZ",
+                "moduleName": "PayUParamsKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "Final",
+                  "HasStorage",
+                  "AccessControl",
+                  "ObjC"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13PayUParamsKit9ConstantsC6ParamsC7baseFeeSSvgZ",
+                    "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC7baseFeeSSvgZ",
+                    "moduleName": "PayUParamsKit",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final",
+                      "ObjC"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "taxAmount",
+                "printedName": "taxAmount",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13PayUParamsKit9ConstantsC6ParamsC9taxAmountSSvpZ",
+                "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC9taxAmountSSvpZ",
+                "moduleName": "PayUParamsKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "Final",
+                  "HasStorage",
+                  "AccessControl",
+                  "ObjC"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13PayUParamsKit9ConstantsC6ParamsC9taxAmountSSvgZ",
+                    "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC9taxAmountSSvgZ",
+                    "moduleName": "PayUParamsKit",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final",
+                      "ObjC"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "ruleId",
+                "printedName": "ruleId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13PayUParamsKit9ConstantsC6ParamsC6ruleIdSSvpZ",
+                "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC6ruleIdSSvpZ",
+                "moduleName": "PayUParamsKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "Final",
+                  "HasStorage",
+                  "AccessControl",
+                  "ObjC"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13PayUParamsKit9ConstantsC6ParamsC6ruleIdSSvgZ",
+                    "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC6ruleIdSSvgZ",
+                    "moduleName": "PayUParamsKit",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final",
+                      "ObjC"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "recurringAmount",
+                "printedName": "recurringAmount",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13PayUParamsKit9ConstantsC6ParamsC15recurringAmountSSvpZ",
+                "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC15recurringAmountSSvpZ",
+                "moduleName": "PayUParamsKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "Final",
+                  "HasStorage",
+                  "AccessControl",
+                  "ObjC"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13PayUParamsKit9ConstantsC6ParamsC15recurringAmountSSvgZ",
+                    "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC15recurringAmountSSvgZ",
+                    "moduleName": "PayUParamsKit",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final",
+                      "ObjC"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "charges",
+                "printedName": "charges",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13PayUParamsKit9ConstantsC6ParamsC7chargesSSvpZ",
+                "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC7chargesSSvpZ",
+                "moduleName": "PayUParamsKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "Final",
+                  "HasStorage",
+                  "AccessControl",
+                  "ObjC"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13PayUParamsKit9ConstantsC6ParamsC7chargesSSvgZ",
+                    "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC7chargesSSvgZ",
+                    "moduleName": "PayUParamsKit",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final",
+                      "ObjC"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "siConvenienceFeeData",
+                "printedName": "siConvenienceFeeData",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13PayUParamsKit9ConstantsC6ParamsC20siConvenienceFeeDataSSvpZ",
+                "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC20siConvenienceFeeDataSSvpZ",
+                "moduleName": "PayUParamsKit",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "Final",
+                  "HasStorage",
+                  "AccessControl",
+                  "ObjC"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13PayUParamsKit9ConstantsC6ParamsC20siConvenienceFeeDataSSvgZ",
+                    "mangledName": "$s13PayUParamsKit9ConstantsC6ParamsC20siConvenienceFeeDataSSvgZ",
+                    "moduleName": "PayUParamsKit",
+                    "static": true,
+                    "implicit": true,
+                    "declAttributes": [
+                      "Final",
+                      "ObjC"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init()",
@@ -87301,6 +88094,147 @@
                 "declKind": "Accessor",
                 "usr": "s:13PayUParamsKit0A13UPaymentParamC7chargesSayAA0A8UChargesCGSgvM",
                 "mangledName": "$s13PayUParamsKit0A13UPaymentParamC7chargesSayAA0A8UChargesCGSgvM",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "chargesSI",
+            "printedName": "chargesSI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PayUParamsKit.PayUCharges]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PayUParamsKit.PayUCharges]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUCharges",
+                        "printedName": "PayUParamsKit.PayUCharges",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)PayUCharges"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam(py)chargesSI",
+            "mangledName": "$s13PayUParamsKit0A13UPaymentParamC9chargesSISayAA0A8UChargesCGSgvp",
+            "moduleName": "PayUParamsKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PayUParamsKit.PayUCharges]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PayUParamsKit.PayUCharges]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUCharges",
+                            "printedName": "PayUParamsKit.PayUCharges",
+                            "usr": "c:@M@PayUParamsKit@objc(cs)PayUCharges"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam(im)chargesSI",
+                "mangledName": "$s13PayUParamsKit0A13UPaymentParamC9chargesSISayAA0A8UChargesCGSgvg",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PayUParamsKit.PayUCharges]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PayUParamsKit.PayUCharges]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUCharges",
+                            "printedName": "PayUParamsKit.PayUCharges",
+                            "usr": "c:@M@PayUParamsKit@objc(cs)PayUCharges"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam(im)setChargesSI:",
+                "mangledName": "$s13PayUParamsKit0A13UPaymentParamC9chargesSISayAA0A8UChargesCGSgvs",
+                "moduleName": "PayUParamsKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13PayUParamsKit0A13UPaymentParamC9chargesSISayAA0A8UChargesCGSgvM",
+                "mangledName": "$s13PayUParamsKit0A13UPaymentParamC9chargesSISayAA0A8UChargesCGSgvM",
                 "moduleName": "PayUParamsKit",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -109231,273 +110165,280 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "BooleanLiteral",
-      "offset": 5822,
+      "offset": 5900,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "BooleanLiteral",
-      "offset": 6431,
+      "offset": 6509,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "BooleanLiteral",
-      "offset": 6738,
+      "offset": 6816,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "BooleanLiteral",
-      "offset": 6819,
+      "offset": 6897,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "FloatLiteral",
-      "offset": 10819,
+      "offset": 10897,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "FloatLiteral",
-      "offset": 10865,
+      "offset": 10943,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "BooleanLiteral",
-      "offset": 11086,
+      "offset": 11164,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "BooleanLiteral",
-      "offset": 11127,
+      "offset": 11205,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "BooleanLiteral",
-      "offset": 11581,
+      "offset": 11659,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "BooleanLiteral",
-      "offset": 15384,
+      "offset": 15462,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16087,
+      "offset": 16206,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16099,
+      "offset": 16218,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16174,
+      "offset": 16293,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16188,
+      "offset": 16307,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16201,
+      "offset": 16320,
       "length": 4,
       "value": "3"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16215,
+      "offset": 16334,
       "length": 7,
       "value": "4"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16232,
+      "offset": 16351,
       "length": 5,
       "value": "5"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16247,
+      "offset": 16366,
       "length": 8,
       "value": "6"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16265,
+      "offset": 16384,
       "length": 10,
       "value": "7"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16285,
+      "offset": 16404,
       "length": 5,
       "value": "8"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16300,
+      "offset": 16419,
       "length": 16,
       "value": "9"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16326,
+      "offset": 16445,
       "length": 7,
       "value": "10"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16343,
+      "offset": 16462,
       "length": 6,
       "value": "11"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16413,
+      "offset": 16532,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16433,
+      "offset": 16552,
       "length": 3,
       "value": "2"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16446,
+      "offset": 16565,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16462,
+      "offset": 16581,
       "length": 3,
       "value": "4"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16475,
+      "offset": 16594,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16494,
+      "offset": 16613,
       "length": 8,
       "value": "6"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16512,
+      "offset": 16631,
       "length": 6,
       "value": "7"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16528,
+      "offset": 16647,
       "length": 4,
       "value": "8"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16542,
+      "offset": 16661,
       "length": 5,
       "value": "9"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 16557,
+      "offset": 16676,
       "length": 3,
       "value": "10"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16732,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 18315,
+      "offset": 17703,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 18327,
+      "offset": 17715,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 18345,
+      "offset": 17733,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 18362,
+      "offset": 17750,
       "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 18432,
+      "offset": 17820,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PaymentOption.swift",
       "kind": "IntegerLiteral",
-      "offset": 18448,
+      "offset": 17836,
       "length": 10,
       "value": "2"
     },
@@ -109665,14 +110606,14 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "BooleanLiteral",
-      "offset": 26465,
+      "offset": 26472,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Request Builder\/PayUPaymentCreateRequestParams.swift",
       "kind": "BooleanLiteral",
-      "offset": 28235,
+      "offset": 28242,
       "length": 5,
       "value": "false"
     },
@@ -110113,56 +111054,70 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Utils\/PPKUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 5915,
+      "offset": 6031,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Utils\/PPKUtils.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8528,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PricingEngineConvFee\/OnDemandConvenienceFeeResponse.swift",
       "kind": "StringLiteral",
-      "offset": 534,
+      "offset": 592,
       "length": 21,
       "value": "\"validate_offer_data\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PricingEngineConvFee\/OnDemandConvenienceFeeResponse.swift",
       "kind": "StringLiteral",
-      "offset": 590,
+      "offset": 648,
       "length": 17,
       "value": "\"pricing_cf_data\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PricingEngineConvFee\/OnDemandConvenienceFeeResponse.swift",
       "kind": "StringLiteral",
-      "offset": 644,
+      "offset": 702,
       "length": 25,
       "value": "\"pricing_dynamic_cf_data\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PricingEngineConvFee\/OnDemandConvenienceFeeResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1574,
+      "offset": 764,
+      "length": 20,
+      "value": "\"pricing_si_cf_data\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PricingEngineConvFee\/OnDemandConvenienceFeeResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1793,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PricingEngineConvFee\/OnDemandConvenienceFeeResponse.swift",
       "kind": "FloatLiteral",
-      "offset": 1945,
+      "offset": 2164,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PricingEngineConvFee\/OnDemandConvenienceFeeResponse.swift",
       "kind": "FloatLiteral",
-      "offset": 1984,
+      "offset": 2203,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/PricingEngineConvFee\/OnDemandConvenienceFeeResponse.swift",
       "kind": "StringLiteral",
-      "offset": 2079,
+      "offset": 2298,
       "length": 16,
       "value": "\"convenienceFee\""
     },
@@ -110182,2381 +111137,2444 @@
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 371,
+      "length": 13,
+      "value": "\"dd MMM yyyy\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 375,
+      "offset": 430,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 414,
+      "offset": 469,
       "length": 6,
       "value": "\"SURL\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 456,
+      "offset": 511,
       "length": 6,
       "value": "\"FURL\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 501,
+      "offset": 556,
       "length": 9,
       "value": "\"Payment\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 557,
+      "offset": 612,
       "length": 5,
       "value": "\"iOS\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 609,
+      "offset": 664,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 679,
+      "offset": 734,
       "length": 26,
       "value": "\"Card number is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 750,
+      "offset": 805,
       "length": 37,
       "value": "\"Card number or CardBin is Invalid, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 836,
+      "offset": 891,
       "length": 30,
       "value": "\"Card number is non-numeric, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 903,
+      "offset": 958,
       "length": 18,
       "value": "\"CVV is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 962,
+      "offset": 1017,
       "length": 22,
       "value": "\"CVV is non-numeric, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1018,
+      "offset": 1073,
       "length": 18,
       "value": "\"CVV is invalid, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1082,
+      "offset": 1137,
       "length": 27,
       "value": "\"Expiry month is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1160,
+      "offset": 1215,
       "length": 36,
       "value": "\"Expiry month is not between 1-12, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1258,
+      "offset": 1313,
       "length": 43,
       "value": "\"Expiry month is less than current month, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1346,
+      "offset": 1401,
       "length": 26,
       "value": "\"Expiry year is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1431,
+      "offset": 1486,
       "length": 47,
       "value": "\"Expiry year can't be less than current year, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1534,
+      "offset": 1589,
       "length": 43,
       "value": "\"Expiry year length greater than 4 digit, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1634,
+      "offset": 1689,
       "length": 32,
       "value": "\" is less than minimum amount, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1709,
+      "offset": 1764,
       "length": 19,
       "value": "\" is non-numeric, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1773,
+      "offset": 1828,
       "length": 27,
       "value": "\"Product Info is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1851,
+      "offset": 1906,
       "length": 43,
       "value": "\"Product Info greater than 100 character, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1937,
+      "offset": 1992,
       "length": 25,
       "value": "\"First name is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2010,
+      "offset": 2065,
       "length": 40,
       "value": "\"First name greater than 60 character, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2089,
+      "offset": 2144,
       "length": 23,
       "value": "\"email ID is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2148,
+      "offset": 2203,
       "length": 23,
       "value": "\"email ID is invalid, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2208,
+      "offset": 2263,
       "length": 18,
       "value": "\"PAN is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2260,
+      "offset": 2315,
       "length": 18,
       "value": "\"PAN is invalid, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2317,
+      "offset": 2372,
       "length": 27,
       "value": "\"phone number is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2380,
+      "offset": 2435,
       "length": 27,
       "value": "\"phone number is invalid, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2440,
+      "offset": 2495,
       "length": 14,
       "value": "\"is invalid, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2492,
+      "offset": 2547,
       "length": 19,
       "value": "\"hash is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2556,
+      "offset": 2611,
       "length": 26,
       "value": "\"Environment is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2624,
+      "offset": 2679,
       "length": 23,
       "value": "\"Invalid Environment, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2684,
+      "offset": 2739,
       "length": 18,
       "value": "\"Key is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2749,
+      "offset": 2804,
       "length": 29,
       "value": "\"Transaction ID is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2830,
+      "offset": 2885,
       "length": 44,
       "value": "\"Transaction ID greater than 25 character, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2923,
+      "offset": 2978,
       "length": 24,
       "value": "\"Bank code is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2997,
+      "offset": 3052,
       "length": 25,
       "value": "\"Wallet Urn is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3070,
+      "offset": 3125,
       "length": 23,
       "value": "\"Invalid load amount, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3138,
+      "offset": 3193,
       "length": 24,
       "value": "\"SI params is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3212,
+      "offset": 3267,
       "length": 26,
       "value": "\"Invalid biilling cycle, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3285,
+      "offset": 3340,
       "length": 25,
       "value": "\"Invalid SI start date, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3355,
+      "offset": 3410,
       "length": 23,
       "value": "\"Invalid SI end date, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3438,
+      "offset": 3493,
       "length": 31,
       "value": "\"Beneficiary details missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3535,
+      "offset": 3590,
       "length": 46,
       "value": "\"Beneficiary account holder name is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3636,
+      "offset": 3691,
       "length": 34,
       "value": "\"Account holder name is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3738,
+      "offset": 3793,
       "length": 48,
       "value": "\"Beneficiary account holder number is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3837,
+      "offset": 3892,
       "length": 47,
       "value": "\"Please enter atleast 8 digit account number, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3944,
+      "offset": 3999,
       "length": 39,
       "value": "\"Beneficiary account type is invalid, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4046,
+      "offset": 4101,
       "length": 44,
       "value": "\"Beneficiary detail mandatory for TPV txn, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4130,
+      "offset": 4185,
       "length": 15,
       "value": "\"Invalid VPA, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4194,
+      "offset": 4249,
       "length": 24,
       "value": "\"Cash card is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4275,
+      "offset": 4330,
       "length": 32,
       "value": "\"Subvention Amount is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4367,
+      "offset": 4422,
       "length": 59,
       "value": "\"Subvention Amount should be a Double value example 5.00, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4492,
+      "offset": 4547,
       "length": 76,
       "value": "\"Subvention Amount should be less than or equal to the transaction amount, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4625,
+      "offset": 4680,
       "length": 28,
       "value": "\"Stored card not selected, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4696,
+      "offset": 4751,
       "length": 18,
       "value": "\"CVV is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4774,
+      "offset": 4829,
       "length": 35,
       "value": "\"CVV length should be 4 for AMEX, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4873,
+      "offset": 4928,
       "length": 26,
       "value": "\"CVV length should be 3, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4946,
+      "offset": 5001,
       "length": 22,
       "value": "\"CVV is non-numeric, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5008,
+      "offset": 5063,
       "length": 18,
       "value": "\"CVV is invalid, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5082,
+      "offset": 5137,
       "length": 31,
       "value": "\"Sodexo sourde id is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5158,
+      "offset": 5213,
       "length": 26,
       "value": "\"Invalid payment method, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5246,
+      "offset": 5301,
       "length": 34,
       "value": "\"Stored card Dictionary missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5341,
+      "offset": 5396,
       "length": 28,
       "value": "\"Merchant hash is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5422,
+      "offset": 5477,
       "length": 27,
       "value": "\"This is not OneTap Card, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5492,
+      "offset": 5547,
       "length": 37,
       "value": "\"Last 4 digits for card is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5573,
+      "offset": 5628,
       "length": 19,
       "value": "\"Trid is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5636,
+      "offset": 5691,
       "length": 19,
       "value": "\"Tavv is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5704,
+      "offset": 5759,
       "length": 25,
       "value": "\"TokenRefNo is missing, \""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5774,
+      "offset": 5829,
       "length": 114,
       "value": "\"No Internet connection. Make sure you are connected to a Wifi network or mobile data is turned on and try again.\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5929,
+      "offset": 5984,
       "length": 22,
       "value": "\"Something went wrong\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5993,
+      "offset": 6048,
       "length": 47,
       "value": "\"The internet connection appears to be offline\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6074,
+      "offset": 6129,
       "length": 17,
       "value": "\"Hash is missing\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6185,
+      "offset": 6240,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6227,
+      "offset": 6282,
       "length": 4,
       "value": "\"pg\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6276,
+      "offset": 6331,
       "length": 10,
       "value": "\"bankcode\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6332,
+      "offset": 6387,
       "length": 11,
       "value": "\"walletUrn\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6390,
+      "offset": 6445,
       "length": 13,
       "value": "\"load_amount\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6451,
+      "offset": 6506,
       "length": 14,
       "value": "\"sdk_platform\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6504,
+      "offset": 6559,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6552,
+      "offset": 6607,
       "length": 9,
       "value": "\"command\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6606,
+      "offset": 6661,
       "length": 11,
       "value": "\"offer_key\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6665,
+      "offset": 6720,
       "length": 14,
       "value": "\"cart_details\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6720,
+      "offset": 6775,
       "length": 7,
       "value": "\"txnid\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6769,
+      "offset": 6824,
       "length": 8,
       "value": "\"amount\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6825,
+      "offset": 6880,
       "length": 13,
       "value": "\"productinfo\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6884,
+      "offset": 6939,
       "length": 11,
       "value": "\"firstname\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6936,
+      "offset": 6991,
       "length": 7,
       "value": "\"email\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6984,
+      "offset": 7039,
       "length": 7,
       "value": "\"phone\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7031,
+      "offset": 7086,
       "length": 6,
       "value": "\"surl\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7077,
+      "offset": 7132,
       "length": 6,
       "value": "\"furl\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7123,
+      "offset": 7178,
       "length": 6,
       "value": "\"hash\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7170,
+      "offset": 7225,
       "length": 7,
       "value": "\"ccnum\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7219,
+      "offset": 7274,
       "length": 8,
       "value": "\"ccname\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7267,
+      "offset": 7322,
       "length": 6,
       "value": "\"ccvv\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7319,
+      "offset": 7374,
       "length": 10,
       "value": "\"ccexpmon\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7374,
+      "offset": 7429,
       "length": 9,
       "value": "\"ccexpyr\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7428,
+      "offset": 7483,
       "length": 10,
       "value": "\"lookupId\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7485,
+      "offset": 7540,
       "length": 13,
       "value": "\"device_type\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7549,
+      "offset": 7604,
       "length": 17,
       "value": "\"instrument_type\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7615,
+      "offset": 7670,
       "length": 15,
       "value": "\"instrument_id\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7678,
+      "offset": 7733,
       "length": 14,
       "value": "\"txn_s2s_flow\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7744,
+      "offset": 7799,
       "length": 18,
       "value": "\"user_credentials\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7808,
+      "offset": 7863,
       "length": 12,
       "value": "\"user_token\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7861,
+      "offset": 7916,
       "length": 6,
       "value": "\"udf1\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7908,
+      "offset": 7963,
       "length": 6,
       "value": "\"udf2\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7955,
+      "offset": 8010,
       "length": 6,
       "value": "\"udf3\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8002,
+      "offset": 8057,
       "length": 6,
       "value": "\"udf4\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8049,
+      "offset": 8104,
       "length": 6,
       "value": "\"udf5\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8096,
+      "offset": 8151,
       "length": 6,
       "value": "\"udf6\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8148,
+      "offset": 8203,
       "length": 12,
       "value": "\"free_trial\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8207,
+      "offset": 8262,
       "length": 13,
       "value": "\"api_version\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8258,
+      "offset": 8313,
       "length": 4,
       "value": "\"si\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8308,
+      "offset": 8363,
       "length": 12,
       "value": "\"si_details\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8370,
+      "offset": 8425,
       "length": 15,
       "value": "\"billingAmount\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8437,
+      "offset": 8492,
       "length": 17,
       "value": "\"billingCurrency\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8503,
+      "offset": 8558,
       "length": 14,
       "value": "\"billingCycle\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8569,
+      "offset": 8624,
       "length": 17,
       "value": "\"billingInterval\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8640,
+      "offset": 8695,
       "length": 18,
       "value": "\"paymentStartDate\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8710,
+      "offset": 8765,
       "length": 16,
       "value": "\"paymentEndDate\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8769,
+      "offset": 8824,
       "length": 9,
       "value": "\"remarks\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8824,
+      "offset": 8879,
       "length": 12,
       "value": "\"store_card\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8887,
+      "offset": 8942,
       "length": 11,
       "value": "\"card_name\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8947,
+      "offset": 9002,
       "length": 13,
       "value": "\"userConsent\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9006,
+      "offset": 9061,
       "length": 11,
       "value": "\"one_click\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9071,
+      "offset": 9126,
       "length": 19,
       "value": "\"one_click_details\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9141,
+      "offset": 9196,
       "length": 14,
       "value": "\"userDeviceID\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9205,
+      "offset": 9260,
       "length": 13,
       "value": "\"vscAuthCode\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9270,
+      "offset": 9325,
       "length": 15,
       "value": "\"merchantAppID\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9353,
+      "offset": 9408,
       "length": 30,
       "value": "\"partnerOriginalTransactionID\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9430,
+      "offset": 9485,
       "length": 11,
       "value": "\"cardAlias\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9491,
+      "offset": 9546,
       "length": 14,
       "value": "\"partnerToken\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9554,
+      "offset": 9609,
       "length": 13,
       "value": "\"payUSdkName\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9619,
+      "offset": 9674,
       "length": 16,
       "value": "\"payUSdkVersion\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9679,
+      "offset": 9734,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9729,
+      "offset": 9784,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9783,
+      "offset": 9838,
       "length": 13,
       "value": "\"billingRule\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9844,
+      "offset": 9899,
       "length": 13,
       "value": "\"billingDate\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9906,
+      "offset": 9961,
       "length": 14,
       "value": "\"billingLimit\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9965,
+      "offset": 10020,
       "length": 11,
       "value": "\"notifyurl\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10020,
+      "offset": 10075,
       "length": 10,
       "value": "\"lastname\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10075,
+      "offset": 10130,
       "length": 10,
       "value": "\"address1\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10130,
+      "offset": 10185,
       "length": 10,
       "value": "\"address2\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10180,
+      "offset": 10235,
       "length": 6,
       "value": "\"city\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10227,
+      "offset": 10282,
       "length": 7,
       "value": "\"state\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10277,
+      "offset": 10332,
       "length": 9,
       "value": "\"country\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10329,
+      "offset": 10384,
       "length": 9,
       "value": "\"zipcode\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10392,
+      "offset": 10447,
       "length": 20,
       "value": "\"shipping_firstname\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10465,
+      "offset": 10520,
       "length": 19,
       "value": "\"shipping_lastname\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10538,
+      "offset": 10593,
       "length": 19,
       "value": "\"shipping_address1\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10611,
+      "offset": 10666,
       "length": 19,
       "value": "\"shipping_address2\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10679,
+      "offset": 10734,
       "length": 15,
       "value": "\"shipping_city\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10744,
+      "offset": 10799,
       "length": 16,
       "value": "\"shipping_state\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10812,
+      "offset": 10867,
       "length": 18,
       "value": "\"shipping_country\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10882,
+      "offset": 10937,
       "length": 18,
       "value": "\"shipping_zipcode\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10950,
+      "offset": 11005,
       "length": 16,
       "value": "\"shipping_phone\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11006,
+      "offset": 11061,
       "length": 6,
       "value": "\"curl\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11054,
+      "offset": 11109,
       "length": 8,
       "value": "\"codurl\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11111,
+      "offset": 11166,
       "length": 15,
       "value": "\"drop_category\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11180,
+      "offset": 11235,
       "length": 19,
       "value": "\"enforce_paymethod\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11246,
+      "offset": 11301,
       "length": 13,
       "value": "\"custom_note\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11308,
+      "offset": 11363,
       "length": 14,
       "value": "\"splitRequest\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11371,
+      "offset": 11426,
       "length": 15,
       "value": "\"note_category\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11440,
+      "offset": 11495,
       "length": 20,
       "value": "\"one_click_checkout\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11512,
+      "offset": 11567,
       "length": 17,
       "value": "\"beneficiaryName\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11589,
+      "offset": 11644,
       "length": 24,
       "value": "\"beneficiaryAccountType\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11658,
+      "offset": 11713,
       "length": 10,
       "value": "\"ifscCode\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11721,
+      "offset": 11776,
       "length": 18,
       "value": "\"verificationMode\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11792,
+      "offset": 11847,
       "length": 19,
       "value": "\"beneficiarydetail\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11871,
+      "offset": 11926,
       "length": 26,
       "value": "\"beneficiaryAccountNumber\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11936,
+      "offset": 11991,
       "length": 5,
       "value": "\"vpa\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11989,
+      "offset": 12044,
       "length": 14,
       "value": "\"salt_version\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12057,
+      "offset": 12112,
       "length": 20,
       "value": "\"twid_customer_hash\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12130,
+      "offset": 12185,
       "length": 19,
       "value": "\"subvention_amount\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12189,
+      "offset": 12244,
       "length": 6,
       "value": "\"pgId\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12247,
+      "offset": 12302,
       "length": 18,
       "value": "\"save_sodexo_card\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12310,
+      "offset": 12365,
       "length": 11,
       "value": "\"source_id\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12376,
+      "offset": 12431,
       "length": 21,
       "value": "\"card_merchant_param\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12450,
+      "offset": 12505,
       "length": 18,
       "value": "\"store_card_token\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12526,
+      "offset": 12581,
       "length": 22,
       "value": "\"storecard_token_type\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12599,
+      "offset": 12654,
       "length": 17,
       "value": "\"additional_info\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12665,
+      "offset": 12720,
       "length": 13,
       "value": "\"last4Digits\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12718,
+      "offset": 12773,
       "length": 6,
       "value": "\"tavv\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12764,
+      "offset": 12819,
       "length": 6,
       "value": "\"trid\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12818,
+      "offset": 12873,
       "length": 12,
       "value": "\"tokenRefNo\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12875,
+      "offset": 12930,
       "length": 11,
       "value": "\"sdk_retry\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12936,
+      "offset": 12991,
       "length": 16,
       "value": "\"device_details\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12991,
+      "offset": 13046,
       "length": 11,
       "value": "\"panNumber\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13042,
+      "offset": 13097,
       "length": 6,
       "value": "\"var1\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13090,
+      "offset": 13145,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13147,
+      "offset": 13202,
       "length": 14,
       "value": "\"seamless_sdk\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13214,
+      "offset": 13269,
       "length": 18,
       "value": "\"additional_param\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13274,
+      "offset": 13329,
       "length": 7,
       "value": "\"items\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13329,
+      "offset": 13384,
       "length": 13,
       "value": "\"sku_details\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13385,
+      "offset": 13440,
       "length": 8,
       "value": "\"sku_id\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13438,
+      "offset": 13493,
       "length": 10,
       "value": "\"sku_name\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13499,
+      "offset": 13554,
       "length": 16,
       "value": "\"amount_per_sku\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13568,
+      "offset": 13623,
       "length": 18,
       "value": "\"offer_auto_apply\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13631,
+      "offset": 13686,
       "length": 10,
       "value": "\"quantity\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13696,
+      "offset": 13751,
       "length": 20,
       "value": "\"additional_charges\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13783,
+      "offset": 13838,
       "length": 31,
       "value": "\"percentage_additional_charges\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13855,
+      "offset": 13910,
       "length": 6,
       "value": "\"mpin\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13903,
+      "offset": 13958,
       "length": 7,
       "value": "\"token\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13952,
+      "offset": 14007,
       "length": 5,
       "value": "\"OLW\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14010,
+      "offset": 14065,
       "length": 19,
       "value": "\"olw_encrypted_key\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14069,
+      "offset": 14124,
       "length": 5,
       "value": "\"otp\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14117,
+      "offset": 14172,
       "length": 9,
       "value": "\"ppiInfo\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14175,
+      "offset": 14230,
       "length": 13,
       "value": "\"requestUUID\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14241,
+      "offset": 14296,
       "length": 17,
       "value": "\"combinationUUID\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14307,
+      "offset": 14362,
       "length": 13,
       "value": "\"chargeUUIDs\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14373,
+      "offset": 14428,
       "length": 10,
       "value": "\"Conv Fee\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14433,
+      "offset": 14488,
       "length": 15,
       "value": "\"pre_authorize\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14493,
+      "offset": 14548,
       "length": 10,
       "value": "\"deviceId\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14533,
+      "offset": 14604,
+      "length": 12,
+      "value": "\"chargeUUID\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 14662,
+      "length": 12,
+      "value": "\"chargeName\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 14717,
+      "length": 9,
+      "value": "\"baseFee\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 14771,
+      "length": 11,
+      "value": "\"taxAmount\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 14824,
+      "length": 8,
+      "value": "\"ruleId\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 14883,
+      "length": 17,
+      "value": "\"recurringAmount\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 14943,
+      "length": 9,
+      "value": "\"charges\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 15008,
+      "length": 22,
+      "value": "\"siConvenienceFeeData\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 15060,
       "length": 9,
       "value": "\"version\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14653,
+      "offset": 15180,
       "length": 7,
       "value": "\"LASER\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14704,
+      "offset": 15231,
       "length": 10,
       "value": "\"DISCOVER\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14754,
+      "offset": 15281,
       "length": 6,
       "value": "\"SMAE\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14801,
+      "offset": 15328,
       "length": 7,
       "value": "\"RUPAY\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14848,
+      "offset": 15375,
       "length": 6,
       "value": "\"VISA\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14894,
+      "offset": 15421,
       "length": 6,
       "value": "\"MAST\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14940,
+      "offset": 15467,
       "length": 6,
       "value": "\"MAES\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14986,
+      "offset": 15513,
       "length": 6,
       "value": "\"DINR\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15032,
+      "offset": 15559,
       "length": 6,
       "value": "\"AMEX\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15077,
+      "offset": 15604,
       "length": 5,
       "value": "\"JCB\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15152,
+      "offset": 15679,
       "length": 188,
       "value": "\"^508[5-9][0-9][0-9]|60698[5-9]|60699[0-9]|607[0-8][0-9][0-9]|6079[0-7][0-9]|60798[0-4]|(?!608000)608[0-4][0-9][0-9]|608500|6521[5-9][0-9]|652[2-9][0-9][0-9]|6530[0-9][0-9]|6531[0-4][0-9]\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15381,
+      "offset": 15908,
       "length": 38,
       "value": "\"^((6304)|(6706)|(6771)|(6709))[\\d]+\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15460,
+      "offset": 15987,
       "length": 35,
       "value": "\"6(?:011|5[0-9]{2})[0-9]{12}[\\d]+\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15538,
+      "offset": 16065,
       "length": 40,
       "value": "\"(5[06-8]|6\\d)\\d{14}(\\d{2,3})?[\\d]+\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15621,
+      "offset": 16148,
       "length": 22,
       "value": "\"(5[06-8]|6\\d)[\\d]+\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15686,
+      "offset": 16213,
       "length": 76,
       "value": "\"((504([435|645|774|775|809|993]))|(60([0206]|[3845]))|(622[018])\\d)[\\d]+\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15812,
+      "offset": 16339,
       "length": 15,
       "value": "\"^5[1-5][\\d]+\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15865,
+      "offset": 16392,
       "length": 14,
       "value": "\"^3[47][\\d]+\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15919,
+      "offset": 16446,
       "length": 16,
       "value": "\"^30[0-5][\\d]+\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15975,
+      "offset": 16502,
       "length": 18,
       "value": "\"2(014|149)[\\d]+\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16033,
+      "offset": 16560,
       "length": 10,
       "value": "\"36[\\d]+\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16080,
+      "offset": 16607,
       "length": 29,
       "value": "\"^35(2[89]|[3-8][0-9])[\\d]+\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16145,
+      "offset": 16672,
       "length": 25,
       "value": "\"(\\d*)(\\.)?(\\d{1,2})?\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16205,
+      "offset": 16732,
       "length": 51,
       "value": "\"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16289,
+      "offset": 16816,
       "length": 31,
       "value": "\"^[A-Za-z]{5}[0-9]{4}[A-Za-z]$\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16355,
+      "offset": 16882,
       "length": 17,
       "value": "\"^[5-9][0-9]{9}$\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16405,
+      "offset": 16932,
       "length": 33,
       "value": "\"^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+$\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16530,
+      "offset": 17057,
       "length": 25,
       "value": "\"check_secure_txn_status\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16651,
+      "offset": 17178,
       "length": 23,
       "value": "\"https:\/\/info.payu.in\/\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16725,
+      "offset": 17252,
       "length": 25,
       "value": "\"https:\/\/secure.payu.in\/\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16795,
+      "offset": 17322,
       "length": 23,
       "value": "\"https:\/\/test.payu.in\/\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16851,
+      "offset": 17378,
       "length": 10,
       "value": "\"_payment\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16895,
+      "offset": 17422,
       "length": 8,
       "value": "\"paytxn\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16930,
+      "offset": 17457,
       "length": 29,
       "value": "\"merchant\/postservice?form=2\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16985,
+      "offset": 17512,
       "length": 26,
       "value": "\"merchant\/MobileAnalytics\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17039,
+      "offset": 17566,
       "length": 17,
       "value": "\"sdk\/transaction\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17636,
+      "offset": 18163,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17668,
+      "offset": 18195,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 17741,
+      "offset": 18268,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17775,
+      "offset": 18302,
       "length": 10,
       "value": "\"PayUUser\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17812,
+      "offset": 18339,
       "length": 6,
       "value": "\"Card\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17851,
+      "offset": 18378,
       "length": 12,
       "value": "\"PayUParams\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17890,
+      "offset": 18417,
       "length": 5,
       "value": "\"284\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17935,
+      "offset": 18462,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17983,
+      "offset": 18510,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18022,
+      "offset": 18549,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18089,
+      "offset": 18616,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18151,
+      "offset": 18678,
       "length": 35,
       "value": "\"application\/x-www-form-urlencoded\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18248,
+      "offset": 18775,
       "length": 5,
       "value": "\"UPI\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18281,
+      "offset": 18808,
       "length": 7,
       "value": "\"UPISI\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18317,
+      "offset": 18844,
       "length": 8,
       "value": "\"UPITPV\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18352,
+      "offset": 18879,
       "length": 6,
       "value": "\"CPMC\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18385,
+      "offset": 18912,
       "length": 6,
       "value": "\"TWID\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18418,
+      "offset": 18945,
       "length": 4,
       "value": "\"CC\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18459,
+      "offset": 18986,
       "length": 6,
       "value": "\"CPMC\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18502,
+      "offset": 19029,
       "length": 6,
       "value": "\"TWID\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18537,
+      "offset": 19064,
       "length": 8,
       "value": "\"SODEXO\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18575,
+      "offset": 19102,
       "length": 9,
       "value": "\"LAZYPAY\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18617,
+      "offset": 19144,
       "length": 7,
       "value": "\"payuw\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18699,
+      "offset": 19226,
       "length": 21,
       "value": "\"One Tap Stored Card\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18753,
+      "offset": 19280,
       "length": 13,
       "value": "\"Saved Cards\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18793,
+      "offset": 19320,
       "length": 22,
       "value": "\"Credit \/ Debit Cards\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18849,
+      "offset": 19376,
       "length": 13,
       "value": "\"Net Banking\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18894,
+      "offset": 19421,
       "length": 11,
       "value": "\"NEFT\/RTGS\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18936,
+      "offset": 19463,
       "length": 11,
       "value": "\"Cash Card\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18973,
+      "offset": 19500,
       "length": 5,
       "value": "\"EMI\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19012,
+      "offset": 19539,
       "length": 13,
       "value": "\"No Cost EMI\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19058,
+      "offset": 19585,
       "length": 12,
       "value": "\"PayU Money\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19100,
+      "offset": 19627,
       "length": 9,
       "value": "\"LazyPay\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19141,
+      "offset": 19668,
       "length": 9,
       "value": "\"ZESTMON\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19176,
+      "offset": 19703,
       "length": 5,
       "value": "\"UPI\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19209,
+      "offset": 19736,
       "length": 7,
       "value": "\"UPISI\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19245,
+      "offset": 19772,
       "length": 8,
       "value": "\"SODEXO\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19317,
+      "offset": 19844,
       "length": 4,
       "value": "\"NB\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19348,
+      "offset": 19875,
       "length": 4,
       "value": "\"CC\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19377,
+      "offset": 19904,
       "length": 4,
       "value": "\"MC\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19408,
+      "offset": 19935,
       "length": 6,
       "value": "\"BNPL\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19440,
+      "offset": 19967,
       "length": 5,
       "value": "\"CLW\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19471,
+      "offset": 19998,
       "length": 5,
       "value": "\"EMI\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19507,
+      "offset": 20034,
       "length": 6,
       "value": "\"CASH\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19546,
+      "offset": 20073,
       "length": 8,
       "value": "\"wallet\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19582,
+      "offset": 20109,
       "length": 7,
       "value": "\"ENACH\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19615,
+      "offset": 20142,
       "length": 5,
       "value": "\"UPI\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19651,
+      "offset": 20178,
       "length": 10,
       "value": "\"neftrtgs\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19738,
+      "offset": 20265,
       "length": 12,
       "value": "\"netbanking\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19777,
+      "offset": 20304,
       "length": 4,
       "value": "\"CC\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19806,
+      "offset": 20333,
       "length": 4,
       "value": "\"MC\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19837,
+      "offset": 20364,
       "length": 6,
       "value": "\"BNPL\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19869,
+      "offset": 20396,
       "length": 5,
       "value": "\"CLW\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19900,
+      "offset": 20427,
       "length": 5,
       "value": "\"EMI\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19936,
+      "offset": 20463,
       "length": 6,
       "value": "\"CASH\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19975,
+      "offset": 20502,
       "length": 10,
       "value": "\"cashcard\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20013,
+      "offset": 20540,
       "length": 7,
       "value": "\"ENACH\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20046,
+      "offset": 20573,
       "length": 5,
       "value": "\"UPI\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20082,
+      "offset": 20609,
       "length": 10,
       "value": "\"neftrtgs\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20149,
+      "offset": 20676,
       "length": 5,
       "value": "\"key\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20190,
+      "offset": 20717,
       "length": 15,
       "value": "\"transactionId\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20234,
+      "offset": 20761,
       "length": 8,
       "value": "\"amount\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20276,
+      "offset": 20803,
       "length": 13,
       "value": "\"productInfo\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20321,
+      "offset": 20848,
       "length": 11,
       "value": "\"firstName\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20360,
+      "offset": 20887,
       "length": 7,
       "value": "\"email\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20395,
+      "offset": 20922,
       "length": 7,
       "value": "\"phone\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20429,
+      "offset": 20956,
       "length": 6,
       "value": "\"surl\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20462,
+      "offset": 20989,
       "length": 6,
       "value": "\"furl\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20505,
+      "offset": 21032,
       "length": 16,
       "value": "\"isRetryPayment\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20558,
+      "offset": 21085,
       "length": 16,
       "value": "\"userCredential\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20606,
+      "offset": 21133,
       "length": 11,
       "value": "\"userToken\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20649,
+      "offset": 21176,
       "length": 11,
       "value": "\"notifyURL\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20689,
+      "offset": 21216,
       "length": 8,
       "value": "\"codURL\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20724,
+      "offset": 21251,
       "length": 6,
       "value": "\"cURL\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20765,
+      "offset": 21292,
       "length": 14,
       "value": "\"dropCategory\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20818,
+      "offset": 21345,
       "length": 18,
       "value": "\"enforcePayMethod\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20869,
+      "offset": 21396,
       "length": 12,
       "value": "\"customNote\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20916,
+      "offset": 21443,
       "length": 14,
       "value": "\"noteCategory\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20972,
+      "offset": 21499,
       "length": 21,
       "value": "\"splitPaymentDetails\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21032,
+      "offset": 21559,
       "length": 18,
       "value": "\"subventionAmount\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21086,
+      "offset": 21613,
       "length": 15,
       "value": "\"skuCartDetail\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21141,
+      "offset": 21668,
       "length": 19,
       "value": "\"additionalCharges\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21210,
+      "offset": 21737,
       "length": 29,
       "value": "\"percentageAdditionalCharges\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21270,
+      "offset": 21797,
       "length": 10,
       "value": "\"flowType\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21310,
+      "offset": 21837,
       "length": 9,
       "value": "\"skipCVV\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21357,
+      "offset": 21884,
       "length": 17,
       "value": "\"enableNativeOTP\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21411,
+      "offset": 21938,
       "length": 16,
       "value": "\"enableOneClick\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Constants\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21470,
+      "offset": 21997,
       "length": 22,
       "value": "\"enforcementOfferKeys\""
     },
@@ -112668,14 +113686,14 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PayUPaymentParam.swift",
       "kind": "IntegerLiteral",
-      "offset": 4598,
+      "offset": 4674,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PayUPaymentParam.swift",
       "kind": "IntegerLiteral",
-      "offset": 4609,
+      "offset": 4685,
       "length": 4,
       "value": "1"
     },

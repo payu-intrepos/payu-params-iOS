@@ -58,6 +58,7 @@ import _SwiftConcurrencyShims
   @objc public var ifscCode: Swift.String?
   @objc public var loadAmount: Swift.String?
   @objc public var charges: [PayUParamsKit.PayUCharges]
+  @objc public var chargesSI: [PayUParamsKit.PayUCharges]
   @objc public var paymentType: PayUParamsKit.PaymentType {
     @objc get
   }
@@ -232,6 +233,7 @@ import _SwiftConcurrencyShims
   @objc public var emis: [PayUParamsKit.EMI]?
   public var binLevel: Swift.Bool?
   @objc public var charges: [PayUParamsKit.PayUCharges]?
+  @objc public var chargesSI: [PayUParamsKit.PayUCharges]?
   @objc public var offerDetails: PayUParamsKit.PayUModelOfferDetail?
   @objc deinit
 }
@@ -276,8 +278,7 @@ import _SwiftConcurrencyShims
   case bnpl
   case other
   case clw
-  public func getTypeName() -> Swift.String
-  public func getTypeActionName() -> Swift.String
+  public func getTypeActionName(isSI: Swift.Bool = false) -> Swift.String
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -941,7 +942,6 @@ extension Swift.Dictionary {
   @objc public class func convertJsonToPostParam(_ json: [Swift.String : Swift.String]) -> Swift.String
   @objc public class func isSITransaction(_ params: PayUParamsKit.PayUPaymentParam) -> Swift.Bool
   @objc public class func getSIPostParams(_ params: PayUParamsKit.PayUPaymentParam?, isOTMTxn: Swift.Bool = false) -> [Swift.String : Swift.String]
-  @objc public class func getSIDetailsPostParams(_ params: PayUParamsKit.PayUPaymentParam?, _ isOTMTxn: Swift.Bool = false) -> Swift.String
   @objc public class func getDeviceRelatedParam() -> [Swift.String : Swift.String]
   @objc public class func getAnalyticsParams(_ paymentParam: PayUParamsKit.PayUPaymentParam) -> [Swift.String : Swift.String]
   @objc public class func escape(_ string: Swift.String) -> Swift.String
@@ -956,6 +956,7 @@ extension Swift.Dictionary {
 @objc public class OnDemandConvenienceFeeResponse : PayUParamsKit.PayUBaseModel {
   @objc final public let validateOfferData: PayUParamsKit.ValidateOfferData?
   @objc final public let pricingConvFeeData: PayUParamsKit.PricingCfData?
+  @objc final public let pricingConvFeeDataSI: PayUParamsKit.PricingCfData?
   @objc final public let pricingDynamicCfData: PayUParamsKit.PricingDynamicCfData?
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
@@ -999,6 +1000,7 @@ extension PayUParamsKit.PricingData {
 @_inheritsConvenienceInitializers @objc public class Constants : ObjectiveC.NSObject {
   @objc public static var yyyyMMdd: Swift.String
   @objc public static var ddMMyyyy: Swift.String
+  @objc public static var dd_MM_yyyy: Swift.String
   @objc public static let MINIMUM_AMOUNT: Swift.Double
   @objc public static let SURL: Swift.String
   @objc public static let FURL: Swift.String
@@ -1146,6 +1148,14 @@ extension PayUParamsKit.PricingData {
     @objc public static let convFeeChargeName: Swift.String
     @objc public static let PRE_AUTHORIZE: Swift.String
     @objc public static let DEVICE_ID: Swift.String
+    @objc public static let chargeUUID: Swift.String
+    @objc public static let chargeName: Swift.String
+    @objc public static let baseFee: Swift.String
+    @objc public static let taxAmount: Swift.String
+    @objc public static let ruleId: Swift.String
+    @objc public static let recurringAmount: Swift.String
+    @objc public static let charges: Swift.String
+    @objc public static let siConvenienceFeeData: Swift.String
     @objc override dynamic public init()
     @objc deinit
   }
@@ -1265,6 +1275,7 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   @objc public var additionalCharges: Swift.String?
   @objc public var percentageAdditionalCharges: Swift.String?
   @objc public var charges: [PayUParamsKit.PayUCharges]?
+  @objc public var chargesSI: [PayUParamsKit.PayUCharges]?
   @objc public var products: [PayUParamsKit.PayUWealthProducts]?
   @objc public var olwParams: PayUParamsKit.PayUModelOLWParams?
   @objc public var flowType: Swift.String?
