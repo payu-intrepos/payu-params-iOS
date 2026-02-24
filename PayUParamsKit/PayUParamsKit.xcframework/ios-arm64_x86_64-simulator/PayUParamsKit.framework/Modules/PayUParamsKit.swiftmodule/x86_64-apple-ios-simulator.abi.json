@@ -69485,14 +69485,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "PayUPaymentParam",
-                "printedName": "PayUParamsKit.PayUPaymentParam",
-                "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam"
+                "name": "Optional",
+                "printedName": "PayUParamsKit.PayUPaymentParam?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUPaymentParam",
+                    "printedName": "PayUParamsKit.PayUPaymentParam",
+                    "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@PayUParamsKit@objc(cs)PPKUtils(cm)isSITransaction:",
-            "mangledName": "$s13PayUParamsKit8PPKUtilsC15isSITransactionySbAA0A13UPaymentParamCFZ",
+            "mangledName": "$s13PayUParamsKit8PPKUtilsC15isSITransactionySbAA0A13UPaymentParamCSgFZ",
             "moduleName": "PayUParamsKit",
             "static": true,
             "declAttributes": [
@@ -111047,21 +111055,21 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Utils\/PPKUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 5298,
+      "offset": 5300,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Utils\/PPKUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 6031,
+      "offset": 6033,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Utils\/PPKUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 8528,
+      "offset": 8530,
       "length": 5,
       "value": "false"
     },

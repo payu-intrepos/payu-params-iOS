@@ -1044,7 +1044,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit8PPKUtils")
 + (NSString * _Nullable)getWealthProduct:(NSArray<PayUWealthProducts *> * _Nullable)products SWIFT_WARN_UNUSED_RESULT;
 + (NSDictionary<NSString *, id> * _Nullable)getJSONFrom:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)convertJsonToPostParam:(NSDictionary<NSString *, NSString *> * _Nonnull)json SWIFT_WARN_UNUSED_RESULT;
-+ (BOOL)isSITransaction:(PayUPaymentParam * _Nonnull)params SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)isSITransaction:(PayUPaymentParam * _Nullable)params SWIFT_WARN_UNUSED_RESULT;
 + (NSDictionary<NSString *, NSString *> * _Nonnull)getSIPostParams:(PayUPaymentParam * _Nullable)params isOTMTxn:(BOOL)isOTMTxn SWIFT_WARN_UNUSED_RESULT;
 + (NSDictionary<NSString *, NSString *> * _Nonnull)getDeviceRelatedParam SWIFT_WARN_UNUSED_RESULT;
 + (NSDictionary<NSString *, NSString *> * _Nonnull)getAnalyticsParams:(PayUPaymentParam * _Nonnull)paymentParam SWIFT_WARN_UNUSED_RESULT;

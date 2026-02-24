@@ -940,7 +940,7 @@ extension Swift.Dictionary {
   @objc public class func getWealthProduct(_ products: [PayUParamsKit.PayUWealthProducts]?) -> Swift.String?
   @objc public class func getJSON(from string: Swift.String) -> [Swift.String : Any]?
   @objc public class func convertJsonToPostParam(_ json: [Swift.String : Swift.String]) -> Swift.String
-  @objc public class func isSITransaction(_ params: PayUParamsKit.PayUPaymentParam) -> Swift.Bool
+  @objc public class func isSITransaction(_ params: PayUParamsKit.PayUPaymentParam?) -> Swift.Bool
   @objc public class func getSIPostParams(_ params: PayUParamsKit.PayUPaymentParam?, isOTMTxn: Swift.Bool = false) -> [Swift.String : Swift.String]
   @objc public class func getDeviceRelatedParam() -> [Swift.String : Swift.String]
   @objc public class func getAnalyticsParams(_ paymentParam: PayUParamsKit.PayUPaymentParam) -> [Swift.String : Swift.String]
