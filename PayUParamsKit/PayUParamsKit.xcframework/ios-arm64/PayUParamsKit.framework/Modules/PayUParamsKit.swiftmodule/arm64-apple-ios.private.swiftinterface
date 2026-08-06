@@ -1,9 +1,11 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUParamsKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
+import CryptoKit
 import Foundation
 @_exported import PayUParamsKit
+import Security
 import Swift
 import UIKit
 import _Concurrency
@@ -1156,6 +1158,7 @@ extension PayUParamsKit.PricingData {
     @objc public static let recurringAmount: Swift.String
     @objc public static let charges: Swift.String
     @objc public static let siConvenienceFeeData: Swift.String
+    @objc public static let encryptedBody: Swift.String
     @objc override dynamic public init()
     @objc deinit
   }
@@ -1234,6 +1237,18 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   @objc override dynamic public init()
   @objc deinit
 }
+public class PayUCPDataEncryption {
+  public init(pKi: Swift.String)
+  public func encryptASEData(aesKey: Swift.String) -> Swift.String?
+  public func generateRandomAESKey() -> Swift.String?
+  public func encryptDataUsingAesGcm(data: Swift.String, aesKey: Swift.String) -> Swift.String?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class HashType : ObjectiveC.NSObject {
+  @objc public static func encryptRequestBody(_ body: Swift.String?, date: Swift.String?, isEncryptionNeeded: Swift.Bool, pubKey: Swift.String?, completionHandler: @escaping (_ encBody: Swift.String, _ encKey: Swift.String) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc @objcMembers public class PayUPaymentParam : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc public var key: Swift.String
   @objc public var transactionId: Swift.String
@@ -1279,6 +1294,7 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   @objc public var products: [PayUParamsKit.PayUWealthProducts]?
   @objc public var olwParams: PayUParamsKit.PayUModelOLWParams?
   @objc public var flowType: Swift.String?
+  public var enableEncryption: Swift.Bool?
   @objc public var partnerWebhookSuccess: Swift.String?
   @objc public var partnerWebhookFailure: Swift.String?
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String, surl: Swift.String, furl: Swift.String, environment: PayUParamsKit.Environment)
