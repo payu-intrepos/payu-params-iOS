@@ -89095,27 +89095,20 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Bool?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Var",
-            "usr": "s:13PayUParamsKit0A13UPaymentParamC16enableEncryptionSbSgvp",
-            "mangledName": "$s13PayUParamsKit0A13UPaymentParamC16enableEncryptionSbSgvp",
+            "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam(py)enableEncryption",
+            "mangledName": "$s13PayUParamsKit0A13UPaymentParamC16enableEncryptionSbvp",
             "moduleName": "PayUParamsKit",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -89126,24 +89119,19 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Bool?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13PayUParamsKit0A13UPaymentParamC16enableEncryptionSbSgvg",
-                "mangledName": "$s13PayUParamsKit0A13UPaymentParamC16enableEncryptionSbSgvg",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam(im)enableEncryption",
+                "mangledName": "$s13PayUParamsKit0A13UPaymentParamC16enableEncryptionSbvg",
                 "moduleName": "PayUParamsKit",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               },
               {
@@ -89158,24 +89146,19 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Bool?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13PayUParamsKit0A13UPaymentParamC16enableEncryptionSbSgvs",
-                "mangledName": "$s13PayUParamsKit0A13UPaymentParamC16enableEncryptionSbSgvs",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PayUPaymentParam(im)setEnableEncryption:",
+                "mangledName": "$s13PayUParamsKit0A13UPaymentParamC16enableEncryptionSbvs",
                 "moduleName": "PayUParamsKit",
                 "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "accessorKind": "set"
               },
               {
@@ -89190,8 +89173,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13PayUParamsKit0A13UPaymentParamC16enableEncryptionSbSgvM",
-                "mangledName": "$s13PayUParamsKit0A13UPaymentParamC16enableEncryptionSbSgvM",
+                "usr": "s:13PayUParamsKit0A13UPaymentParamC16enableEncryptionSbvM",
+                "mangledName": "$s13PayUParamsKit0A13UPaymentParamC16enableEncryptionSbvM",
                 "moduleName": "PayUParamsKit",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -114550,15 +114533,22 @@
     },
     {
       "filePath": "\/Users\/amrendra.roy\/OneDrive - PayU Payments Pvt Ltd\/Documents\/GitLab_Projects\/CheckOutPro_Native\/COPro_card_scanner\/one-payu-ui-sdk-ios_new\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PayUPaymentParam.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2049,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amrendra.roy\/OneDrive - PayU Payments Pvt Ltd\/Documents\/GitLab_Projects\/CheckOutPro_Native\/COPro_card_scanner\/one-payu-ui-sdk-ios_new\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PayUPaymentParam.swift",
       "kind": "IntegerLiteral",
-      "offset": 4971,
+      "offset": 4977,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/amrendra.roy\/OneDrive - PayU Payments Pvt Ltd\/Documents\/GitLab_Projects\/CheckOutPro_Native\/COPro_card_scanner\/one-payu-ui-sdk-ios_new\/Dependency\/PayUParamsKit\/PayUParamsKit\/PayUParamsKit\/Models\/Payment\/PayUPaymentParam.swift",
       "kind": "IntegerLiteral",
-      "offset": 4982,
+      "offset": 4988,
       "length": 4,
       "value": "1"
     },

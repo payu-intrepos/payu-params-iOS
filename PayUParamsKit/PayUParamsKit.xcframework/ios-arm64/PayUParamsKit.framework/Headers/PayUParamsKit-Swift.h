@@ -1555,6 +1555,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit16PayUPaymentParam")
 @property (nonatomic, copy) NSArray<PayUWealthProducts *> * _Nullable products;
 @property (nonatomic, strong) PayUModelOLWParams * _Nullable olwParams;
 @property (nonatomic, copy) NSString * _Nullable flowType;
+@property (nonatomic) BOOL enableEncryption;
 @property (nonatomic, copy) NSString * _Nullable partnerWebhookSuccess;
 @property (nonatomic, copy) NSString * _Nullable partnerWebhookFailure;
 - (nonnull instancetype)initWithKey:(NSString * _Nonnull)key transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email phone:(NSString * _Nonnull)phone surl:(NSString * _Nonnull)surl furl:(NSString * _Nonnull)furl environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;

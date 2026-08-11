@@ -1294,7 +1294,7 @@ public class PayUCPDataEncryption {
   @objc public var products: [PayUParamsKit.PayUWealthProducts]?
   @objc public var olwParams: PayUParamsKit.PayUModelOLWParams?
   @objc public var flowType: Swift.String?
-  public var enableEncryption: Swift.Bool?
+  @objc public var enableEncryption: Swift.Bool
   @objc public var partnerWebhookSuccess: Swift.String?
   @objc public var partnerWebhookFailure: Swift.String?
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String, surl: Swift.String, furl: Swift.String, environment: PayUParamsKit.Environment)
