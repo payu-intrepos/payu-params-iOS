@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUParamsKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import CryptoKit
 import Foundation
 @_exported import PayUParamsKit
@@ -215,6 +215,11 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @objcMembers public class ApplePay : PayUParamsKit.PaymentOption {
+  @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class CardBinInfo : ObjectiveC.NSObject {
   @objc override dynamic public init()
   public var taxInPercentage: Swift.Double?
@@ -228,6 +233,7 @@ import _SwiftConcurrencyShims
   public var isDomestic: Swift.Bool?
   @objc public var bankName: Swift.String?
   @objc public var bankCode: Swift.String?
+  @objc public var pgCode: Swift.String?
   @objc public var bin: Swift.String?
   public var isAtmPinCard: Swift.Bool?
   public var isSISupported: Swift.Bool?
@@ -280,6 +286,7 @@ import _SwiftConcurrencyShims
   case bnpl
   case other
   case clw
+  case applePay
   public func getTypeActionName(isSI: Swift.Bool = false) -> Swift.String
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -698,7 +705,9 @@ import _SwiftConcurrencyShims
   @objc public var skuAmount: Swift.String
   @objc public var quantity: Swift.Int
   @objc public var offerKeys: [Swift.String]?
+  @objc public var autoApplyOffer: Swift.Bool
   @objc public init(skuId: Swift.String, skuName: Swift.String, skuAmount: Swift.String, quantity: Swift.Int, offerKeys: [Swift.String]? = nil)
+  @objc convenience public init(skuId: Swift.String, skuName: Swift.String, skuAmount: Swift.String, quantity: Swift.Int, offerKeys: [Swift.String]?, autoApplyOffer: Swift.Bool)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
 }
@@ -1217,6 +1226,7 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   case fullCardRedirection
   case mobile
   case olwRedirection
+  case applePaySDK
   public init?(rawValue: Swift.String)
   public typealias AllCases = [PayUParamsKit.PayUPaymentNavigationType]
   public typealias RawValue = Swift.String
@@ -1294,7 +1304,7 @@ public class PayUCPDataEncryption {
   @objc public var products: [PayUParamsKit.PayUWealthProducts]?
   @objc public var olwParams: PayUParamsKit.PayUModelOLWParams?
   @objc public var flowType: Swift.String?
-  @objc public var enableEncryption: Swift.Bool
+  public var enableEncryption: Swift.Bool?
   @objc public var partnerWebhookSuccess: Swift.String?
   @objc public var partnerWebhookFailure: Swift.String?
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String, surl: Swift.String, furl: Swift.String, environment: PayUParamsKit.Environment)
